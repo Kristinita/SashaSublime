@@ -1,0 +1,2219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist
+  PUBLIC '-//Apple Computer//DTD PLIST 1.0//EN'
+  'http://www.apple.com/DTDs/PropertyList-1.0.dtd'>
+<plist version="1.0">
+	<dict>
+		<key>author</key>
+		<string>Саша Черных</string>
+		<key>name</key>
+		<string>SashaSublime</string>
+		<key>settings</key>
+		<array>
+			<dict>
+				<key>settings</key>
+				<dict>
+					<!-- Бэкграунд -->
+					<key>background</key>
+					<string>#2A211C</string>
+					<!-- Номера строк -->
+					<key>gutterForeground</key>
+					<string>#FF1493</string>
+					<!-- Граница миникарты -->
+					<key>minimapBorder</key>
+					<string>hotpink</string>
+					<!-- «Канавка», в которой содержатся номера строк -->
+					<key>gutter</key>
+					<string>darkslategray</string>
+					<!-- Один параметр для двух значений: 1) Каретка, 2) Текст, найденный при помощи Find and Replace, если курсор находится совсем в другом месте. Допустим, нашёл слово «key», а пишешь в совсем другом месте. «key» тогда обведётся оранжевым прямоугольником с закруглёнными краями. -->
+					<key>caret</key>
+					<string>darkorange</string>
+					<!-- Линия, на которой располагается каретка -->
+					<key>lineHighlight</key>
+					<string>lightslategray</string>
+					<!-- Основной текст -->
+					<key>foreground</key>
+					<string>#ffdab9</string>
+					<!-- Не знаю, что означает. Возможно, параметр бесполезен для Sublime Text 3. -->
+					<key>invisibles</key>
+					<string>#FF0000</string>
+					<!-- Выделенный текст, не считая обводку вокруг него -->
+					<key>selection</key>
+					<string>dimgray</string>
+					<!-- Подчёркивание любых скобок, между которыми расположена каретка -->
+					<key>bracketContentsForeground</key>
+					<string>yellow</string>
+					<!-- Стиль подчёркивания скобок, между которыми расположена каретка -->
+					<key>bracketContentsOptions</key>
+					<string>underline</string>
+					<!-- Подчёркивание любых скобок, вплотную с которыми расположена каретка -->
+					<key>bracketsForeground</key>
+					<string>cyan</string>
+					<!-- Стиль подчёркивания скобок, вплотную с которыми расположена каретка -->
+					<key>bracketsOptions</key>
+					<string>squiggly_underline</string>
+					<!-- Подчёркивание тега и соответствующего ему закрывающего/открывающего тега -->
+					<key>tagsForeground</key>
+					<string>lawngreen</string>
+					<!-- Стиль подчёркивания тега и соответствующего ему закрывающего/открывающего тега -->
+					<key>tagsOptions</key>
+					<string>underline</string>
+					<!-- Фон активного на данный момент результата, найденного через Find and Replace -->
+					<key>findHighlight</key>
+					<string>beige</string>
+					<!-- Текст активного на данный момент результата, найденного через Find and Replace результатов  -->
+					<key>findHighlightForeground</key>
+					<string>magenta</string>
+					<!-- Обводка активного на данный момент результата, найденного через Find and Replace -->
+					<key>selectionBorder</key>
+					<string>yellow</string>
+					<!-- Подсветка после ввода. Допустим, ввёл в строку поиска «ур» — высветилось «ур» у слова «курс». Но когда стал вводить дальше — «уро» — если в тексте нет «уро», «ур» подсвечивается обозначенным здесь цветом.-->
+					<key>inactiveSelection</key>
+					<string>purple</string>
+					<!-- Вертикальные линии вручную заданных отступов пунктиром. Отключил, ибо портят дизайн. -->
+					<key>guide</key>
+					<string/>
+					<!-- Тени справа и слева (слева при горизонтальной перемотке), когда текст вылазит за пределы экрана -->
+					<key>shadow</key>
+					<string>#F08080</string>
+					<!-- Ширина теней слева и справа при вертикальной перемотке, когда текст вылазит за пределы экрана -->
+					<key>shadowWidth</key>
+					<string>25</string>
+				</dict>
+			</dict>
+			<!-- Scopes с общими именами -->
+			<!-- Выделение жирным -->
+			<dict>
+				<key>name</key>
+				<string>Markup: Bold</string>
+				<key>scope</key>
+				<string>markup.bold</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>bold</string>
+				</dict>
+			</dict>
+			<!-- Выделение курсивом -->
+			<dict>
+				<key>name</key>
+				<string>Markup: Italic</string>
+				<key>scope</key>
+				<string>markup.italic</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>italic</string>
+				</dict>
+			</dict>
+			<!-- Любые комментарии -->
+			<dict>
+				<key>name</key>
+				<string>Comment</string>
+				<key>scope</key>
+				<string>comment</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>italic</string>
+					<key>foreground</key>
+					<string>#FFFF7A</string>
+				</dict>
+			</dict>
+			<!-- Общая подсветка фона элементов -->
+			<dict>
+				<key>name</key>
+				<string>Embedded source</string>
+				<key>scope</key>
+				<string>text source</string>
+				<key>settings</key>
+				<dict>
+					<key>background</key>
+					<string>#E07585E0</string>
+				</dict>
+			</dict>
+			<!-- HTML: числа во внутреннем CSS -->
+			<dict>
+				<key>name</key>
+				<string>Number</string>
+				<key>scope</key>
+				<string>constant.numeric</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#75EB75</string>
+				</dict>
+			</dict>
+			<!-- HTML: &nbsp; и прочие спецсимволы -->
+			<dict>
+				<key>name</key>
+				<string>User-defined constant</string>
+				<key>scope</key>
+				<string>constant</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>bold</string>
+					<key>foreground</key>
+					<string>#FC8389</string>
+				</dict>
+			</dict>
+			<!-- True или false -->
+			<dict>
+				<key>name</key>
+				<string>Built-in constant</string>
+				<key>scope</key>
+				<string>constant.language</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>bold</string>
+					<key>foreground</key>
+					<string>#D1C2FF</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Variable</string>
+				<key>scope</key>
+				<string>variable.language, variable.other</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#FA8537</string>
+				</dict>
+			</dict>
+			<!-- HTML: значения атрибутов тегов -->
+			<dict>
+				<key>name</key>
+				<string>String</string>
+				<key>scope</key>
+				<string>string</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#E5FEFF</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>String interpolation</string>
+				<key>scope</key>
+				<string>constant.character.escape, string source</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#8FF788</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Preprocessor line</string>
+				<key>scope</key>
+				<string>meta.preprocessor</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#F28CB8</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Preprocessor directive</string>
+				<key>scope</key>
+				<string>keyword.control.import</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>bold</string>
+					<key>foreground</key>
+					<string>#9AFF87</string>
+				</dict>
+			</dict>
+			<!-- JavaScript: Объявленная функция -->
+			<dict>
+				<key>name</key>
+				<string>Function name</string>
+				<key>scope</key>
+				<string>entity.name.function, keyword.other.name-of-parameter.objc</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>bold</string>
+					<key>foreground</key>
+					<string>#FF9358</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>JS: Operator</string>
+				<key>scope</key>
+				<string>keyword.operator.js</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#B8D8FF</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Answer</string>
+				<key>scope</key>
+				<string>meta.answer</string>
+				<key>settings</key>
+				<dict>
+					<key>background</key>
+					<string>#804A7D99</string>
+					<key>foreground</key>
+					<string>cyan</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Type name</string>
+				<key>scope</key>
+				<string>entity.name.type</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>underline</string>
+					<key>foreground</key>
+					<string>#F94CFF</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Inherited class name</string>
+				<key>scope</key>
+				<string>entity.other.inherited-class</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>italic</string>
+					<key>foreground</key>
+					<string>#FFCF66</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Function parameter</string>
+				<key>scope</key>
+				<string>variable.parameter</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>italic</string>
+					<key>foreground</key>
+					<string>#BCADFF</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Function argument and result types</string>
+				<key>scope</key>
+				<string>storage.type.method</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#A9B1D9</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Section</string>
+				<key>scope</key>
+				<string>meta.section entity.name.section, declaration.section entity.name.section</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>italic</string>
+					<key>foreground</key>
+					<string>#91F0FF</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Library function</string>
+				<key>scope</key>
+				<string>support.function</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>bold</string>
+					<key>foreground</key>
+					<string>#E063FF</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Library object</string>
+				<key>scope</key>
+				<string>support.class, support.type</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>bold</string>
+					<key>foreground</key>
+					<string>#EFFF0A</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Library constant</string>
+				<key>scope</key>
+				<string>support.constant</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>bold</string>
+					<key>foreground</key>
+					<string>#FF85C4</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Library variable</string>
+				<key>scope</key>
+				<string>support.variable</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>bold</string>
+					<key>foreground</key>
+					<string>#7899F5</string>
+				</dict>
+			</dict>
+			<!-- Бэкграунд ошибок -->
+			<dict>
+				<key>name</key>
+				<string>Invalid</string>
+				<key>scope</key>
+				<string>invalid</string>
+				<key>settings</key>
+				<dict>
+					<key>background</key>
+					<string>#990000</string>
+					<key>foreground</key>
+					<string>#FFFFFF</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Invalid trailing whitespace</string>
+				<key>scope</key>
+				<string>invalid.deprecated.trailing-whitespace</string>
+				<key>settings</key>
+				<dict>
+					<key>background</key>
+					<string>#FFD0D0</string>
+				</dict>
+			</dict>
+			<!-- Mediawiki NG: ошибка или стили в таблицах, записанные через style -->
+			<dict>
+				<key>name</key>
+				<string>Entity</string>
+				<key>scope</key>
+				<string>entity</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>magenta</string>
+				</dict>
+			</dict>
+			<!-- HTML: скобки div'a, в котором находится тег с новым именем -->
+			<dict>
+				<key>name</key>
+				<string>Number</string>
+				<key>scope</key>
+				<string>text.html.mt source.css.embedded.html punctuation.definition.tag.html</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>yellow</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Support</string>
+				<key>scope</key>
+				<string>support</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>yellow</string>
+				</dict>
+			</dict>
+			<!-- JavaScript: объявление переменной -->
+			<!-- XML: DOCTYPE в самом начале документа -->
+			<dict>
+				<key>name</key>
+				<string>Keyword</string>
+				<key>scope</key>
+				<string>keyword, storage</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>bold</string>
+					<key>foreground</key>
+					<string>#FF334B</string>
+				</dict>
+			</dict>
+			<!-- Mediawiki NG: текст внутри шаблонов -->
+			<dict>
+				<key>name</key>
+				<string>Meta:Function parameter value</string>
+				<key>scope</key>
+				<string>meta.function.parameters</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>yellowgreen</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Meta: Value</string>
+				<key>scope</key>
+				<string>meta.value</string>
+				<key>settings</key>
+				<dict>
+					<key>background</key>
+					<string>magenta</string>
+				</dict>
+			</dict>
+			<!-- Mediawiki NG: скобки тега <br />-->
+			<dict>
+				<key>name</key>
+				<string>Meta: Tag ValidHTML</string>
+				<key>scope</key>
+				<string>meta.tag.validhtml</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>snow</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Markup XML declaration</string>
+				<key>scope</key>
+				<string>meta.tag.preprocessor.xml</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#70E1EB</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Markup DOCTYPE</string>
+				<key>scope</key>
+				<string>meta.tag.sgml.doctype</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#FFA37F</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Markup DTD</string>
+				<key>scope</key>
+				<string>string.quoted.docinfo.doctype.DTD</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>italic</string>
+					<key>foreground</key>
+					<string>#F587B6</string>
+				</dict>
+			</dict>
+			<!-- Mediawiki NG: содержимое шаблонов-карточек -->
+			<dict>
+				<key>name</key>
+				<string>Markup: Raw</string>
+				<key>scope</key>
+				<string>markup.raw</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#D8C2FF</string>
+				</dict>
+			</dict>
+			<!-- Mediawiki NG: элементы списка после # или * -->
+			<dict>
+				<key>name</key>
+				<string>Markup: List</string>
+				<key>scope</key>
+				<string>markup.list</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>pink</string>
+				</dict>
+			</dict>
+			<!-- Mediawiki NG: заголовок между == == -->
+			<dict>
+				<key>name</key>
+				<string>Markup: Heading</string>
+				<key>scope</key>
+				<string>markup.heading</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>gold</string>
+				</dict>
+			</dict>
+			<!-- Mediawiki NG: заголовки, следующие за |- в вики-таблицах -->
+			<dict>
+				<key>name</key>
+				<string>Markup: Table</string>
+				<key>scope</key>
+				<string>markup.other.table</string>
+				<key>settings</key>
+				<dict>
+					<key>background</key>
+					<string>#181818</string>
+					<key>foreground</key>
+					<string>mediumspringgreen</string>
+				</dict>
+			</dict>
+			<!-- Mediawiki NG: содержимое между тегами <s></s>-->
+			<dict>
+				<key>name</key>
+				<string>Markup: Strikethrough</string>
+				<key>scope</key>
+				<string>markup.other.strikethrough</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>aquamarine</string>
+				</dict>
+			</dict>
+			<!-- Mediawiki NG: разные спецсимволы, например, # и '''  -->
+			<dict>
+				<key>name</key>
+				<string>Markup: Special</string>
+				<key>scope</key>
+				<string>markup.other.special</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>gold</string>
+				</dict>
+			</dict>
+			<!-- Mediawiki NG: страница вики-сайта, куда ведёт внутренняя ссылка, например, в конструкции [[Кошка|кошачий]], данная область видимости показывает цветом слово «Кошка»-->
+			<dict>
+				<key>name</key>
+				<string>Markup tag</string>
+				<key>scope</key>
+				<string>meta.tag, declaration.tag</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#9FD1F5</string>
+				</dict>
+			</dict>
+			<!-- HTML: атрибуты тегов -->
+			<dict>
+				<key>name</key>
+				<string>Markup tag attribute</string>
+				<key>scope</key>
+				<string>entity.other.attribute-name</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>italic</string>
+					<key>foreground</key>
+					<string>#F378F5</string>
+				</dict>
+			</dict>
+			<!-- JSON -->
+			<!-- JSON: параметры -->
+			<dict>
+				<key>name</key>
+				<string>JSON: parameters</string>
+				<key>scope</key>
+				<string>source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.array.json meta.structure.dictionary.json string.quoted.double.json , source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.array.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.array.json meta.structure.dictionary.json string.quoted.double.json   </string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#E5FEFF</string>
+				</dict>
+			</dict>
+			<!-- JSON: значения параметров -->
+			<dict>
+				<key>name</key>
+				<string>JSON: values</string>
+				<key>scope</key>
+				<string>source.json meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json , source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.array.json meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json , source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.array.json meta.structure.dictionary.json , source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.array.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.array.json meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json  </string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>aquamarine</string>
+				</dict>
+			</dict>
+			<!-- JSON: квадратные скобки, открывающая и закрывающая -->
+			<dict>
+				<key>name</key>
+				<string>JSON: square brackets</string>
+				<key>scope</key>
+				<string>source.json meta.structure.array.json punctuation.definition.array.begin.json , source.json meta.structure.array.json punctuation.definition.array.end.json </string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>orangered</string>
+				</dict>
+			</dict>
+			<!-- JSON: фигурные скобки, открывающая и закрывающая -->
+			<dict>
+				<key>name</key>
+				<string>JSON: braces</string>
+				<key>scope</key>
+				<string>source.json meta.structure.dictionary.json punctuation.definition.dictionary.begin.json , source.json meta.structure.dictionary.json punctuation.definition.dictionary.end.json </string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#ffff99</string>
+				</dict>
+			</dict>
+			<!-- JSON: двоеточие -->
+			<dict>
+				<key>name</key>
+				<string>JSON: colons</string>
+				<key>scope</key>
+				<string>source.json meta.structure.dictionary.json meta.structure.dictionary.value.json punctuation.separator.dictionary.key-value.json  </string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>hotpink</string>
+				</dict>
+			</dict>
+			<!-- JSON: запятая -->
+			<dict>
+				<key>name</key>
+				<string>JSON: commas</string>
+				<key>scope</key>
+				<string>source.json meta.structure.array.json  punctuation.separator.array.json , source.json  meta.structure.dictionary.json meta.structure.dictionary.value.json punctuation.separator.dictionary.pair.json   </string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>magenta</string>
+				</dict>
+			</dict>
+			<!-- JSON: кавычки-лапки -->
+			<dict>
+				<key>name</key>
+				<string>JSON: quotes pads — &quot;&quot;</string>
+				<key>scope</key>
+				<string>source.json punctuation.definition.string.begin.json , source.json punctuation.definition.string.end.json </string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>paleturquoise</string>
+				</dict>
+			</dict>
+			<!-- Конец JSON -->
+			<!-- XML -->
+			<!-- HTML: теги -->
+			<!-- XML: теги -->
+			<dict>
+				<key>name</key>
+				<string>Markup name of tag</string>
+				<key>scope</key>
+				<string>entity.name.tag</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>bold</string>
+					<key>foreground</key>
+					<string>#8FCDFF</string>
+				</dict>
+			</dict>
+			<!-- XML: открывающие и закрывающие скобки тегов -->
+			<dict>
+				<key>name</key>
+				<string>XML: tags brackets</string>
+				<key>scope</key>
+				<string>text.xml meta.tag.xml punctuation.definition.tag.begin.xml, text.xml meta.tag.xml punctuation.definition.tag.end.xml </string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>yellow</string>
+				</dict>
+			</dict>
+			<!-- Конец XML -->
+			<!-- HTML -->
+			<!-- HTML: общая подсветка JavaScript в документах -->
+			<dict>
+				<key>name</key>
+				<string>HTML: JavaScript backlight</string>
+				<key>scope</key>
+				<string>source.js.embedded.html</string>
+				<key>settings</key>
+				<dict>
+					<key>background</key>
+					<string>#7A4A2299</string>
+				</dict>
+			</dict>
+			<!-- HTML: общая подсветка CSS в документах -->
+			<dict>
+				<key>name</key>
+				<string>HTML: CSS backlight</string>
+				<key>scope</key>
+				<string>source.css.embedded.html, meta.attribute-with-value.style.html source.css</string>
+				<key>settings</key>
+				<dict>
+					<key>background</key>
+					<string>#804A7D99</string>
+				</dict>
+			</dict>
+			<!-- HTML: открывающие и закрывающие теги блочных тегов-->
+			<dict>
+				<key>name</key>
+				<string>HTML: brackets of block tags </string>
+				<key>scope</key>
+				<string>text.html.basic meta.tag.block.any.html punctuation.definition.tag.begin.html , text.html.basic meta.tag.block.any.html punctuation.definition.tag.end.html</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>yellow</string>
+				</dict>
+			</dict>
+			<!-- HTML: открывающие и закрывающие скобки строчных тегов -->
+			<dict>
+				<key>name</key>
+				<string>HTML: brackets of lowercase tags</string>
+				<key>scope</key>
+				<string>text.html.basic punctuation.definition.tag.begin.html, text.html.basic punctuation.definition.tag.end.html</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>yellow</string>
+				</dict>
+			</dict>
+			<!-- HTML: открывающая и закрывающая угловые скобки у собственных тегов -->
+			<dict>
+				<key>name</key>
+				<string>HTML: brackets of personal tags</string>
+				<key>scope</key>
+				<string>text.html.basic meta.tag.other.html punctuation.definition.tag.begin.html, text.html.basic meta.tag.other.html punctuation.definition.tag.end.html </string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>chartreuse</string>
+				</dict>
+			</dict>
+			<!-- HTML: открывающие скобки тегов <html>, <body>, <head>-->
+			<dict>
+				<key>name</key>
+				<string>HTML: brackets of tags html, body, head</string>
+				<key>scope</key>
+				<string>text.html.basic meta.tag.structure.any.html punctuation.definition.tag.begin.html , text.html.basic meta.tag.structure.any.html punctuation.definition.tag.end.html</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>lightcoral</string>
+				</dict>
+			</dict>
+			<!-- HTML: угловые скобки у DOCTYPE -->
+			<dict>
+				<key>name</key>
+				<string>HTML: DOCTYPE brackets</string>
+				<key>scope</key>
+				<string>text.html.basic meta.tag.sgml.html punctuation.definition.tag.html </string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>red</string>
+				</dict>
+			</dict>
+			<!-- HTML: открывающие и закрывающие скобки тега <style>и прочих тегов, для которых не придумали отдельных scopes -->
+			<dict>
+				<key>name</key>
+				<string>HTML: brackets of other tags</string>
+				<key>scope</key>
+				<string>text.html.basic punctuation.definition.tag.begin.html, text.html.basic punctuation.definition.tag.end.html</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>yellow</string>
+				</dict>
+			</dict>
+			<!-- HTML: селекторы пользовательских тегов во внутреннем CSS -->
+			<!-- CSS: селекторы пользовательских тегов -->
+			<dict>
+				<key>name</key>
+				<string>HTML: personal tags CSS selectors, CSS: Personal tags selectors</string>
+				<key>scope</key>
+				<string>text.html.basic source.css.embedded.html meta.selector.css, source.css meta.selector.css</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>bold</string>
+					<key>foreground</key>
+					<string>yellowgreen</string>
+				</dict>
+			</dict>
+			<!-- HTML: фигурные скобки во внутреннем СSS, открывающая и закрывающая -->
+			<!-- CSS: фигурные скобки -->
+			<dict>
+				<key>name</key>
+				<string>HTML, СSS: braces</string>
+				<key>scope</key>
+				<string>text.html.basic source.css.embedded.html meta.property-list.css punctuation.section.property-list.css, text.html.basic source.css.embedded.html punctuation.section.property-list.css, source.css  punctuation.section.property-list.css </string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>orange</string>
+				</dict>
+			</dict>
+			<!-- HTML: круглые скобки во внутреннем СSS, открывающие и закрывающие, когда указывается цвет в RGB, пример: скобки в rgb(070, 085, 080) -->
+			<!-- CSS: круглые скобки, открывающие и закрывающие, когда указывается цвет в RGB, пример: скобки в rgb(070, 085, 080)-->
+			<dict>
+				<key>name</key>
+				<string>HTML: round brackets in RGB color in CSS, CSS: round brackets in RGB color</string>
+				<key>scope</key>
+				<string>text.html.basic source.css.embedded.html meta.property-list.css meta.property-value.css meta.function-call.css meta.group.css punctuation.definition.group.begin.css, text.html.basic source.css.embedded.html meta.property-list.css meta.property-value.css meta.function-call.css meta.group.css punctuation.definition.group.end.css, sourse.css meta.property-list.css meta.property-value.css meta.function-call.css meta.group.css punctuation.definition.group.begin.css , sourse.css meta.property-list.css meta.property-value.css meta.function-call.css meta.group.css punctuation.definition.group.end.css </string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>lightskyblue</string>
+				</dict>
+			</dict>
+			<!-- HTML: во внутреннем СSS круглые скобки, в которых содержится путь к бэкграунду, например: background-image: url(../aside/Зелёная_кофта.jpg), открывающая и закрывающая -->
+			<!-- CSS: скобки, в которымх содержится путь к бэкграунду, открывающая и закрывающая -->
+			<dict>
+				<key>name</key>
+				<string>HTML: round brackets for path to the file in CSS, CSS: round brackets for path to the file</string>
+				<key>scope</key>
+				<string>text.html.basic meta.tag.block.any.html meta.attribute-with-value.style.html source.css meta.property-value.css meta.function-call.css meta.group.css punctuation.definition.group.begin.css , text.html.basic meta.tag.block.any.html meta.attribute-with-value.style.html source.css meta.property-value.css meta.function-call.css meta.group.css punctuation.definition.group.end.css , source.css meta.property-list.css meta.property-value.css meta.function-call.css meta.group.css punctuation.definition.group.begin.css , source.css meta.property-list.css meta.property-value.css meta.function-call.css meta.group.css punctuation.definition.group.end.css  </string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>lightcoral</string>
+				</dict>
+			</dict>
+			<!-- HTML: кавычки-лапки, открывающая и закрывающая, везде -->
+			<!-- CSS: кавычки-лапки, открывающая и закрывающая -->
+			<!-- JavaScript: кавычки-лапки -->
+			<dict>
+				<key>name</key>
+				<string>HTML, CSS, JavaScript: quotes pads — &quot;&quot;</string>
+				<key>scope</key>
+				<string>punctuation.definition.string.begin.html ,  punctuation.definition.string.end.html , punctuation.definition.string.begin.css , punctuation.definition.string.end.css , source.js  string.quoted.double.js punctuation.definition.string.begin.js , source.js  string.quoted.double.js punctuation.definition.string.end.js </string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>lightpink</string>
+				</dict>
+			</dict>
+			<!-- HTML: одинарные кавычки-->
+			<!-- CSS: одинарные кавычки -->
+			<dict>
+				<key>name</key>
+				<string>HTML, CSS: single quotes — ''</string>
+				<key>scope</key>
+				<string>text.html.basic meta.tag.inline.a.html meta.attribute-with-value.html string.quoted.single.html punctuation.definition.string.begin.html , text.html.basic meta.tag.inline.a.html meta.attribute-with-value.html string.quoted.single.html punctuation.definition.string.end.html , source.css meta.property-list.css meta.property-value.css meta.function-call.css meta.group.css string.quoted.single.css punctuation.definition.string.begin.css , source.css meta.property-list.css meta.property-value.css meta.function-call.css meta.group.css string.quoted.single.css punctuation.definition.string.end.css </string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>gold</string>
+				</dict>
+			</dict>
+			<!-- HTML: двоеточия во внутренних CSS и JavaScript -->
+			<!-- CSS: двоеточия -->
+			<!-- JavaScript: двоеточия -->
+			<dict>
+				<key>name</key>
+				<string>HTML: CSS and JavaScript colons, CSS, JavaScript: colons</string>
+				<key>scope</key>
+				<string>text.html.basic source.css.embedded.html source.css meta.property-list.css meta.property-value.css punctuation.separator.key-value.css, source.css meta.property-list.css meta.property-value.css punctuation.separator.key-value.css , source.js  meta.object-literal.js punctuation.separator.key-value.js , text.html.basic source.css.embedded.html meta.object-literal.js punctuation.separator.key-value.js</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>palegreen</string>
+				</dict>
+			</dict>
+			<!-- HTML: точка с запятой во внутреннем CSS -->
+			<!-- CSS: точка с запятой -->
+			<dict>
+				<key>name</key>
+				<string>HTML: CSS semicolons, CSS: semicolons</string>
+				<key>scope</key>
+				<string>text.html.basic source.css.embedded.html meta.property-list.css meta.property-value.css punctuation.terminator.rule.css, source.css  punctuation.terminator.rule.css  </string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#E76BF2</string>
+				</dict>
+			</dict>
+			<!-- HTML: любой текст внутри встроенного CSS, для которого нет собственных scopes; 1) стоящий не в тему после точки с запятой, 2) располагающийся нормально -->
+			<!-- CSS: располагающийся нормально текст, для которого нет собственных scopes -->
+			<dict>
+				<key>name</key>
+				<string>HTML: text in CSS without scopes, CSS: text without scopes</string>
+				<key>scope</key>
+				<string>text.html.basic source.css.embedded.html meta.property-list.css meta.property-name.css, text.html.basic source.css.embedded.html meta.property-list.css meta.property-value.css, source.css meta.property-list.css meta.property-value.css </string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>paleturquoise</string>
+				</dict>
+			</dict>
+			<!-- HTML: во встроенном JavaScript systemLanguage на заглавной — http://Kristinita.ru -->
+			<!-- JavaScript: systemLanguage на заглавной — http://Kristinita.ru -->
+			<dict>
+				<key>name</key>
+				<string>HTML: JavaScript systemLanguage, JavaScript: systemLanguage</string>
+				<key>scope</key>
+				<string>text.html.basic source.js.embedded.html meta.group.js meta.block.js meta.group.js meta.property.object.js, source.js  meta.group.js meta.block.js meta.group.js meta.property.object.js</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>gold</string>
+				</dict>
+			</dict>
+			<!-- HTML: type, async, sync во встроенном JavaScript на заглавной -->
+			<!-- JavaScript: type, async, sync на заглавной -->
+			<dict>
+				<key>name</key>
+				<string>HTML: JavaScript type, async, JavaScript: type, async</string>
+				<key>scope</key>
+				<string>text.html.basic source.js.embedded.html meta.group.js meta.block.js meta.property.object.js, source.js meta.group.js meta.block.js meta.property.object.js</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#FCDA7E</string>
+				</dict>
+			</dict>
+			<!-- HTML: розовый бэкграунд widget_id встроенного JavaScript на заглавной -->
+			<!-- JavaScript: розовый бэкграунд widget_id на заглавной -->
+			<dict>
+				<key>name</key>
+				<string>HTML: JavaScript widget_id, JavaScript: widget_id</string>
+				<key>scope</key>
+				<string>text.html.basic source.js.embedded.html meta.group.js meta.block.js meta.brackets.js meta.object-literal.js meta.object-literal.key.js, source.js meta.group.js meta.block.js meta.brackets.js meta.object-literal.js meta.object-literal.key.js </string>
+				<key>settings</key>
+				<dict>
+					<key>background</key>
+					<string>#E07585E0</string>
+				</dict>
+			</dict>
+			<!-- HTML: createElement во встроенном JavaScript на заглавной -->
+			<!-- JavaScript: createElement на заглавной -->
+			<dict>
+				<key>name</key>
+				<string>HTML: JavaScript createElement, JavaScript: createElement</string>
+				<key>scope</key>
+				<string>text.html.basic source.js.embedded.html meta.group.js meta.block.js meta.function-call.method.js support.function.dom.js, source.js meta.group.js meta.block.js meta.function-call.method.js support.function.dom.js </string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>italic</string>
+					<key>foreground</key>
+					<string>lightcoral</string>
+				</dict>
+			</dict>
+			<!-- HTML: toLowerCase во встроенном JavaScript на заглавной -->
+			<!-- JavaScript: toLowerCase на заглавной -->
+			<dict>
+				<key>name</key>
+				<string>HTML: JavaScript toLowerCase, JavaScript: toLowerCase</string>
+				<key>scope</key>
+				<string>text.html.basic source.js.embedded.html meta.group.js meta.block.js meta.function-call.method.js variable.function.js, source.js meta.group.js meta.block.js meta.function-call.method.js variable.function.js</string>
+				<key>settings</key>
+				<dict>
+					<key>background</key>
+					<string>#6BC7548F</string>
+				</dict>
+			</dict>
+			<!-- HTML: set в Cufon.set встроенного JavaScript с Куфоном на всех страницах сайта -->
+			<!-- JavaScript: set в Cufon.set скрипта с Куфоном на всех страницах сайта  -->
+			<dict>
+				<key>name</key>
+				<string>HTML: JavaScript set in Cufon.set, JavaScript: set in Cufon.set</string>
+				<key>scope</key>
+				<string>text.html.basic source.js.embedded.html meta.function-call.method.js variable.function.js, source.js meta.function-call.method.js variable.function.js </string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>italic</string>
+					<key>foreground</key>
+					<string>mistyrose</string>
+				</dict>
+			</dict>
+			<!-- HTML: length в скрипте Sasha Black -->
+			<!-- JavaScript: length в скрипте Sasha Black -->
+			<dict>
+				<key>name</key>
+				<string>HTML: JavaScript length, JavaScript: length</string>
+				<key>scope</key>
+				<string>text.html.basic source.js.embedded.html meta.block.js meta.conditional.js meta.block.js meta.property.object.js, source.js meta.block.js meta.conditional.js meta.block.js meta.property.object.js </string>
+				<key>settings</key>
+				<dict>
+					<key>background</key>
+					<string>#5CCCD6B0</string>
+				</dict>
+			</dict>
+			<!-- HTML: Sasha Phenomenal-->
+			<!-- JavaScript: Sasha Phenomenal -->
+			<dict>
+				<key>name</key>
+				<string>HTML: Sasha Phenomenal, JavaScript: Sasha Phenomenal</string>
+				<key>scope</key>
+				<string>text.html.basic sashaphenomenal.html, source.js sashaphenomenal.js </string>
+				<key>settings</key>
+				<dict>
+					<key>background</key>
+					<string>#E07585E0</string>
+				</dict>
+			</dict>
+			<!-- HTML: открывающая и закрывающая круглые скобки перед во внутреннем JavaScript на всех страницах, 1) Во всём тексте, 2) После имени объявленной функции -->
+			<!-- CSS: круглые скобки после @media -->
+			<!-- JavaScript: круглые скобки везде, открывающая и закрывающая -->
+			<dict>
+				<key>name</key>
+				<string>HTML: JavaScript round brackets, CSS: round brackets after @media, JavaScript: round brackets</string>
+				<key>scope</key>
+				<string>text.html.basic source.js.embedded.html meta.group.js punctuation.definition.group.js, text.html.basic source.js.embedded.html meta.function.declaration.js punctuation.definition.parameters.begin.js , text.html.basic source.js.embedded.html meta.function.declaration.js punctuation.definition.parameters.end.js , source.css meta.at-rule.media.css, source.js meta.group.js punctuation.definition.group.js , source.js meta.function.declaration.js punctuation.definition.parameters.begin.js, source.js meta.function.declaration.js punctuation.definition.parameters.end.js </string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>violet</string>
+				</dict>
+			</dict>
+			<!-- HTML: круглые скобки после toLowerCase на заглавной во встроенном JavaScript -->
+			<!-- JavaScript: круглые скобки после toLowerCase на заглавной -->
+			<dict>
+				<key>name</key>
+				<string>HTML: JavaScript round brackets after toLowerCase, JavaScript: round brackets after toLowerCase</string>
+				<key>scope</key>
+				<string>text.html.basic source.js.embedded.html meta.group.js meta.block.js meta.function-call.method.js meta.group.js punctuation.definition.group.js, source.js meta.group.js meta.block.js meta.function-call.method.js meta.group.js punctuation.definition.group.js </string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>hotpink</string>
+				</dict>
+			</dict>
+			<!-- HTML: точка с запятой во встроенном JavaScript -->
+			<!-- Javascript: точка с запятой -->
+			<dict>
+				<key>name</key>
+				<string>HTML: JavaScript semicolons, JavaScript: semicolons</string>
+				<key>scope</key>
+				<string>text.html.basic source.js.embedded.html punctuation.terminator.statement.js, source.js punctuation.terminator.statement.js </string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>skyblue</string>
+				</dict>
+			</dict>
+			<!-- HTML: квадратные скобки во встроенном JavaScript -->
+			<!-- CSS: квадратные скобки -->
+			<!-- JavaScript: квадратные скобки -->
+			<dict>
+				<key>name</key>
+				<string>HTML: JavaScript square brackets, CSS: square brackets, JavaScript: square brackets</string>
+				<key>scope</key>
+				<string>text.html.basic source.js.embedded.html punctuation.definition.brackets.js , source.css  punctuation.definition.entity.css , source.js punctuation.definition.brackets.js  </string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>mediumaquamarine</string>
+				</dict>
+			</dict>
+			<!-- HTML: фигурные скобки во встроенном JavaScript -->
+			<!-- JavaScript: фигурные скобки -->
+			<dict>
+				<key>name</key>
+				<string>HTML: JavaScript braces, JavaScript: braces</string>
+				<key>scope</key>
+				<string>text.html.basic source.js.embedded.html  punctuation.definition.block.js, source.js punctuation.definition.block.js  </string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>aquamarine</string>
+				</dict>
+			</dict>
+			<!-- HTML: закрывающие точка с запятой после toLowerCase во встроенном JavaScript -->
+			<!-- JavaScript: закрывающие точка с запятой после toLowerCase -->
+			<dict>
+				<key>name</key>
+				<string>HTML: JavaScript semicolons after toLowerCase, JavaScript: semicolons after toLowerCase</string>
+				<key>scope</key>
+				<string>text.html.basic source.js.embedded.html meta.group.js meta.block.js punctuation.terminator.statement.js, source.js meta.group.js meta.block.js punctuation.terminator.statement.js  </string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>red</string>
+				</dict>
+			</dict>
+			<!-- HTML: запятая во встроенном JavaScript, 1) везде, 2) отделяющая параметры функции -->
+			<!-- JavaScript: запятая -->
+			<dict>
+				<key>name</key>
+				<string>HTML: JavaScript comma, JavaScript: comma</string>
+				<key>scope</key>
+				<string>text.html.basic source.js.embedded.html meta.delimiter.comma.js, text.html.basic source.js.embedded.html meta.function.declaration.js punctuation.separator.parameter.function.js , source.js meta.delimiter.comma.js, source.js meta.function.declaration.js punctuation.separator.parameter.function.js </string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>yellow</string>
+				</dict>
+			</dict>
+			<!-- HTML: точка во встроенном JavaScript -->
+			<!-- Javascript: точка -->
+			<dict>
+				<key>name</key>
+				<string>HTML: JavaScript dot, JavaScript: dot</string>
+				<key>scope</key>
+				<string>text.html.basic source.js.embedded.html punctuation.accessor.js, source.js punctuation.accessor.js</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>orange</string>
+				</dict>
+			</dict>
+			<!-- HTML: запятая во встроенном JavaScript после значения параметра -->
+			<!-- JavaScript: запятая после значения параметра -->
+			<dict>
+				<key>name</key>
+				<string>HTML: JavaScript comma after value of parameter, JavaScript: comma after value of parameter</string>
+				<key>scope</key>
+				<string>text.html.basic source.js.embedded.html meta.group.js meta.group.js meta.block.js meta.object-literal.js, source.js meta.group.js meta.group.js meta.block.js meta.object-literal.js </string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>mediumspringgreen</string>
+				</dict>
+			</dict>
+			<!-- HTML: одинарные кавычки во встроенном JavaScript, открывающая и закрывающая -->
+			<!-- JavaScript: одинарные кавычки, открывающая и закрывающая -->
+			<dict>
+				<key>name</key>
+				<string>HTML: JavaScript unary quotes, JavaScript: unary quotes</string>
+				<key>scope</key>
+				<string>text.html.basic source.js.embedded.html meta.block.js string.quoted.single.js punctuation.definition.string.begin.js , text.html.basic source.js.embedded.html meta.block.js string.quoted.single.js punctuation.definition.string.end.js , source.js meta.block.js string.quoted.single.js punctuation.definition.string.begin.js , source.js meta.block.js string.quoted.single.js punctuation.definition.string.end.js </string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>palevioletred</string>
+				</dict>
+			</dict>
+			<!-- HTML: в JQuery jQuery.fn.init -->
+			<!-- JavaScript: в JQuery jQuery.fn.init -->
+			<dict>
+				<key>name</key>
+				<string>HTML: jQuery.fn.init in JQuery, JavaScript: jQuery.fn.init in JQuery</string>
+				<key>scope</key>
+				<string>text.html.basic source.js.embedded.html meta.instance.constructor.js meta.function-call.constructor.js variable.type.js, source.js meta.instance.constructor.js meta.function-call.constructor.js variable.type.js </string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>italic</string>
+					<key>foreground</key>
+					<string>plum</string>
+				</dict>
+			</dict>
+			<!-- HTML: в JQuery знак доллара -->
+			<!-- JavaScript: в JQuery знак доллара -->
+			<dict>
+				<key>name</key>
+				<string>HTML: JavaScript dollar sign, JavaScript: dollar sign</string>
+				<key>scope</key>
+				<string>text.html.basic source.js.embedded.html meta.property.object.dollar.only.js punctuation.dollar.js,  source.js meta.property.object.dollar.only.js punctuation.dollar.js </string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>lightgreen</string>
+				</dict>
+			</dict>
+			<!-- Конец HTML -->
+			<!-- Diff -->
+			<!-- Diff: имена файлов, включая пути; номера различающихся строк в файлах и файле диффа -->
+			<dict>
+				<key>name</key>
+				<string>Diff: header</string>
+				<key>scope</key>
+				<string>meta.diff, meta.diff.header</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#fcf18d</string>
+				</dict>
+			</dict>
+			<!-- Diff: удалённые строки  -->
+			<dict>
+				<key>name</key>
+				<string>Diff: deleted</string>
+				<key>scope</key>
+				<string>markup.deleted</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>lightcoral</string>
+				</dict>
+			</dict>
+			<!-- Diff: добавленные строки -->
+			<dict>
+				<key>name</key>
+				<string>Diff: inserted</string>
+				<key>scope</key>
+				<string>markup.inserted</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#d1e231</string>
+				</dict>
+			</dict>
+			<!-- Diff: не знаю. В синтаксисе Find Results имена файлов, включая путь -->
+			<dict>
+				<key>name</key>
+				<string>Diff: changed</string>
+				<key>scope</key>
+				<string>markup.changed</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>violet</string>
+				</dict>
+			</dict>
+			<!-- Конец Diff -->
+			<!-- Regular Expression -->
+			<!-- Regular Expression: круглые скобки. -->
+			<dict>
+				<key>name</key>
+				<string>Regular Expression: round brackets</string>
+				<key>scope</key>
+				<string>source.regexp meta.group.regexp keyword.control.group.regexp  </string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>darkorange</string>
+				</dict>
+			</dict>
+			<!-- Regular Expression: круглые скобки внутри круглых скобок.  -->
+			<dict>
+				<key>name</key>
+				<string>Regular Expression: round brackets in round brackets</string>
+				<key>scope</key>
+				<string>source.regexp meta.group.regexp meta.group.regexp keyword.control.group.regexp </string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>yellow</string>
+				</dict>
+			</dict>
+			<!-- Regular Expression: метасимволы начала/конца слова \b и \B. Границы строки $ и ^. -->
+			<dict>
+				<key>name</key>
+				<string>Regular Expression: \b and \B metasymbols</string>
+				<key>scope</key>
+				<string>source.regexp keyword.control.anchors.regexp</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>paleturquoise</string>
+				</dict>
+			</dict>
+			<!-- Regular Expression: Кванторы. -->
+			<dict>
+				<key>name</key>
+				<string>Regular Expression: quantifiers</string>
+				<key>scope</key>
+				<string>source.regexp keyword.operator.quantifier.regexp</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>gold</string>
+				</dict>
+			</dict>
+			<!-- Regular Expression: Знак / (над Enter) — OR, или. -->
+			<dict>
+				<key>name</key>
+				<string>Regular Expression: metasymbol |</string>
+				<key>scope</key>
+				<string>source.regexp keyword.operator.regexp </string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>violet</string>
+				</dict>
+			</dict>
+			<!-- Regular Expression: набор символов — \w, \s и т. д. -->
+			<dict>
+				<key>name</key>
+				<string>Regular Expression: character set</string>
+				<key>scope</key>
+				<string>source.regexp keyword.control.character-class.regexp </string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>cornflowerblue</string>
+				</dict>
+			</dict>
+			<!-- Regular Expression: шестнадцатеричное представление, например, \x00-->
+			<dict>
+				<key>name</key>
+				<string>Regular Expression: hexadecimal characters</string>
+				<key>scope</key>
+				<string>source.regexp constant.other.range.regexp constant.character.escape.regexp </string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>yellowgreen</string>
+				</dict>
+			</dict>
+			<!-- Regular Expression: ссылки вперёд и ссылки назад -->
+			<dict>
+				<key>name</key>
+				<string>Regular Expression: links forward and back</string>
+				<key>scope</key>
+				<string>source.regexp meta.group.regexp constant.other.assertion.regexp </string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#ffdab9</string>
+					<key>background</key>
+					<string>#FAF20A7A</string>
+				</dict>
+			</dict>
+			<!-- Regular Expression: метасимвол . (точка). Вхождение 0 или более раз.-->
+			<dict>
+				<key>name</key>
+				<string>Regular Expression: metasymbol .</string>
+				<key>scope</key>
+				<string>source.regexp keyword.operator.regexp</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>palevioletred</string>
+				</dict>
+			</dict>
+			<!-- Regular Expression: модификаторы, например, ?m-->
+			<dict>
+				<key>name</key>
+				<string>Regular Expression: modifiers</string>
+				<key>scope</key>
+				<string>source.regexp meta.group.regexp meta.mode-modifier.regexp </string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>violet</string>
+				</dict>
+			</dict>
+			<!-- Конец Regular Expression -->
+			<!-- Git Gutter -->
+			<dict>
+				<key>name</key>
+				<string>GitGutter: deleted</string>
+				<key>scope</key>
+				<string>markup.deleted.git_gutter</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#F92672</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>GitGutter: inserted</string>
+				<key>scope</key>
+				<string>markup.inserted.git_gutter</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#A6E22E</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>GitGutter: changed</string>
+				<key>scope</key>
+				<string>markup.changed.git_gutter</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#967EFB</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>GitGutter: ignored</string>
+				<key>scope</key>
+				<string>markup.ignored.git_gutter</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#565656</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>GitGutter: untracked</string>
+				<key>scope</key>
+				<string>markup.untracked.git_gutter</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#565656</string>
+				</dict>
+			</dict>
+			<!-- Конец Git Gutter -->
+			<!-- Mediawiki NG -->
+			<!-- Mediawiki NG: закрывающая чёрточка в тегах вроде <br />, двоеточие в конструкциях вида [[:en:Joe McGinniss -->
+			<dict>
+				<key>name</key>
+				<string>Mediawiki NG: slash in tag br</string>
+				<key>scope</key>
+				<string>text.html.mediawiki markup.other.inline-styles.html.mediawiki markup.other.inline-styles.html.mediawiki markup.other.inline-styles.html.mediawiki markup.other.inline-styles.html.mediawiki meta.tag.validhtml.mediawiki meta.tag.validhtml.mediawiki entity.other.attributes.validhtml.mediawiki </string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>red</string>
+				</dict>
+			</dict>
+			<!-- Mediawiki NG: Заголовок 4-го уровня, между === === -->
+			<dict>
+				<key>name</key>
+				<string>Mediawiki NG: fourth level title</string>
+				<key>scope</key>
+				<string>text.html.mediawiki markup.heading.4.mediawiki  </string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>bold</string>
+					<key>foreground</key>
+					<string>#dd9475</string>
+				</dict>
+			</dict>
+			<!-- Mediawiki NG: Заголовок 3-го уровня, между === === -->
+			<dict>
+				<key>name</key>
+				<string>Mediawiki NG: third level title</string>
+				<key>scope</key>
+				<string>text.html.mediawiki markup.heading.3.mediawiki  </string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>bold</string>
+					<key>foreground</key>
+					<string>palevioletred</string>
+				</dict>
+			</dict>
+			<!-- Mediawiki NG: Заголовок 2-го уровня, между == == -->
+			<dict>
+				<key>name</key>
+				<string>Mediawiki NG: second level title</string>
+				<key>scope</key>
+				<string>text.html.mediawiki markup.heading.2.mediawiki </string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>bold</string>
+					<key>foreground</key>
+					<string>plum</string>
+				</dict>
+			</dict>
+			<!-- Mediawiki NG: знаки равенства,  == ==, в заголовках -->
+			<dict>
+				<key>name</key>
+				<string>Mediawiki NG: equal signs in templates</string>
+				<key>scope</key>
+				<string>text.html.mediawiki markup.heading.2.mediawiki markup.heading.tag.mediawiki, text.html.mediawiki markup.heading.3.mediawiki markup.heading.tag.mediawiki , text.html.mediawiki markup.heading.4.mediawiki markup.heading.tag.mediawiki    </string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>gold</string>
+				</dict>
+			</dict>
+			<!-- Mediawiki NG: Открывающие/закрывающие скобки у разновидностей тегов -->
+			<dict>
+				<key>name</key>
+				<string>Mediawiki NG: angle brackets of all tags</string>
+				<key>scope</key>
+				<string>text.html.mediawiki meta.tag.validhtml.mediawiki, text.html.mediawiki meta.tag.validhtml.mediawiki </string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>yellow</string>
+				</dict>
+			</dict>
+			<!-- Mediawiki NG и html: всевозможные разновидности скобок -->
+			<dict>
+				<key>name</key>
+				<string>Mediawiki NG: all brackets</string>
+				<key>scope</key>
+				<string>declaration.tag.inline, declaration.tag.inline entity, source entity.name, meta.tag.inline, meta.tag.inline entity</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>yellow</string>
+				</dict>
+			</dict>
+			<!-- Mediawiki NG: знак = в шаблонах  -->
+			<dict>
+				<key>name</key>
+				<string>Mediawiki NG: sign = in templates</string>
+				<key>scope</key>
+				<string>text.html.mediawiki meta.template.mediawiki variable.parameter.template.mediawiki , text.html.mediawiki meta.reference.content.mediawiki meta.template.mediawiki variable.parameter.template.mediawiki   </string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>sandybrown</string>
+				</dict>
+			</dict>
+			<!-- Mediawiki NG: содержимое тега <blockquote>-->
+			<dict>
+				<key>name</key>
+				<string>Mediawiki NG: blockquote</string>
+				<key>scope</key>
+				<string>text.html.mediawiki meta.reference.content.mediawiki </string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>orange</string>
+				</dict>
+			</dict>
+			<!-- Mediawiki NG: параметр в шаблонах  -->
+			<dict>
+				<key>name</key>
+				<string>Mediawiki NG: template parameters</string>
+				<key>scope</key>
+				<string>text.html.mediawiki meta.template.mediawiki variable.parameter.template.mediawiki , text.html.mediawiki meta.reference.content.mediawiki meta.template.mediawiki variable.parameter.template.mediawiki   </string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#D8C2FF</string>
+				</dict>
+			</dict>
+			<!-- Mediawiki NG: текст в шаблонах  -->
+			<dict>
+				<key>name</key>
+				<string>Mediawiki NG: text in templates</string>
+				<key>scope</key>
+				<string>text.html.mediawiki meta.template.mediawiki meta.function.parameters.template.mediawiki, text.html.mediawiki meta.template.mediawiki meta.function.parameters.template.mediawiki markup.list.mediawiki meta.template.mediawiki meta.function.parameters.template.mediawiki meta.tag.link.wiki.mediawiki markup.underline.link.internal.mediawiki  </string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#d1e231</string>
+				</dict>
+			</dict>
+			<!-- Mediawiki NG: ссылка во внутренних ссылках  -->
+			<dict>
+				<key>name</key>
+				<string>Mediawiki NG: text in templates</string>
+				<key>scope</key>
+				<string>text.html.mediawiki meta.link.inline.external.mediawiki markup.underline.link.external.mediawiki , text.html.mediawiki meta.table.mediawiki markup.other.table.row.mediawiki string.other.table.cellcontents.mediawiki markup.italic.html.mediawiki meta.link.inline.external.mediawiki markup.underline.link.external.mediawiki  </string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#ffae42</string>
+				</dict>
+			</dict>
+			<!-- Mediawiki NG: атрибут <style>в теге <span>и его значение -->
+			<dict>
+				<key>name</key>
+				<string>Mediawiki NG: style in span</string>
+				<key>scope</key>
+				<string>text.html.mediawiki meta.tag.validhtml.mediawiki entity.other.attributes.validhtml.mediawiki  </string>
+				<key>settings</key>
+				<dict>
+					<key>background</key>
+					<string>#E68F94A8</string>
+					<key>fontStyle</key>
+					<string>italic</string>
+					<key>foreground</key>
+					<string>#FAE900</string>
+				</dict>
+			</dict>
+			<!-- Mediawiki NG: скобки тега <noinclude>-->
+			<dict>
+				<key>name</key>
+				<string>Mediawiki NG: noinclude brackets</string>
+				<key>scope</key>
+				<string>text.html.mediawiki meta.template.mediawiki punctuation.fix_this_later.pipe.mediawiki</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>lightcoral</string>
+				</dict>
+			</dict>
+			<!-- Mediawiki NG: закрывающий тег </ref>-->
+			<dict>
+				<key>name</key>
+				<string>Mediawiki NG: /ref tag </string>
+				<key>scope</key>
+				<string>text.html.mediawiki meta.template.mediawiki meta.function.parameters.template.mediawiki meta.tag.inline.ref.mediawiki </string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#8FCDFF</string>
+				</dict>
+			</dict>
+			<!-- Mediawiki NG: символ / (над Enter) в таблицах -->
+			<dict>
+				<key>name</key>
+				<string>Mediawiki NG: sign / in tables </string>
+				<key>scope</key>
+				<string>text.html.mediawiki meta.template.mediawiki meta.tag.param-delimiter.template.mediawiki   </string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>lightcoral</string>
+				</dict>
+			</dict>
+			<!-- Mediawiki NG: знак = в шаблонах -->
+			<dict>
+				<key>name</key>
+				<string>Mediawiki NG: Equal sign in templates </string>
+				<key>scope</key>
+				<string>text.html.mediawiki meta.template.mediawiki punctuation.equals-sign.template.mediawiki  </string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>tomato</string>
+				</dict>
+			</dict>
+			<!-- Конец Mediawiki NG -->
+			<!-- BracketHighlighter -->
+			<!-- BracketHighlighter: Вопросительный знак, если BracketHighlighter не находит, с чем сопоставлена скобка, а также текст внутри несопоставленного открывающего/закрывающего тега -->
+			<dict>
+				<key>name</key>
+				<string>Unmatched</string>
+				<key>scope</key>
+				<string>brackethighlighter.unmatched</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#FD971F</string>
+				</dict>
+			</dict>
+			<!-- BracketHighlighter: фигурные скобки -->
+			<dict>
+				<key>name</key>
+				<string>BracketHighlighter: Curly</string>
+				<key>scope</key>
+				<string>brackethighlighter.curly</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#FF0000</string>
+				</dict>
+			</dict>
+			<!-- BracketHighlighter: круглые скобки -->
+			<dict>
+				<key>name</key>
+				<string>BracketHighlighter: Round</string>
+				<key>scope</key>
+				<string>brackethighlighter.round</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>lightblue</string>
+				</dict>
+			</dict>
+			<!-- BracketHighlighter: квадратные скобки -->
+			<dict>
+				<key>name</key>
+				<string>BracketHighlighter: Square</string>
+				<key>scope</key>
+				<string>brackethighlighter.square</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>pink</string>
+				</dict>
+			</dict>
+			<!-- BracketHighlighter: угловые скобки -->
+			<dict>
+				<key>name</key>
+				<string>BracketHighlighter: Angle</string>
+				<key>scope</key>
+				<string>brackethighlighter.angle</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#FEFE22</string>
+				</dict>
+			</dict>
+			<!-- BracketHighlighter: скобки тегов (пока не знаю, что за тегов) -->
+			<dict>
+				<key>name</key>
+				<string>BracketHighlighter: Bracket Tag</string>
+				<key>scope</key>
+				<string>brackethighlighter.tag</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>violet</string>
+				</dict>
+			</dict>
+			<!-- BracketHighlighter: одинарные и двойные скобки, (ещё какие-то регулярные выражения) -->
+			<dict>
+				<key>name</key>
+				<string>BracketHighlighter: Single Quote | Double Quote | Regex</string>
+				<key>scope</key>
+				<string>brackethighlighter.quote</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>palegreen</string>
+				</dict>
+			</dict>
+			<!-- SublimeLinter -->
+			<!-- SublimeLinter: круг, показывающий плохие привычки -->
+			<dict>
+				<key>name</key>
+				<string>SublimeLinter: Warning</string>
+				<key>scope</key>
+				<string>sublimelinter.mark.warning</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#DDB700</string>
+				</dict>
+			</dict>
+			<!-- SublimeLinter: пока не знаю, что означает, какая-то отметка в канавке -->
+			<dict>
+				<key>name</key>
+				<string>SublimeLinter: Gutter Mark</string>
+				<key>scope</key>
+				<string>sublimelinter.gutter-mark</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>green</string>
+				</dict>
+			</dict>
+			<!-- SublimeLinter: круг, показывающий ошибки -->
+			<dict>
+				<key>name</key>
+				<string>SublimeLinter: Error</string>
+				<key>scope</key>
+				<string>sublimelinter.mark.error</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#D02000</string>
+				</dict>
+			</dict>
+			<!-- Личный синтаксис «ToDo Manager», см. http://stackoverflow.com/a/36019245/5951529: @Сделано -->
+			<!-- ToDo Manager: @Сделано  -->
+			<dict>
+				<key>name</key>
+				<string>ToDo Manager: Done</string>
+				<key>scope</key>
+				<string>meta.done</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>chartreuse</string>
+				</dict>
+			</dict>
+			<!-- ToDo Manager: @Отложено  -->
+			<dict>
+				<key>name</key>
+				<string>ToDo Manager: Postponed</string>
+				<key>scope</key>
+				<string>meta.postponed</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>lightpink</string>
+				</dict>
+			</dict>
+			<!-- ToDo Manager: @Проверить -->
+			<dict>
+				<key>name</key>
+				<string>ToDo Manager: Check</string>
+				<key>scope</key>
+				<string>meta.check</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>aquamarine</string>
+				</dict>
+			</dict>
+			<!-- ToDo Manager: @ПоКрис -->
+			<dict>
+				<key>name</key>
+				<string>ToDo Manager: Kristinita's Search</string>
+				<key>scope</key>
+				<string>meta.kristinita</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>gold</string>
+				</dict>
+			</dict>
+			<!-- ToDo Manager: @Почитать -->
+			<dict>
+				<key>name</key>
+				<string>ToDo Manager: Read</string>
+				<key>scope</key>
+				<string>meta.read</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>yellow</string>
+				</dict>
+			</dict>
+			<!-- ToDo Manager: @КПБ -->
+			<dict>
+				<key>name</key>
+				<string>ToDo Manager: Kira Pirate Buccaneer</string>
+				<key>scope</key>
+				<string>meta.kirapiratebuccaneer</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>salmon</string>
+				</dict>
+			</dict>
+			<!-- ToDo Manager: @Системайзер -->
+			<dict>
+				<key>name</key>
+				<string>ToDo Manager: Systemizer</string>
+				<key>scope</key>
+				<string>meta.systemizer</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>azure</string>
+				</dict>
+			</dict>
+			<!-- ToDo Manager: @Закладки -->
+			<dict>
+				<key>name</key>
+				<string>ToDo Manager: Bookmarks</string>
+				<key>scope</key>
+				<string>meta.bookmarks</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>snow</string>
+				</dict>
+			</dict>
+			<!-- ToDo Manager: @Неудача -->
+			<dict>
+				<key>name</key>
+				<string>ToDo Manager: Failure</string>
+				<key>scope</key>
+				<string>meta.failure</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>paleturquoise</string>
+				</dict>
+			</dict>
+			<!-- ToDo Manager: @Выложить -->
+			<dict>
+				<key>name</key>
+				<string>ToDo Manager: Lay Out</string>
+				<key>scope</key>
+				<string>meta.layout</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>springgreen</string>
+				</dict>
+			</dict>
+			<!-- ToDo Manager: @КатКрис -->
+			<dict>
+				<key>name</key>
+				<string>ToDo Manager: Catalogue</string>
+				<key>scope</key>
+				<string>meta.catalogue</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>violet</string>
+				</dict>
+			</dict>
+			<!-- ToDo Manager: @Анима -->
+			<dict>
+				<key>name</key>
+				<string>ToDo Manager: Anima</string>
+				<key>scope</key>
+				<string>meta.anima</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>gainsboro</string>
+				</dict>
+			</dict>
+			<!-- ToDo Manager: @Подумать -->
+			<dict>
+				<key>name</key>
+				<string>ToDo Manager: Think</string>
+				<key>scope</key>
+				<string>meta.think</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>orange</string>
+				</dict>
+			</dict>
+			<!-- ToDo Manager: @Связи -->
+			<dict>
+				<key>name</key>
+				<string>ToDo Manager: Public Relations</string>
+				<key>scope</key>
+				<string>meta.publicrelations</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>lavender</string>
+				</dict>
+			</dict>
+			<!-- ToDo Manager: @Сохранность -->
+			<dict>
+				<key>name</key>
+				<string>ToDo Manager: Safety</string>
+				<key>scope</key>
+				<string>meta.safety</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#f4a900</string>
+				</dict>
+			</dict>
+			<!-- ToDo Manager: @Баг -->
+			<dict>
+				<key>name</key>
+				<string>ToDo Manager: Bugs</string>
+				<key>scope</key>
+				<string>meta.bugs</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>SandyBrown</string>
+				</dict>
+			</dict>
+			<!-- ToDo Manager: @Важно -->
+			<dict>
+				<key>name</key>
+				<string>ToDo Manager: Important</string>
+				<key>scope</key>
+				<string>meta.important</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#FF1493</string>
+				</dict>
+			</dict>
+			<!-- ToDo Manager: @Компьютер -->
+			<dict>
+				<key>name</key>
+				<string>ToDo Manager: Computer</string>
+				<key>scope</key>
+				<string>meta.computer</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>skyblue</string>
+				</dict>
+			</dict>
+			<!-- ToDo Manager: @Задача -->
+			<dict>
+				<key>name</key>
+				<string>ToDo Manager: Task</string>
+				<key>scope</key>
+				<string>meta.task</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#ffb02e</string>
+				</dict>
+			</dict>
+			<!-- Конец личного синтаксиса «ToDo Manager» -->
+			<!-- Личный синтаксис Kireopardy -->
+			<!-- Kireopardy: Плюс -->
+			<dict>
+				<key>name</key>
+				<string>ToDo Manager: Task</string>
+				<key>scope</key>
+				<string>kira.plus</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>mediumspringgreen</string>
+				</dict>
+			</dict>
+			<!-- Kireopardy: вертикальная черта -->
+			<dict>
+				<key>name</key>
+				<string>ToDo Manager: Task</string>
+				<key>scope</key>
+				<string>kira.verticalbar</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>gold</string>
+					<key>fontStyle</key>
+					<string>bold</string>
+				</dict>
+			</dict>
+			<!-- Kireopardy: вертикальная черта -->
+			<dict>
+				<key>name</key>
+				<string>ToDo Manager: Task</string>
+				<key>scope</key>
+				<string>kira.hyphen</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#ffb02e</string>
+				</dict>
+			</dict>
+			<!-- Kireopardy: вертикальная черта -->
+			<dict>
+				<key>name</key>
+				<string>ToDo Manager: Task</string>
+				<key>scope</key>
+				<string>kira.error</string>
+				<key>settings</key>
+				<dict>
+					<key>background</key>
+					<string>#990000</string>
+				</dict>
+			</dict>
+			<!-- Kireopardy: вертикальная черта -->
+			<dict>
+				<key>name</key>
+				<string>ToDo Manager: Task</string>
+				<key>scope</key>
+				<string>kira.garniromises</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>bold</string>
+					<key>foreground</key>
+					<string>coral</string>
+				</dict>
+			</dict>
+			<!-- Kireopardy: вертикальная черта -->
+			<dict>
+				<key>name</key>
+				<string>ToDo Manager: Task</string>
+				<key>scope</key>
+				<string>kira.knowledge</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#edff21</string>
+				</dict>
+			</dict>
+			<!-- Kireopardy: вертикальная черта -->
+			<dict>
+				<key>name</key>
+				<string>ToDo Manager: Task</string>
+				<key>scope</key>
+				<string>kira.round</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#1cd3a2</string>
+				</dict>
+			</dict>
+			<!-- Kireopardy: вертикальная черта -->
+			<dict>
+				<key>name</key>
+				<string>ToDo Manager: Task</string>
+				<key>scope</key>
+				<string>kira.logicquestion</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>pink</string>
+				</dict>
+			</dict>
+			<!-- Kireopardy: вертикальная черта -->
+			<dict>
+				<key>name</key>
+				<string>ToDo Manager: Task</string>
+				<key>scope</key>
+				<string>kira.knowledgequestion</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>plum</string>
+				</dict>
+			</dict>
+			<!-- Kireopardy: вертикальная черта -->
+			<dict>
+				<key>name</key>
+				<string>ToDo Manager: Task</string>
+				<key>scope</key>
+				<string>kira.auction</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>bold</string>
+					<key>foreground</key>
+					<string>hotpink</string>
+				</dict>
+			</dict>
+			<!-- Kireopardy: вертикальная черта -->
+			<dict>
+				<key>name</key>
+				<string>ToDo Manager: Task</string>
+				<key>scope</key>
+				<string>kira.nothingwrong</string>
+				<key>settings</key>
+				<dict>
+					<key>background</key>
+					<string>red</string>
+				</dict>
+			</dict>
+			<!-- Kireopardy: вертикальная черта -->
+			<dict>
+				<key>name</key>
+				<string>ToDo Manager: Task</string>
+				<key>scope</key>
+				<string>kira.piginapoke</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#f7943c</string>
+				</dict>
+			</dict>
+			<!-- Kireopardy: вертикальная черта -->
+			<dict>
+				<key>name</key>
+				<string>ToDo Manager: Task</string>
+				<key>scope</key>
+				<string>kira.numbers</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#7fc7ff</string>
+				</dict>
+			</dict>
+			<!-- Kireopardy: вертикальная черта -->
+			<dict>
+				<key>name</key>
+				<string>ToDo Manager: Task</string>
+				<key>scope</key>
+				<string>kira.axaxes</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>italic</string>
+					<key>foreground</key>
+					<string>tomato</string>
+				</dict>
+			</dict>
+		</array>
+		<key>uuid</key>
+		<string>4147</string>
+		<key>colorSpaceName</key>
+		<string>sRGB</string>
+		<key>semanticClass</key>
+		<string>theme.dark.SashaSublime</string>
+		<key>comment</key>
+		<string>На основе Espresso Libre Криса Томаса</string>
+	</dict>
+</plist>
