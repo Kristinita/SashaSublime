@@ -279,7 +279,7 @@ Restart Sublime Text → SublimeLinter should not prescribe in your preferences 
 ## See also
 
 + [Kristinita's Search](http://kristinita.ru) — search engine, searching only authoritative sources, materials are written by experts on the subject.
-+ [Sasha Black](http://kristinita.ru/Sasha-Black) — mini-service checks the reputation of your site and the availability of the site in the blacklists. 
++ [Sasha Black](http://kristinita.ru/Sasha-Black) — mini-service checks the reputation of your site and the availability of the site in the blacklists.
 
 ## Thanks
 
