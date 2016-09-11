@@ -99,7 +99,7 @@ It turned out to work not so carefully as i wanted.
 ![Mediawiki1](http://i.imgur.com/Y2FYuFI.png)
 ![Mediawiki2](http://i.imgur.com/sSzqfsm.png)
 
-## Installation
+## Downloading and installation
 
 ### Package Control
 
@@ -107,22 +107,54 @@ i'm wait, when accepting [my request](https://github.com/wbond/package_control_c
 
 ### Git
 
+`Preferences` → `Browse Packages...` → in this folder open terminal, preferable to you, and run command:
 
+	git clone https://github.com/Kristinita/SashaSublime.git
 
+### Hub
+
+I reccomend use [Hub](https://hub.github.com/) — a command-line wrapper for git that makes you better at GitHub.
+
+If you use Hub, `Preferences` → `Browse Packages...` → in this folder open terminal, preferable to you, and run command:
+
+	hub clone Kristinita/SashaSublime
 
 ### Manually
 
-Copy files from a repository to the folder `User`: *Preferences* → *Browse Packages* → `User`. 
+Open the page <https://github.com/Kristinita/SashaSublime> in browser. In right bottom angle select <kbd>Clone or download</kbd> and then <kbd>Download ZIP</kbd>:
 
-*Preferences* → *Settings - User* → add in opened file these lines:
+![Download ZIP](http://i.imgur.com/fzvUXYo.png)
 
-	"color_scheme": "Packages/User/SashaSublime.tmTheme",
+Download zip-archive and unpack it to <kbd>Alt+N</kbd> → `Browse Packages...` folder. Rename `SashaSublime-master` to `SashaSublime`. 
+
+----
+
+As a result your folder with SashaSublime has to settle down on the path `Preferences` → `Browse Packages...` → `SashaSublime`. For example, absolute path for me is `E:\Sublime Text 3\Data\Packages`.
+
+## Activation
+
+### Themr and Schemr
+
+Install [Themr](https://github.com/benweier/Themr) plugin. <kbd>Ctrl+Shift+P</kbd> → `Themr: List themes` → `SashaSublime` → <kbd>Enter</kbd>.
+
+![Theme SashaSublime](http://i.imgur.com/dgIVs3Y.png)
+
+Then install [Schemr](https://github.com/benweier/Schemr) plugin. <kbd>Ctrl+Shift+P</kbd> → `Schemr: List all scheme`s → `SashaSublime  [Dark]` → <kbd>Enter</kbd>.
+
+![Scheme SashaSublime](http://i.imgur.com/UYOiBB9.png)
+
+### Manually
+
+<kbd>Alt+N</kbd> → `Settings - User` → add in open file 2 lines:
+
+	"color_scheme": "Packages/SashaSublime/SashaSublime.tmTheme",
 	"theme": "SashaSublime.sublime-theme",
 
+Be attentive, [correctly place](http://ru.stackoverflow.com/a/238934/199934) commas, quotes, brackets and colons.
 
 ## Preferences
 
-Also you can make that all your settings were as at me. Copy into your file *Preferences* → *Settings - User* these lines from my file *Preferences* → *Preferences.sublime-settings*:
+Also you can make that all your settings were as at me. Copy into your file`Preferences` → `Settings - User` these lines from my file `Preferences` → `Preferences.sublime-settings`:
 
 	"always_show_minimap_viewport": true,
 	"auto_find_in_selection": false,
@@ -150,7 +182,6 @@ Also you can make that all your settings were as at me. Copy into your file *Pre
 	"match_tags": false,
 	"menu_visible": true,
 	"show_encoding": true,
-	"show_full_path": true,
 
 Before copying save in a safe place file *Preferences.sublime-settings* from the `User` folder or, what better, use [Local History](https://github.com/vishr/local-history) plugin. If you don't like my preferences, you will be able to return to your preferable settings.
 
@@ -220,13 +251,9 @@ To paint in different colors of a bracket of a plugin of BracketHighlighter, exe
 }
 ```
 
-*Bonus*: , add in the `Packages` → `GitGutter` `icons` folder from the title page of my repository.
-
 ### GitGutter
 
-Probably you are faced with the [same](https://github.com/jisaacks/GitGutter/issues/199#issuecomment-227016698) problem of small icons in GitGutter. In this case in folder, when Sublime Text installed, → `Data` → `Installed Packages` → unpack `GitGutter.sublime-package` any zip archiver (i reccomend [Hao Zip](http://forum.ru-board.com/topic.cgi?forum=5&topic=35814&start=0)) to Data → Packages folder. For example, for me file GitGutter.sublime-package is situated for me in `E:\Sublime Text 3\Data\Installed Packages` path, and I unpacked `.zip` to `E:\Sublime Text 3\Data\Packages` path. 
-
-Now in my `Packages` folder is situated folder `GitGutter`. Delete `GitGutter.sublime-package` file → `GitGutter` → `icons` → replace icons in GitGutter folder to icons on `icons` → `GitGutter` of my repository.
+Probably you are faced with the [same](https://github.com/jisaacks/GitGutter/issues/199#issuecomment-227016698) problem of small icons in GitGutter. To solve this problem, at first install [PackageResourceViewer](https://github.com/skuroda/PackageResourceViewer) plugin. <kbd>Ctrl+Shift+P</kbd> → `PackageResourceViewer: Extract Package` → `GitGutter`. Then `Preferences` → `Browse Packages...` → `icons` → change the already available icons to icons in folder `icons` → `GitGutter` of SashaSublime repository. Your icons for GitGutter have to replace on icons of the bigger size.
 
 ## How to change favicon in Sublime Text 3?
 
@@ -253,9 +280,11 @@ Examples, when use colors of «S» letter my favicon:
 
 The subject is created for personal use if it isn't pleasant to you, simply don't use it. If you don't like any separate colors in my subject, you can change them yourself, see [detailed instructions in Russian](http://ru.stackoverflow.com/a/516668/199934). You can also find a set of other solutions on themes in other my answers on [Stack Overflow in Russian](http://ru.stackoverflow.com/search?q=user:199934%20[sublime-text]%20is:answer) and [Toster](https://toster.ru/user/Kristinita/answers).
 
-To all parameters in the `Default.sublime-theme` file and almost to all parameters in the `Sasha.tmTheme` file comments in Russian are left. You can quickly see which color corresponds to which element. Comments in the `Preferences.sublime-settings` file aren't present because they are [removed](https://forum.sublimetext.com/t/bug-comments-deleted-in-preferences-user/7064/6?u=sasha_chernykh) at change of settings. About all parameters containing in this file it is [possible to read](http://www.sublimetext.ru/documentation/preferences/list) on the Russian site Sublime Text 3.
+To all parameters in the `SashaSublime.sublime-theme` file and almost to all parameters in the `SashaSublime.tmTheme` file comments in Russian are left. You can quickly see which color corresponds to which element. Comments in the `Preferences.sublime-settings` file aren't present because they are [removed](https://forum.sublimetext.com/t/bug-comments-deleted-in-preferences-user/7064/6?u=sasha_chernykh) at change of settings. About all parameters containing in this file it is [possible to read](http://www.sublimetext.ru/documentation/preferences/list) on the Russian site Sublime Text 3.
 
 After the Sublime Text 3 updatings settings of the color theme can get off. Please, if you found out that colors became not such as before, [report to me](https://github.com/Kristinita/SashaSublime/issues/new) about it. Unfortunately, i always used only Windows, and i can't check operability of a subject on other operating systems.
+
+If the icon for your markup language or a programming language is absent in SashaSublime, you can add it independently, having carried out the [these instructions](http://ru.stackoverflow.com/a/544861/199934) or to ask me.
 
 During the work on a theme the theme [Espresso Libre](http://colorsublime.com/theme/Espresso_Libre) of Chris Thomas is taken as a basis.
 
@@ -270,7 +299,7 @@ If you know how to solve these problems, please, [tell me](https://github.com/Kr
 
 If you use [SublimeLinter](https://github.com/SublimeLinter/SublimeLinter3), you may not like that Sublime Linter additional sets the color scheme in your user settings. To deactivate the color scheme SublimeLinter, follow these steps:
 
-Install [PackageResourceViewer](https://github.com/skuroda/PackageResourceViewer) plugin → <kbd>Ctrl+Shift+P</kbd> → PackageResourceViewer: `Open Resource` → `SublimeLinter` → `lint` → `util.py` → in open file to comment out or remove line 215: :crossed_flags:  
+Install [PackageResourceViewer](https://github.com/skuroda/PackageResourceViewer) plugin → <kbd>Ctrl+Shift+P</kbd> → PackageResourceViewer: `Open Resource` → `SublimeLinter` → `lint` → `util.py` → in open file to comment out or remove line 215:
 
 	sublime.set_timeout_async(generate_color_scheme_async, 0)
 
