@@ -139,7 +139,7 @@ Install [Themr](https://github.com/benweier/Themr) plugin. <kbd>Ctrl+Shift+P</kb
 
 ![Theme SashaSublime](http://i.imgur.com/dgIVs3Y.png)
 
-Then install [Schemr](https://github.com/benweier/Schemr) plugin. <kbd>Ctrl+Shift+P</kbd> → `Schemr: List all scheme`s → `SashaSublime  [Dark]` → <kbd>Enter</kbd>.
+Then install [Schemr](https://github.com/benweier/Schemr) plugin. <kbd>Ctrl+Shift+P</kbd> → `Schemr: List all schemes` → `SashaSublime  [Dark]` → <kbd>Enter</kbd>.
 
 ![Scheme SashaSublime](http://i.imgur.com/UYOiBB9.png)
 
