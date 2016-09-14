@@ -1,0 +1,6 @@
+[
+    {
+        "caption": "SashaSublime: Report plugin issue",
+        "command": "sasha_sublime_issues"
+    }
+]

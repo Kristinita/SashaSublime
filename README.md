@@ -14,7 +14,7 @@ i faced a problem that in already available themes and color schemes many elemen
 3. proper execution for each syntax,
 4. each element of syntax has to have color.
 
-Supported syntaxes: JSON, XML, HTML, CSS, JavaScript, Diff, Regular Expression and Mediawiki NG. The color scheme is incompatible with syntaxes of [CSS3](https://packagecontrol.io/packages/CSS3_Syntax) and [JavaScriptNext - ES6](https://packagecontrol.io/packages/JavaScriptNext%20-%20ES6%20Syntax). Please, use default syntax for JavaScript and CSS for compatibility with SashaSublime. If you want use SashaSublime, but in some syntaxes you want use another color scheme, please, read page 73 «[Sublime Text Power User](https://docs.zoho.com/file/nqgo4e3473558e032489e9dc3bceb3db16723)» book.
+Supported syntaxes: JSON, XML, HTML, CSS, JavaScript, Diff, Regular Expression and Mediawiki NG. The color scheme is incompatible with syntaxes of [CSS3](https://packagecontrol.io/packages/CSS3_Syntax) and [JavaScriptNext - ES6](https://packagecontrol.io/packages/JavaScriptNext%20-%20ES6%20Syntax). Please, use default syntax for JavaScript and CSS for compatibility with SashaSublime. If you want use SashaSublime, but in some syntaxes you want use another color scheme, please, read page 73 «[Sublime Text Power User](https://docs.zoho.com/file/nqgo4e3473558e032489e9dc3bceb3db16723)» book. If you want other color scheme for [Distraction Free Mode](https://www.sublimetext.com/docs/2/distraction_free.html), please, see [this answer](http://stackoverflow.com/a/15908023/5951529).
 
 ## Screenshots
 
@@ -139,7 +139,7 @@ Install [Themr](https://github.com/benweier/Themr) plugin. <kbd>Ctrl+Shift+P</kb
 
 ![Theme SashaSublime](http://i.imgur.com/dgIVs3Y.png)
 
-Then install [Schemr](https://github.com/benweier/Schemr) plugin. <kbd>Ctrl+Shift+P</kbd> → `Schemr: List all schemes` → `SashaSublime  [Dark]` → <kbd>Enter</kbd>.
+Then install [Schemr](https://github.com/benweier/Schemr) plugin. <kbd>Ctrl+Shift+P</kbd> → `Schemr: List all scheme`s → `SashaSublime  [Dark]` → <kbd>Enter</kbd>.
 
 ![Scheme SashaSublime](http://i.imgur.com/UYOiBB9.png)
 
@@ -313,6 +313,10 @@ Restart Sublime Text → SublimeLinter should not prescribe in your preferences 
 ## Thanks
 
 Many thanks to those who answered my questions on themes and color schemes on [Stack Overflow](http://stackoverflow.com/), [English](https://forum.sublimetext.com/) and [Russian](http://forum.sublimetext.ru) Sublime Text forums: [@Keith Hall](https://github.com/keith-hall), [@MattDMo](https://github.com/MattDMo), [@Enteleform](https://github.com/Enteleform), [@r-stein](https://github.com/r-stein), [@maximsmol](https://github.com/maximsmol), [@braver](https://github.com/braver) and [@Дмитрий Лоак](https://vk.com/id206422835).
+
+## Contacts
+
+<kbd>Ctrl+Shift+P</kbd> → `SashaSublime: Report plugin issue` → write your issue.
 
 ## License
 
