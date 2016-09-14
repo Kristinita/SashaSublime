@@ -1,0 +1,7 @@
+Thanks for installing SashaSublime, theme and color scheme for Sublime Text 3, where all elements are good visible!
+
+Full description SashaSublime is situated on GitHub repository: <https://github.com/Kristinita/SashaSublime>.
+
+If you have questions, feature request or bug report, <kbd>Ctrl+Shift+P</kbd> → `SashaSublime: Report plugin issue` → wrote your issue.
+
+Work on yourself.
