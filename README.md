@@ -6,7 +6,7 @@
 
 <p align="center"><img src="http://i.imgur.com/0TF54SX.jpg" alt=""></p>
 
-##Description
+## Description
 i faced a problem that in already available themes and color schemes many elements of syntaxes have dim, badly distinguishable an eye of color. i tried to use many themes and schemes, but the result in one of them didn't satisfy me. Therefore, i decided to write own theme; its concept: 
 
 1. **all colors of all elements are well visible**,
@@ -14,7 +14,31 @@ i faced a problem that in already available themes and color schemes many elemen
 3. proper execution for each syntax,
 4. each element of syntax has to have color.
 
-Supported syntaxes: JSON, XML, HTML, CSS, JavaScript, Diff, Regular Expression and Mediawiki NG. The color scheme is incompatible with syntaxes of [CSS3](https://packagecontrol.io/packages/CSS3_Syntax) and [JavaScriptNext - ES6](https://packagecontrol.io/packages/JavaScriptNext%20-%20ES6%20Syntax). Please, use default syntax for JavaScript and CSS for compatibility with SashaSublime. If you want use SashaSublime, but in some syntaxes you want use another color scheme, please, read page 73 «[Sublime Text Power User](https://docs.zoho.com/file/nqgo4e3473558e032489e9dc3bceb3db16723)» book. If you want other color scheme for [Distraction Free Mode](https://www.sublimetext.com/docs/2/distraction_free.html), please, see [this answer](http://stackoverflow.com/a/15908023/5951529).
+## Support
+
+### Platforms
+
+Windows, macOS, Linux.
+
+### Sublime Text
+
+Only Build 3114 and higher. Older versions of Sublime Text are not supported. Please take the automatic upgrade Sublime Text, if you wanted use SashaSublime.
+
+Cause — [serious updating](https://forum.sublimetext.com/t/changing-scopes-in-build-3114/20088) [scopes](http://ru.stackoverflow.com/a/516668/199934) for syntaxes in new builds. After each new update Sublime Text color schemes developers [needs to many change](https://toster.ru/q/321006#answer_852035) color scheme files.
+
+Example, how to view JavaScript code:
+
+**Build 3114:**
+![Build 3114](http://i.imgur.com/fTv7zgG.png)
+
+**Build 3103:**
+![Build 3103](http://i.imgur.com/9vnVBy4.png)
+
+In Build 3103 many syntax elements are not own colors.
+
+### Syntaxes
+
+Supported syntaxes: JSON, XML, HTML, CSS, JavaScript, Diff, Regular Expression and Mediawiki NG. The color scheme is incompatible with syntaxes of [CSS3](https://packagecontrol.io/packages/CSS3_Syntax) and [JavaScriptNext - ES6](https://packagecontrol.io/packages/JavaScriptNext%20-%20ES6%20Syntax). Please, use default syntax for JavaScript and CSS for compatibility with SashaSublime. If you want use SashaSublime, but in some syntaxes you want use another color scheme, please, read page 73 in «[Sublime Text Power User](http://nbviewer.jupyter.org/github/Kristinita/SashaBooks/blob/master/IT/Sublime%20Text%20Power%20User.pdf#page=73)» book. If you want other color scheme for [Distraction Free Mode](https://www.sublimetext.com/docs/2/distraction_free.html), please, see [this answer](http://stackoverflow.com/a/15908023/5951529).
 
 ## Screenshots
 
@@ -282,7 +306,7 @@ The subject is created for personal use if it isn't pleasant to you, simply don'
 
 To all parameters in the `SashaSublime.sublime-theme` file and almost to all parameters in the `SashaSublime.tmTheme` file comments in Russian are left. You can quickly see which color corresponds to which element. Comments in the `Preferences.sublime-settings` file aren't present because they are [removed](https://forum.sublimetext.com/t/bug-comments-deleted-in-preferences-user/7064/6?u=sasha_chernykh) at change of settings. About all parameters containing in this file it is [possible to read](http://www.sublimetext.ru/documentation/preferences/list) on the Russian site Sublime Text 3.
 
-After the Sublime Text 3 updatings settings of the color theme can get off. Please, if you found out that colors became not such as before, [report to me](https://github.com/Kristinita/SashaSublime/issues/new) about it. Unfortunately, i always used only Windows, and i can't check operability of a subject on other operating systems.
+After the Sublime Text 3 updatings settings of the color theme can get off. Please, if you found out that colors became not such as before, [report to me](https://github.com/Kristinita/SashaSublime/issues/new) about it.
 
 If the icon for your markup language or a programming language is absent in SashaSublime, you can add it independently, having carried out the [these instructions](http://ru.stackoverflow.com/a/544861/199934) or to ask me.
 
