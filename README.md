@@ -45,12 +45,24 @@ Supported syntaxes: JSON, XML, HTML, CSS, JavaScript, Diff, Regular Expression a
 Screenshots are made in the Windows 10 operating system, Sublime Text 3, Build 3114. If i make changes to my color theme and color scheme, i try not to forget to take screenshots of the changes. But Sublime Text and plugins updated, and look at my screenshots may differ from appearance to reality. If you see a discrepancy, please let me know.
 
 ### General
+
+#### Overall plan
 ![SashaSublime](http://i.imgur.com/ljT5eJp.png)
+
+#### Details
 In a theme/scheme the smallest details are well visible.
 ![Overall plan details](http://i.imgur.com/DlrJCes.png) 
+
+#### Gutter
 ![Gutter](http://i.imgur.com/VqeuQtH.png) 
+
+#### Autocomplete
 ![Autocomplete](http://i.imgur.com/3RPAwA7.png) 
+
+#### Tabs
 ![Tabs](http://i.imgur.com/CTOQ9WG.png)
+
+#### Sidebar
 ![Side bar](http://i.imgur.com/N8UWi1Q.png) 
 
 ### Plugins
