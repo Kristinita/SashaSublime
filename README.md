@@ -67,15 +67,19 @@ In a theme/scheme the smallest details are well visible.
 
 ### Plugins
 
-[Sublimerge 3](http://www.sublimerge.com/sm3/) + [GitGutter](https://packagecontrol.io/packages/GitGutter)
+####  [Sublimerge 3](http://www.sublimerge.com/sm3/) + [GitGutter](https://packagecontrol.io/packages/GitGutter)
 ![Sublimerge](http://i.imgur.com/YnfYXWD.png)  
-[HexViewer](https://github.com/facelessuser/HexViewer)  
+
+####  [HexViewer](https://github.com/facelessuser/HexViewer)  
 ![Hex Viewer](http://i.imgur.com/c0t0Iqy.png)  
-[GitGutter](https://packagecontrol.io/packages/GitGutter) + [SublimeLinter](http://www.sublimelinter.com/en/latest/)   
+
+####  [GitGutter](https://packagecontrol.io/packages/GitGutter) + [SublimeLinter](http://www.sublimelinter.com/en/latest/)   
 ![GitGutter and SublimeLinter](http://i.imgur.com/24kzw67.png)  
-[BracketHighlighter](https://facelessuser.github.io/BracketHighlighter/)     
+
+####  [BracketHighlighter](https://facelessuser.github.io/BracketHighlighter/)     
 ![BracketHighlighter](http://i.imgur.com/S8SE9nh.png)     
-[Emmet](http://emmet.io/)    
+
+#### [Emmet](http://emmet.io/)    
 ![Emmet](http://i.imgur.com/Arhzbgl.png)    
 
 
@@ -352,7 +356,7 @@ Many thanks to those who answered my questions on themes and color schemes on [S
 
 ## Contacts
 
-<kbd>Ctrl+Shift+P</kbd> → `SashaSublime: Report plugin issue` → write your issue.
+<kbd>Ctrl+Shift+P</kbd> → `SashaSublime: Report SashaSublime issue` → write your issue.
 
 ## License
 
