@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist
+  PUBLIC '-//Apple Computer//DTD PLIST 1.0//EN'
+  'http://www.apple.com/DTDs/PropertyList-1.0.dtd'>
+<plist version="1.0">
+	<dict>
+		<key>name</key>
+		<string>Sublime Widgets</string>
+		<key>settings</key>
+		<array>
+			<dict>
+				<key>settings</key>
+				<dict>
+					<!-- Бэкграунд в панелях и консоли -->
+					<key>background</key>
+					<string>#EBEAD9</string>
+					<!-- Каретка в панелях и консоли -->
+					<key>caret</key>
+					<string>lightcoral</string>
+					<!-- Фореграунд в панелях и консоли -->
+					<key>foreground</key>
+					<string>midnightblue</string>
+					<!-- Не знаю, что означает. Возможно, параметр бесполезен для Sublime Text 3. -->
+					<key>invisibles</key>
+					<string>red</string>
+					<!-- Не понял, что за линия выделяется -->
+					<key>lineHighlight</key>
+					<string>red</string>
+					<!-- Активный выделенный текст -->
+					<key>selection</key>
+					<string>#FFC0CBEB</string>
+					<!-- Граница только активного выделенного текста в панелях и консоли -->
+					<key>selectionBorder</key>
+					<string>palevioletred</string>
+					<!-- Неактивный выделенный текст -->
+					<key>inactiveSelection</key>
+					<string>#98F898AD</string>
+				</dict>
+			</dict>
+			<!-- Regular Expression -->
+			<!-- Regular expression: числа. Например, в выражении ([1-6])\1 данным цветом подсветится «1-6». Жирным выделятся: диапазоны «0-9», «A-Z» и метасимволы, обозначающие диапазоны, например, «\d» или «\w». -->
+			<dict>
+				<key>scope</key>
+				<string>constant</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>bold</string>
+					<key>foreground</key>
+					<string>red</string>
+				</dict>
+			</dict>
+			<!-- Regular expression: квадратные скобки -->
+			<dict>
+				<key>name</key>
+				<string>Keyword</string>
+				<key>scope</key>
+				<string>keyword, storage</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>bold</string>
+					<key>foreground</key>
+					<string>#ff7e00</string>
+				</dict>
+			</dict>
+			<!-- Regular Expression: круглые скобки. -->
+			<dict>
+				<key>name</key>
+				<string>Regular Expression: round brackets</string>
+				<key>scope</key>
+				<string>source.regexp meta.group.regexp keyword.control.group.regexp  </string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>bold</string>
+					<key>foreground</key>
+					<string>deeppink</string>
+				</dict>
+			</dict>
+			<!-- Regular expression: метасимвол \n и обратный слэш — \ -->
+			<dict>
+				<key>scope</key>
+				<string>constant.character.escape</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>bold</string>
+					<key>foreground</key>
+					<string>#33b433</string>
+				</dict>
+			</dict>
+			<!-- Regular Expression: круглые скобки внутри круглых скобок.  -->
+			<dict>
+				<key>name</key>
+				<string>Regular Expression: round brackets in round brackets</string>
+				<key>scope</key>
+				<string>source.regexp meta.group.regexp meta.group.regexp keyword.control.group.regexp </string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>bold</string>
+					<key>foreground</key>
+					<string>#30d5c8</string>
+				</dict>
+			</dict>
+			<!-- Regular Expression: метасимволы начала/конца слова \b и \B. Границы строки $ и ^. -->
+			<dict>
+				<key>name</key>
+				<string>Regular Expression: \b and \B metasymbols</string>
+				<key>scope</key>
+				<string>source.regexp keyword.control.anchors.regexp</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>bold</string>
+					<key>foreground</key>
+					<string>purple</string>
+				</dict>
+			</dict>
+			<!-- Regular Expression: Кванторы и {интервалы} -->
+			<dict>
+				<key>name</key>
+				<string>Regular Expression: quantifiers and intervals</string>
+				<key>scope</key>
+				<string>source.regexp keyword.operator.quantifier.regexp</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>bold</string>
+					<key>foreground</key>
+					<string>magenta</string>
+				</dict>
+			</dict>
+			<!-- Regular Expression: Знак / (над Enter) — OR, или. -->
+			<dict>
+				<key>name</key>
+				<string>Regular Expression: metasymbol |</string>
+				<key>scope</key>
+				<string>source.regexp keyword.operator.regexp </string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>bold</string>
+					<key>foreground</key>
+					<string>mediumvioletred</string>
+				</dict>
+			</dict>
+			<!-- Regular Expression: набор символов — \w, \s и т. д. -->
+			<dict>
+				<key>name</key>
+				<string>Regular Expression: character set</string>
+				<key>scope</key>
+				<string>source.regexp keyword.control.character-class.regexp </string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>bold</string>
+					<key>foreground</key>
+					<string>cornflowerblue</string>
+				</dict>
+			</dict>
+			<!-- Regular Expression: шестнадцатеричное представление, например, \x00-->
+			<dict>
+				<key>name</key>
+				<string>Regular Expression: hexadecimal characters</string>
+				<key>scope</key>
+				<string>source.regexp constant.other.range.regexp constant.character.escape.regexp </string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>bold</string>
+					<key>foreground</key>
+					<string>blue</string>
+				</dict>
+			</dict>
+			<!-- Regular Expression: ссылки вперёд и ссылки назад -->
+			<dict>
+				<key>name</key>
+				<string>Regular Expression: links forward and back</string>
+				<key>scope</key>
+				<string>source.regexp meta.group.regexp constant.other.assertion.regexp </string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>salmon</string>
+					<key>background</key>
+					<string>#FAF20A7A</string>
+				</dict>
+			</dict>
+			<!-- Regular Expression: метасимвол . (точка). Вхождение 0 или более раз.-->
+			<dict>
+				<key>name</key>
+				<string>Regular Expression: metasymbol .</string>
+				<key>scope</key>
+				<string>source.regexp meta.group.regexp meta.group.regexp keyword.other.any.regexp</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>bold</string>
+					<key>foreground</key>
+					<string>brown</string>
+				</dict>
+			</dict>
+			<!-- Regular Expression: модификаторы, например, ?m-->
+			<dict>
+				<key>name</key>
+				<string>Regular Expression: modifiers</string>
+				<key>scope</key>
+				<string>source.regexp meta.group.regexp meta.mode-modifier.regexp </string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>bold</string>
+					<key>foreground</key>
+					<string>darkviolet</string>
+				</dict>
+			</dict>
+		</array>
+	</dict>
+</plist>

@@ -1,4 +1,6 @@
 ![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)
+![Release](https://img.shields.io/badge/Release-1.1.0-orange.svg)
+[![Bitcoin Donate](https://www.drupal.org/files/project-images/bitcoindonate.png)](bitcoin:1DF9jgzftTFn4ZnDV2YEjUtZ3uHtBywj57)
 
 # SashaSublime
 
@@ -11,7 +13,7 @@ i faced a problem that in already available themes and color schemes many elemen
 
 1. **all colors of all elements are well visible**,
 2. change colors made not for beauty, and for better visibility,
-3. proper execution for each syntax,
+3. different colors for each syntax,
 4. each element of syntax has to have color.
 
 ## Support
@@ -84,38 +86,56 @@ In a theme/scheme the smallest details are well visible.
 
 
 ### Selected text
-Results with the established [WordHighlight](https://github.com/SublimeText/WordHighlight) plugin.  
+Results with the established [WordHighlight](https://github.com/SublimeText/WordHighlight) plugin.
+
+#### Selected text  
 ![Accentuation](http://i.imgur.com/yJ2EdbD.png) 
-_Selected text_
+
+#### Selected text when the carriage is not on text field
 ![Accentuation2](http://i.imgur.com/y715wdq.png)
-_Selected text when the carriage is not on text field_  
+
+#### Find (<kbd>Ctrl+F</kbd>) text
 ![Find result](http://i.imgur.com/Z3lGryq.png)
-_Find (<kbd>Ctrl+F</kbd>) text_
-![Find result2](http://i.imgur.com/Tyqv7to.png)
-_Find text when the carriage is out of the found text. Сarriage color and this border color set to the same parameter._
+
+#### Find text when the carriage is out of the found text.
+![Find result2](http://i.imgur.com/Tyqv7to.png)  
+Сarriage color and this border color set to the same parameter.
 
 ### Panels and consoles
-![Ctrl+P panel](http://i.imgur.com/2hRinyv.png)
-![Find and Replace panel](http://i.imgur.com/VRbjlZz.png)
-![Console](http://i.imgur.com/vYkR1MV.png)
-![Git output console](http://i.imgur.com/Ifw1A6s.png)
-![Build console](http://i.imgur.com/DpltLqa.png)
-![ScopeHunter console](http://i.imgur.com/BToxW54.png)
 
-### Comparison of Monokai (default theme) and SashaSublime
-SashaSublime has several times more than parameters, than a default theme Monokai.
-![Monokai scopes](http://i.imgur.com/YITyD6A.png)
-![SashaSublime scopes](http://i.imgur.com/5KE0MKI.png)
+#### GotoAnything panel
+![GotoAnything panel](http://i.imgur.com/2hRinyv.png)
 
-### JSON
+#### Find and Replace panel
+![Find and Replace panel](http://i.imgur.com/d22BO6I.png)
+
+#### Console
+![Console](http://i.imgur.com/JwQyqyU.png)
+
+#### Build System output console
+
+For get a black and white colors, Install [SublimeANSI](https://github.com/aziz/SublimeANSI) plugin and [add](https://github.com/aziz/SublimeANSI#using-this-plugin-as-a-dependency-for-your-pluginbuild-output-panel) in your `.sublime-build` file these lines:
+
+	/*  add target and syntax */
+	"target": "ansi_color_build",
+	"syntax": "Packages/ANSIescape/ANSI.tmLanguage"
+
+![Build console](http://i.imgur.com/4s81HhM.png)
+
+#### ScopeHunter output console
+![ScopeHunter console](http://i.imgur.com/CsxZ8XW.png)
+
+### Syntaxes
+
+#### JSON
 ![JSON1](http://i.imgur.com/N2LvbNZ.png)
 ![JSON2](http://i.imgur.com/epuwjOb.png)
 ![JSON3](http://i.imgur.com/6kWo4aW.png)
 
-### XML
+#### XML
 ![XML](http://i.imgur.com/0s4EFYN.png)
 
-### HTML
+#### HTML
 ![HTML1](http://i.imgur.com/POTMTWq.png)
 ![HTML2](http://i.imgur.com/LFKMdDX.png)
 ![HTML3](http://i.imgur.com/AbGgQa9.png)
@@ -123,21 +143,32 @@ SashaSublime has several times more than parameters, than a default theme Monoka
 ### CSS
 ![CSS](http://i.imgur.com/Rr9AmIZ.png)
 
-### JavaScript
-It turned out to work not so carefully as i wanted.
+#### JavaScript
+It turned out to work not so carefully as i wanted.  
+
 ![JS1](http://i.imgur.com/dedldIL.png)
 ![JS2](http://i.imgur.com/2e34vGr.png)
 
-### Diff
+#### Diff
 ![Diff](http://i.imgur.com/AF7BgIU.png)
 
-### Regular Expression
+#### Regular Expression
 ![Regex1](http://i.imgur.com/kzwyA4E.png)
 ![Regex2](http://i.imgur.com/Fu2Slm6.png)
+![Regex3](http://i.imgur.com/1kvOeeK.png)
 
-### Mediawiki NG
+#### Mediawiki NG
 ![Mediawiki1](http://i.imgur.com/Y2FYuFI.png)
 ![Mediawiki2](http://i.imgur.com/sSzqfsm.png)
+
+## Comparison of Monokai (default color scheme) and SashaSublime
+SashaSublime has several times more than parameters, than a default theme Monokai. See mouse cursor on the thumb of vertical scroll bar SashaSublime color scheme.
+
+### Monokai scopes
+![Monokai scopes](http://i.imgur.com/YITyD6A.png)
+
+### SashaSublime scopes
+![SashaSublime scopes](http://i.imgur.com/5KE0MKI.png)
 
 ## Downloading and installation
 
@@ -295,11 +326,27 @@ To paint in different colors of a bracket of a plugin of BracketHighlighter, exe
 
 Probably you are faced with the [same](https://github.com/jisaacks/GitGutter/issues/199#issuecomment-227016698) problem of small icons in GitGutter. To solve this problem, at first install [PackageResourceViewer](https://github.com/skuroda/PackageResourceViewer) plugin. <kbd>Ctrl+Shift+P</kbd> → `PackageResourceViewer: Extract Package` → `GitGutter`. Then `Preferences` → `Browse Packages...` → `icons` → change the already available icons to icons in folder `icons` → `GitGutter` of SashaSublime repository. Your icons for GitGutter have to replace on icons of the bigger size.
 
-## How to change favicon in Sublime Text 3?
+## Customization non-Sublime Text settings for Windows
 
-This guide for Windows users, Mac users possible help [this](http://apple.stackexchange.com/questions/153176/changing-sublime-text-3-icon-in-dock-on-yosemite) answer.
+Some settings not customizable via Sublime Text, to change them, you need to use other programs.
 
-Download and open [Resource Hacker](http://rsload.net/soft/editor/9133-resource-hacker.html) or [alternate](http://alternativeto.net/software/resource-hacker/) programs for edit *.exe* files. For example, in Resource Hacker: `File` → `Open` → *sublime_text.exe* → `Icon Group` → right mouse button on *103:3081* → `Replace Icon ...` 
+All settings in sections **Title Bar** color and **Winaero Tweaker** will affect **all** programs that do not have their own settings for these options, not only for Sublime Text. You will see the changes made, and when you open other programs.
+
+All manuals in this section for Windows 10 users, use default theme .Users of others operating systems, please, see instructions for your OS in other sources. 
+
+If you follow all the steps in this section, you will get the result:
+
+#### Active window
+![Active window](http://i.imgur.com/AUdJEug.png)
+
+#### Inactive window
+![Inactive window](http://i.imgur.com/3E1qY10.png)
+
+### Changing favicon in Sublime Text 3
+
+Mac users possible help [this](http://apple.stackexchange.com/questions/153176/changing-sublime-text-3-icon-in-dock-on-yosemite) answer.
+
+For Windows users: download and open [Resource Hacker](http://rsload.net/soft/editor/9133-resource-hacker.html) or [alternate](http://alternativeto.net/software/resource-hacker/) programs for edit *.exe* files. For example, in Resource Hacker: `File` → `Open` → *sublime_text.exe* → `Icon Group` → right mouse button on *103:3081* → `Replace Icon ...` 
 
 ![Resource Hacker](http://i.imgur.com/XcLuNqS.png)
 
@@ -316,24 +363,90 @@ Examples, when use colors of «S» letter my favicon:
 + violet — icons on desktop,
 + orange — in [Rocket Dock](http://portableapps.com/node/25965) panel and at drag and drop file with icon Sublime Text.
 
-## Notes
+### Title Bar and window border color
 
-The subject is created for personal use if it isn't pleasant to you, simply don't use it. If you don't like any separate colors in my subject, you can change them yourself, see [detailed instructions in Russian](http://ru.stackoverflow.com/a/516668/199934). You can also find a set of other solutions on themes in other my answers on [Stack Overflow in Russian](http://ru.stackoverflow.com/search?q=user:199934%20[sublime-text]%20is:answer) and [Toster](https://toster.ru/user/Kristinita/answers).
+<kbd>Win+R</kbd> → insert in input area this text 
 
-To all parameters in the `SashaSublime.sublime-theme` file and almost to all parameters in the `SashaSublime.tmTheme` file comments in Russian are left. You can quickly see which color corresponds to which element. Comments in the `Preferences.sublime-settings` file aren't present because they are [removed](https://forum.sublimetext.com/t/bug-comments-deleted-in-preferences-user/7064/6?u=sasha_chernykh) at change of settings. About all parameters containing in this file it is [possible to read](http://www.sublimetext.ru/documentation/preferences/list) on the Russian site Sublime Text 3.
+	rundll32.exe shell32.dll,Control_RunDLL desk.cpl,Advanced,@Advanced
 
-After the Sublime Text 3 updatings settings of the color theme can get off. Please, if you found out that colors became not such as before, [report to me](https://github.com/Kristinita/SashaSublime/issues/new) about it.
+→ <kbd>OK</kbd> → move thumbs. You can preview changes in title bar your window. I select orange color:
 
-If the icon for your markup language or a programming language is absent in SashaSublime, you can add it independently, having carried out the [these instructions](http://ru.stackoverflow.com/a/544861/199934) or to ask me.
+![Orange Title bar](http://i.imgur.com/iZDK322.png)
 
-During the work on a theme the theme [Espresso Libre](http://colorsublime.com/theme/Espresso_Libre) of Chris Thomas is taken as a basis.
+`Save changes`. Window border will have exactly the same color as title bar.
+
+![Orange windows border](http://i.imgur.com/jdWUb5m.png)
+
+### Winaero Tweaker
+
+Install programm [Winaero Tweaker](http://rsload.net/soft/optimization/19590-winaero-tweaker.html) — GUI for customization Windows 10 settings — and run it.
+
+#### Inactive Title Bar color
+
+`Appearence` → `Inactive Title Bars Color` → click on the square near *Current color (Click to change)* to select the color. I select pink color:
+
+![Pink inactive Title Bar](http://i.imgur.com/ZdcNwMQ.png)
+
+#### Menu Bar settings
+
+`Advanced Appearence Settings` → `Menus` → change values of parameters. I select `Adjust menu height` → *27*, `font` — *Segoe UI*, `font size` — *10*.  
+
+![Menu Bar](http://i.imgur.com/TxDmEIg.png)
+
+`Apply changes` → `Sign out now` → settings are viewed in new Windows session.
+
+#### Title Bar settings
+
+`Advanced Appearence Settings` → `Window Title Bars` → change values of parameters. I select `Window Title bar height` → *30*, `font` — *Segoe UI*, `font size` — *11*.
+
+![Title bar settings](http://i.imgur.com/mFnVWxi.png)
+
+`Apply changes` → `Sign out now` → settings are viewed in new Windows session.
+
+## Editing SashaSublime settings
+
+Parameters in the file of SashaSublime package are comments in Russian. You can see which color corresponds to which element. Exception — `Preferences.sublime-settings`. Comments in this file automatically [removed](https://forum.sublimetext.com/t/bug-comments-deleted-in-preferences-user/7064/6?u=sasha_chernykh). About all parameters containing in `Preferences.sublime-settings` file it is [possible to read](http://www.sublimetext.ru/documentation/preferences/list) on the Russian site Sublime Text 3.
+
+If you don't like some colors in SashaSublime, you can change them yourself, see [detailed instructions in Russian](http://ru.stackoverflow.com/a/516668/199934). You can also find a set of other solutions on themes and schemes in other my answers on [Stack Overflow in Russian](http://ru.stackoverflow.com/search?q=user:199934%20[sublime-text]%20is:answer) and [Toster](https://toster.ru/user/Kristinita/answers).
+
+But there's a problems. You have 2 options, how to customize SashaSublime.
+
+### Editing default files
+
+#### Steps
+
+Install [PackageResourceViewer](https://github.com/skuroda/PackageResourceViewer) plugin: <kbd>Ctrl+Shift+P</kbd> → `PackageResourseViewer:Open Resourse` → `SashaSublime` → edit SashaSublime files.
+
+#### Problem 
+
+After updates SashaSublime your changes will be lost. You will need to copy the modified file in a separate place, and after the upgrade SashaSublime, you will need to merge you changes from your file into the file of SashaSublime, for example, via [Sublimerge 3](http://www.sublimerge.com/sm3/).
+
+### Editing user files
+
+#### Steps
+
+1. **Theme file**  
+`Preferences` → `Browse Packages...` → `User` → create file `Example.sublime-theme`, if you want to make a changes in theme. Instead of `Example` you can name your file by any other name. Copy the contents of the file `SashaSublime.sublime-theme` into `Example.sublime-theme` make a changes and save `Example.sublime-theme` file. Via [Themr](#themr-and-schemr) select Example theme.
+
+2. **Scheme file**  
+`Preferences` → `Browse Packages...` → `User` → create file `Example.tmTheme`. Instead of `Example` you can name your file by any other name. Copy the contents of the file `SashaSublime.tmTheme` into `Example.tmTheme` make a changes and save `Example.tmTheme` file. Via [Schemr](#themr-and-schemr) select Example scheme.
+
+#### Problem
+
+Will be updated `SashaSublime.sublime-theme` and `SashaSublime.tmTheme` files, no `Example.sublime-theme` and `Example.tmTheme` files. You will not see updates, if you not select SashaSublime theme and scheme files. You will need to merge you changes from SashaSublime into your file, for example, via [Sublimerge 3](http://www.sublimerge.com/sm3/).
 
 ## Known defects
 
 If you know how to solve these problems, please, [tell me](https://github.com/Kristinita/SashaSublime/issues).
 
-+ [changing color text «Open files and folders» in placeholder](https://forum.sublimetext.com/t/how-to-style-placeholders-text-like-open-files-and-folders-in-the-find-in-files-dialog/21650),
-+ [reset Custom Settings icon after updating GitGutter](https://github.com/jisaacks/GitGutter/issues/307).
++ [not change color text «Open files and folders» in placeholder](https://forum.sublimetext.com/t/how-to-style-placeholders-text-like-open-files-and-folders-in-the-find-in-files-dialog/21650),
++ [reset Custom Settings icon after updating GitGutter](https://github.com/jisaacks/GitGutter/issues/307),
++ [Color Highlighter are generated new schemes](https://forum.sublimetext.com/t/how-to-disable-new-color-scheme-generating-color-highlighter/22949),
++ [double schemes in Schemr list if you using Color Highlighter](https://github.com/benweier/Schemr/issues/34),
++ [no syntax highlighting in *Replace With:* field](https://forum.sublimetext.com/t/where-i-can-to-make-regex-syntax-highlight-for-replace-with/22961),
++ [not change Menu Bar color in default Windows 10 theme](http://winreview.ru/forum/viewtopic.php?f=6&t=294),
++ [not change window border thickness in default Windows 10 theme](http://winreview.ru/forum/viewtopic.php?f=6&t=295).
+
 
 ### SublimeLinter wrote own color scheme file in preferences
 
@@ -354,9 +467,21 @@ Restart Sublime Text → SublimeLinter should not prescribe in your preferences 
 
 Many thanks to those who answered my questions on themes and color schemes on [Stack Overflow](http://stackoverflow.com/), [English](https://forum.sublimetext.com/) and [Russian](http://forum.sublimetext.ru) Sublime Text forums: [@Keith Hall](https://github.com/keith-hall), [@MattDMo](https://github.com/MattDMo), [@Enteleform](https://github.com/Enteleform), [@r-stein](https://github.com/r-stein), [@maximsmol](https://github.com/maximsmol), [@braver](https://github.com/braver) and [@Дмитрий Лоак](https://vk.com/id206422835).
 
+During the work on a theme the theme [Espresso Libre](http://colorsublime.com/theme/Espresso_Libre) of Chris Thomas is taken as a basis.
+
 ## Contacts
 
 <kbd>Ctrl+Shift+P</kbd> → `SashaSublime: Report SashaSublime issue` → write your issue.
+
+After the Sublime Text 3 updatings settings of the color theme [can get off](https://forum.sublimetext.com/t/changing-scopes-in-build-3114/20088?u=sasha_chernykh). Please, if you found out that colors became not such as before, [report to me](https://github.com/Kristinita/SashaSublime/issues/new) about it.
+
+If the icon for your markup language or a programming language is absent in SashaSublime, you can add it independently, having carried out the [these instructions](http://ru.stackoverflow.com/a/544861/199934) or to ask me.
+
+## Donate
+
+I do not hope that I will get at least a penny, but suddenly I'm lucky ... All the money will go to the treatment of [Sasha's](https://vk.com/hair_in_the_wind) teeth.
+
+[![Bitcoin Donate](https://www.drupal.org/files/project-images/bitcoindonate.png)](bitcoin:1DF9jgzftTFn4ZnDV2YEjUtZ3uHtBywj57)
 
 ## License
 

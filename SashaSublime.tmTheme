@@ -1317,10 +1317,10 @@
 					<string>paleturquoise</string>
 				</dict>
 			</dict>
-			<!-- Regular Expression: Кванторы. -->
+			<!-- Regular Expression: Кванторы и {интервалы}. -->
 			<dict>
 				<key>name</key>
-				<string>Regular Expression: quantifiers</string>
+				<string>Regular Expression: quantifiers and intervals</string>
 				<key>scope</key>
 				<string>source.regexp keyword.operator.quantifier.regexp</string>
 				<key>settings</key>
@@ -1379,18 +1379,6 @@
 					<string>#FAF20A7A</string>
 				</dict>
 			</dict>
-			<!-- Regular Expression: метасимвол . (точка). Вхождение 0 или более раз.-->
-			<dict>
-				<key>name</key>
-				<string>Regular Expression: metasymbol .</string>
-				<key>scope</key>
-				<string>source.regexp keyword.operator.regexp</string>
-				<key>settings</key>
-				<dict>
-					<key>foreground</key>
-					<string>palevioletred</string>
-				</dict>
-			</dict>
 			<!-- Regular Expression: модификаторы, например, ?m-->
 			<dict>
 				<key>name</key>
@@ -1401,6 +1389,18 @@
 				<dict>
 					<key>foreground</key>
 					<string>violet</string>
+				</dict>
+			</dict>
+			<!-- Regular Expression: метасимвол . (точка). Вхождение 0 или более раз.-->
+			<dict>
+				<key>name</key>
+				<string>Regular Expression: metasymbol .</string>
+				<key>scope</key>
+				<string>source.regexp meta.group.regexp meta.group.regexp keyword.other.any.regexp</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>paleturquoise</string>
 				</dict>
 			</dict>
 			<!-- Конец Regular Expression -->
