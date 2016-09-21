@@ -1,6 +1,6 @@
+<a href="bitcoin:1DF9jgzftTFn4ZnDV2YEjUtZ3uHtBywj57"><img src="https://www.drupal.org/files/project-images/bitcoindonate.png" alt="Bitcoin Donate Button"></a>
 ![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Release](https://img.shields.io/badge/Release-1.1.0-orange.svg)
-[![Bitcoin Donate](https://www.drupal.org/files/project-images/bitcoindonate.png)](bitcoin:1DF9jgzftTFn4ZnDV2YEjUtZ3uHtBywj57)
 
 # SashaSublime
 
@@ -481,7 +481,7 @@ If the icon for your markup language or a programming language is absent in Sash
 
 I do not hope that I will get at least a penny, but suddenly I'm lucky ... All the money will go to the treatment of [Sasha's](https://vk.com/hair_in_the_wind) teeth.
 
-[![Bitcoin Donate](https://www.drupal.org/files/project-images/bitcoindonate.png)](bitcoin:1DF9jgzftTFn4ZnDV2YEjUtZ3uHtBywj57)
+<a href="bitcoin:1DF9jgzftTFn4ZnDV2YEjUtZ3uHtBywj57"><img src="https://www.drupal.org/files/project-images/bitcoindonate.png" alt="Bitcoin Donate Button"></a>
 
 ## License
 

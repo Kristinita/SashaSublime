@@ -1,0 +1,2 @@
++ Added highlight syntax for regular expressions in find and replace consoles.
++ Added instructions about customization some graphic parameters for Windows 10 users.
