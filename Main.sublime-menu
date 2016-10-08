@@ -1,0 +1,27 @@
+[
+    {
+        "caption": "Preferences",
+        "mnemonic": "n",
+        "id": "preferences",
+        "children":
+        [
+            {
+                "caption": "Package Settings",
+                "mnemonic": "P",
+                "id": "package-settings",
+                "children":
+                [
+                    {
+                        "caption": "SashaSublime",
+                        "children":
+                        [
+                            {
+                                "caption": "Send issue",
+                                "command": "sasha_sublime_issues",                            },
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

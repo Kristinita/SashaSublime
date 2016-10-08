@@ -238,7 +238,7 @@
 		"layer1.tint": [0, 206, 209],
 		"layer1.opacity": 1.0,
 	},
-	// Текст слов в консоли Find and Replace
+	// Текст слов в панели Find and Replace
 	{
 		"class": "label_control",
 		"color": [240, 248, 255],
@@ -250,6 +250,21 @@
 		"class": "label_control",
 		"parents": [{ "class": "button_control" }],
 		"color": [127, 255, 212]
+	},
+	// Крестик, закрывающий панели Find and Replace
+	{
+		"class": "panel_close_button",
+		"layer0.texture": "SashaSublime/icons/close_symbols/panel_close_symbol.png",
+		"layer0.opacity": 1.0,
+		"layer1.texture": "SashaSublime/icons/close_symbols/panel_close_symbol.png",
+		"content_margin": [10, 10]
+	},
+	//  Наведение на крестик, закрывающий панели Find and Replace. Не нужно, поскольку я задал для слоёв одинаковое значение
+	{
+		"class": "panel_close_button",
+		"attributes": ["hover"],
+		"layer0.opacity": 1.0,
+		"layer1.opacity": 1.0,
 	},
 	// Текст Статус Бара
 	{
@@ -827,19 +842,8 @@
 		"class": "close_button",
 		"attributes": ["hover"],
 		"layer0.opacity": 1.0
-	}, {
-		"class": "panel_close_button",
-		"layer0.texture": "Theme - Default/dark_x.png",
-		"layer0.opacity": 0.6,
-		"layer1.texture": "Theme - Default/dark_x_light_shadow.png",
-		"layer1.opacity": 0.0,
-		"content_margin": [8, 8]
-	}, {
-		"class": "panel_close_button",
-		"attributes": ["hover"],
-		"layer0.opacity": 0.0,
-		"layer1.opacity": 1.0,
-	}, {
+	},
+	 {
 		"class": "sidebar_container",
 		"layer0.draw_center": false,
 		"layer0.inner_margin": [0, 0, 1, 0],

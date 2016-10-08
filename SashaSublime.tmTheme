@@ -79,6 +79,69 @@
 					<!-- Ширина теней слева и справа при вертикальной перемотке, когда текст вылазит за пределы экрана -->
 					<key>shadowWidth</key>
 					<string>25</string>
+					<!-- Всплывающее окно при наведении -->
+					<!--
+					1) Body: color — фореграунд
+					2) background-color: бэкграунд
+					3) margin — ширина рамки
+					4) padding — отступ текста от рамки
+					5) a: color — цвет ссылок
+					 -->
+					<key>popupCss</key>
+					<string><![CDATA[
+						html
+							{
+								background-color: peru;
+							}
+						body
+							{
+								color: mediumvioletred;
+								background-color: #F4A460;
+								font-family: Verdana;
+								border-radius: 0.7rem;
+								margin: 0.2rem;
+								padding: 0.2rem;
+							}
+						body#show-definitions
+						    {
+					            font-family: Verdana;
+					        }
+						a
+							{
+								color: mediumorchid;
+							}
+					]]></string>
+					<!-- Фантомы. Когда при запуске AutoHotkey ошибка, на линии, где совершена ошибка, показывается фантом. -->
+					<!--
+					1) Body: color — фореграунд
+					2) background-color: бэкграунд
+					3) margin — ширина рамки
+					4) padding — отступ текста от рамки
+					5) a: color — цвет ссылок
+					6) .error, .deleted: color — текст ошибок
+					 -->
+					<key>phantomCss</key>
+					<string><![CDATA[
+						html
+							{
+								background-color: blanchedalmond;
+							}
+						body
+							{
+								color: rgb(135, 206, 235);
+								background-color: rgb(101, 62, 58);
+								margin: 1.8px;
+								padding: 0.2em;
+							}
+						a
+							{
+								color: rgb(135, 206, 235);
+							}
+						.error, .deleted
+							{
+								color: #ffdab9;
+							}
+					]]></string>
 				</dict>
 			</dict>
 			<!-- Scopes с общими именами -->
@@ -120,16 +183,28 @@
 					<string>#FFFF7A</string>
 				</dict>
 			</dict>
-			<!-- Общая подсветка фона элементов -->
+			<!-- Отмена общей подсветки бэкграунда для PHP -->
 			<dict>
 				<key>name</key>
-				<string>Embedded source</string>
+				<string>Embedded source: no PHP files</string>
 				<key>scope</key>
 				<string>text source</string>
 				<key>settings</key>
 				<dict>
 					<key>background</key>
-					<string>#E07585E0</string>
+					<string>#2A211C</string>
+				</dict>
+			</dict>
+			<!-- Общая подсветка фона элементов -->
+			<dict>
+				<key>name</key>
+				<string>Embedded source</string>
+				<key>scope</key>
+				<string>embedded.php</string>
+				<key>settings</key>
+				<dict>
+					<key>background</key>
+					<string>#2A211C</string>
 				</dict>
 			</dict>
 			<!-- HTML: числа во внутреннем CSS -->
@@ -928,7 +1003,7 @@
 				<key>name</key>
 				<string>HTML: CSS and JavaScript colons, CSS, JavaScript: colons</string>
 				<key>scope</key>
-				<string>text.html.basic source.css.embedded.html source.css meta.property-list.css meta.property-value.css punctuation.separator.key-value.css, source.css meta.property-list.css meta.property-value.css punctuation.separator.key-value.css , source.js  meta.object-literal.js punctuation.separator.key-value.js , text.html.basic source.css.embedded.html meta.object-literal.js punctuation.separator.key-value.js</string>
+				<string>text.html.basic source.css.embedded.html source.css meta.property-list.css meta.property-value.css punctuation.separator.key-value.css, source.css meta.property-list.css meta.property-value.css punctuation.separator.key-value.css , source.css meta.property-list.css punctuation.separator.key-value.css, source.js  meta.object-literal.js punctuation.separator.key-value.js , text.html.basic source.css.embedded.html meta.object-literal.js punctuation.separator.key-value.js </string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
@@ -961,6 +1036,21 @@
 					<string>paleturquoise</string>
 				</dict>
 			</dict>
+			<!-- HTML: text- и adjust- в -ms-text-size-adjust: 100%; встроенного CSS -->
+			<!-- CSS: text- и adjust- в -ms-text-size-adjust: 100%; -->
+			<dict>
+				<key>name</key>
+				<string>HTML: CSS semicolons, CSS: semicolons</string>
+				<key>scope</key>
+				<string>source.css meta.property-list.css meta.property-name.css</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>orange</string>
+					<key>fontStyle</key>
+					<string>bold</string>
+				</dict>
+			</dict>
 			<!-- HTML: во встроенном JavaScript systemLanguage на заглавной — http://Kristinita.ru -->
 			<!-- JavaScript: systemLanguage на заглавной — http://Kristinita.ru -->
 			<dict>
@@ -980,11 +1070,11 @@
 				<key>name</key>
 				<string>HTML: JavaScript type, async, JavaScript: type, async</string>
 				<key>scope</key>
-				<string>text.html.basic source.js.embedded.html meta.group.js meta.block.js meta.property.object.js, source.js meta.group.js meta.block.js meta.property.object.js</string>
+				<string>text.html.basic source.js.embedded.html meta.block.js meta.property.object.js </string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
-					<string>#FCDA7E</string>
+					<string>hotpink</string>
 				</dict>
 			</dict>
 			<!-- HTML: розовый бэкграунд widget_id встроенного JavaScript на заглавной -->
@@ -1041,19 +1131,6 @@
 					<string>italic</string>
 					<key>foreground</key>
 					<string>mistyrose</string>
-				</dict>
-			</dict>
-			<!-- HTML: length в скрипте Sasha Black -->
-			<!-- JavaScript: length в скрипте Sasha Black -->
-			<dict>
-				<key>name</key>
-				<string>HTML: JavaScript length, JavaScript: length</string>
-				<key>scope</key>
-				<string>text.html.basic source.js.embedded.html meta.block.js meta.conditional.js meta.block.js meta.property.object.js, source.js meta.block.js meta.conditional.js meta.block.js meta.property.object.js </string>
-				<key>settings</key>
-				<dict>
-					<key>background</key>
-					<string>#5CCCD6B0</string>
 				</dict>
 			</dict>
 			<!-- HTML: Sasha Phenomenal-->
@@ -1681,7 +1758,7 @@
 			<!-- BracketHighlighter: Вопросительный знак, если BracketHighlighter не находит, с чем сопоставлена скобка, а также текст внутри несопоставленного открывающего/закрывающего тега -->
 			<dict>
 				<key>name</key>
-				<string>Unmatched</string>
+				<string>BracketHighlighter: Unmatched</string>
 				<key>scope</key>
 				<string>brackethighlighter.unmatched</string>
 				<key>settings</key>
@@ -1797,6 +1874,35 @@
 				<dict>
 					<key>foreground</key>
 					<string>#D02000</string>
+				</dict>
+			</dict>
+			<!-- AutoHotkey -->
+			<!-- AutoHotkey: двойное двоеточие -->
+			<dict>
+				<key>name</key>
+				<string>AutoHotkey: double colon</string>
+				<key>scope</key>
+				<string>source.ahk hotkeyline.ahk punctuation.definition.equals.colon</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>green</string>
+					<key>fontStyle</key>
+					<string>italic</string>
+				</dict>
+			</dict>
+			<!-- AutoHotkey: скобки и кавычки -->
+			<dict>
+				<key>name</key>
+				<string>AutoHotkey: brackets</string>
+				<key>scope</key>
+				<string>source.ahk punctuation.bracket.ahk</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>thistle</string>
+					<key>fontStyle</key>
+					<string>italic</string>
 				</dict>
 			</dict>
 			<!-- Личный синтаксис «ToDo Manager», см. http://stackoverflow.com/a/36019245/5951529: @Сделано -->
@@ -2206,6 +2312,95 @@
 					<string>tomato</string>
 				</dict>
 			</dict>
+			<!-- Kireopardy: Конец синтаксиса -->
+			<!-- DrCalendar -->
+			<!-- DrCalendar: сегодня -->
+			<dict>
+				<key>name</key>
+				<string>DrCalendar today</string>
+				<key>scope</key>
+				<string>keyword.DrCalendar.today</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>bold</string>
+					<key>foreground</key>
+					<string>violet</string>
+				</dict>
+			</dict>
+			<!-- DrCalendar: месяц -->
+			<dict>
+				<key>name</key>
+				<string>DrCalendar month</string>
+				<key>scope</key>
+				<string>string.DrCalendar.month</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>red</string>
+				</dict>
+			</dict>
+			<!-- DrCalendar: день недели «Пн, вт ...»-->
+			<dict>
+				<key>name</key>
+				<string>DrCalendar day of week</string>
+				<key>scope</key>
+				<string>string.DrCalendar.dayofweek</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>yellow</string>
+				</dict>
+			</dict>
+			<!-- DrCalendar: день недели: «Понедельник, вторник ...» -->
+			<dict>
+				<key>name</key>
+				<string>DrCalendar Today</string>
+				<key>scope</key>
+				<string>string.DrCalendar.fulldayofweek</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>orange</string>
+				</dict>
+			</dict>
+			<!-- DrCalendar: день, месяц, год: 4.4.1990 -->
+			<dict>
+				<key>name</key>
+				<string>DrCalendar DayMonthYear</string>
+				<key>scope</key>
+				<string>keyword.DrCalendar.daymonthyear</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>green</string>
+				</dict>
+			</dict>
+			<!-- DrCalendar: обычный день, не выделенный -->
+			<dict>
+				<key>name</key>
+				<string>DrCalendar day</string>
+				<key>scope</key>
+				<string>DrCalendar.day</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#1f75fe</string>
+				</dict>
+			</dict>
+			<!-- DrCalendar: год -->
+			<dict>
+				<key>name</key>
+				<string>DrCalendar year</string>
+				<key>scope</key>
+				<string>DrCalendar.Year</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>pink</string>
+				</dict>
+			</dict>
+			<!-- DrCalendar: Конец синтаксиса -->
 		</array>
 		<key>uuid</key>
 		<string>4147</string>
