@@ -9,100 +9,101 @@
 
 <!-- MarkdownTOC -->
 
-1. [SashaSublime](#sashasublime)
-	1. [Description](#description)
-	1. [Support](#support)
-		1. [Platforms](#platforms)
-		1. [Sublime Text](#sublime-text)
-		1. [Syntaxes](#syntaxes)
-	1. [Screenshots](#screenshots)
-		1. [General](#general)
-			1. [Overall plan](#overall-plan)
-			1. [Details](#details)
-			1. [Gutter](#gutter)
-			1. [Autocomplete](#autocomplete)
-			1. [Tabs](#tabs)
-			1. [Sidebar](#sidebar)
-			1. [Indexing status](#indexing-status)
-			1. [Phantom](#phantom)
-		1. [Plugins](#plugins)
-			1. [Sublimerge 3 + GitGutter](#sublimerge-3--gitgutter)
-			1. [HexViewer](#hexviewer)
-			1. [GitGutter + SublimeLinter](#gitgutter--sublimelinter)
-			1. [BracketHighlighter](#brackethighlighter)
-			1. [Emmet](#emmet)
-			1. [Color Helper](#color-helper)
-			1. [dr_months_calendar](#drmonthscalendar)
-			1. [Suricate](#suricate)
-		1. [Selected text Sasha](#selected-text-sasha)
-			1. [Selected text](#selected-text)
-			1. [Selected text when the carriage is not on text field](#selected-text-when-the-carriage-is-not-on-text-field)
-			1. [Find \(Ctrl+F\) text](#find-ctrlf-text)
-			1. [Find text when the carriage is out of the found text.](#find-text-when-the-carriage-is-out-of-the-found-text)
-		1. [Panels and consoles](#panels-and-consoles)
-			1. [GotoAnything panel](#gotoanything-panel)
-			1. [Switch Project panel](#switch-project-panel)
-			1. [Find and Replace panel](#find-and-replace-panel)
-			1. [Console](#console)
-			1. [Build System output console](#build-system-output-console)
-			1. [ScopeHunter output console](#scopehunter-output-console)
-		1. [Syntaxes](#syntaxes-1)
-			1. [JSON](#json)
-			1. [XML](#xml)
-			1. [HTML](#html)
-			1. [CSS](#css)
-			1. [JavaScript](#javascript)
-			1. [Diff](#diff)
-			1. [Regular Expression](#regular-expression)
-			1. [Mediawiki NG](#mediawiki-ng)
-	1. [Comparison of Monokai \(default color scheme\) and SashaSublime](#comparison-of-monokai-default-color-scheme-and-sashasublime)
-		1. [Monokai scopes](#monokai-scopes)
-		1. [SashaSublime scopes](#sashasublime-scopes)
-	1. [Downloading and installation](#downloading-and-installation)
-		1. [Package Control](#package-control)
-		1. [Git](#git)
-		1. [Hub](#hub)
-		1. [Manually](#manually)
-	1. [Activation](#activation)
-		1. [Themr and Schemr](#themr-and-schemr)
-		1. [Manually](#manually-1)
-	1. [Preferences](#preferences)
-	1. [Setting SashaSublime for some plugins](#setting-sashasublime-for-some-plugins)
-		1. [BracketHighlighter](#brackethighlighter-1)
-		1. [GitGutter](#gitgutter)
-	1. [Customization non-Sublime Text settings for Windows](#customization-non-sublime-text-settings-for-windows)
-			1. [Active window](#active-window)
-			1. [Inactive window](#inactive-window)
-		1. [Changing favicon in Sublime Text 3](#changing-favicon-in-sublime-text-3)
-		1. [Title Bar and window border color](#title-bar-and-window-border-color)
-		1. [Winaero Tweaker](#winaero-tweaker)
-			1. [Inactive Title Bar color](#inactive-title-bar-color)
-			1. [Menu Bar settings](#menu-bar-settings)
-			1. [Title Bar settings](#title-bar-settings)
-	1. [Editing SashaSublime settings](#editing-sashasublime-settings)
-		1. [Editing default files](#editing-default-files)
-			1. [Steps](#steps)
-			1. [Problem](#problem)
-		1. [Editing user files](#editing-user-files)
-			1. [Steps](#steps-1)
-			1. [Problem](#problem-1)
-	1. [Known defects](#known-defects)
-		1. [SublimeLinter wrote own color scheme file in preferences](#sublimelinter-wrote-own-color-scheme-file-in-preferences)
-	1. [See also](#see-also)
-	1. [Thanks](#thanks)
-	1. [Contacts](#contacts)
-	1. [Donate](#donate)
-		1. [Bitcoin](#bitcoin)
-		1. [Litecoin](#litecoin)
-		1. [Paypal $](#paypal-)
-		1. [Paypal €](#paypal-€)
-	1. [License](#license)
+1. [Description](#description)
+1. [Support](#support)
+	1. [Platforms](#platforms)
+	1. [Sublime Text](#sublime-text)
+	1. [Syntaxes](#syntaxes)
+1. [Screenshots](#screenshots)
+	1. [General](#general)
+		1. [Overall plan](#overall-plan)
+		1. [Details](#details)
+		1. [Gutter](#gutter)
+		1. [Autocomplete](#autocomplete)
+		1. [Tabs](#tabs)
+		1. [Sidebar](#sidebar)
+		1. [Indexing status](#indexing-status)
+		1. [Phantom](#phantom)
+	1. [Plugins](#plugins)
+		1. [Sublimerge 3 + GitGutter](#sublimerge-3--gitgutter)
+		1. [HexViewer](#hexviewer)
+		1. [GitGutter + SublimeLinter](#gitgutter--sublimelinter)
+		1. [BracketHighlighter](#brackethighlighter)
+		1. [Emmet](#emmet)
+		1. [Color Helper](#color-helper)
+		1. [dr_months_calendar](#drmonthscalendar)
+		1. [Suricate](#suricate)
+	1. [Selected text Sasha](#selected-text-sasha)
+		1. [Selected text](#selected-text)
+		1. [Selected text when the carriage is not on text field](#selected-text-when-the-carriage-is-not-on-text-field)
+		1. [Find \(Ctrl+F\) text](#find-ctrlf-text)
+		1. [Find text when the carriage is out of the found text.](#find-text-when-the-carriage-is-out-of-the-found-text)
+	1. [Panels and consoles](#panels-and-consoles)
+		1. [GotoAnything panel](#gotoanything-panel)
+		1. [Switch Project panel](#switch-project-panel)
+		1. [Find and Replace panel](#find-and-replace-panel)
+		1. [Console](#console)
+		1. [Build System output console](#build-system-output-console)
+		1. [ScopeHunter output console](#scopehunter-output-console)
+	1. [Syntaxes](#syntaxes-1)
+		1. [JSON](#json)
+		1. [XML](#xml)
+		1. [HTML](#html)
+		1. [CSS](#css)
+		1. [JavaScript](#javascript)
+		1. [Diff](#diff)
+		1. [Regular Expression](#regular-expression)
+		1. [Mediawiki NG](#mediawiki-ng)
+1. [Comparison of Monokai \(default color scheme\) and SashaSublime](#comparison-of-monokai-default-color-scheme-and-sashasublime)
+	1. [Monokai scopes](#monokai-scopes)
+	1. [SashaSublime scopes](#sashasublime-scopes)
+1. [Downloading and installation](#downloading-and-installation)
+	1. [Package Control](#package-control)
+	1. [Git](#git)
+	1. [Hub](#hub)
+	1. [Manually](#manually)
+1. [Activation](#activation)
+	1. [Themr and Schemr](#themr-and-schemr)
+	1. [Manually](#manually-1)
+1. [Preferences](#preferences)
+1. [Setting SashaSublime for some plugins](#setting-sashasublime-for-some-plugins)
+	1. [BracketHighlighter](#brackethighlighter-1)
+	1. [GitGutter](#gitgutter)
+1. [Customization non-Sublime Text settings for Windows](#customization-non-sublime-text-settings-for-windows)
+		1. [Active window](#active-window)
+		1. [Inactive window](#inactive-window)
+	1. [Changing favicon in Sublime Text 3](#changing-favicon-in-sublime-text-3)
+	1. [Title Bar and window border color](#title-bar-and-window-border-color)
+	1. [Winaero Tweaker](#winaero-tweaker)
+		1. [Inactive Title Bar color](#inactive-title-bar-color)
+		1. [Menu Bar settings](#menu-bar-settings)
+		1. [Title Bar settings](#title-bar-settings)
+1. [Editing SashaSublime settings](#editing-sashasublime-settings)
+	1. [Editing default files](#editing-default-files)
+		1. [Steps](#steps)
+		1. [Problem](#problem)
+	1. [Editing user files](#editing-user-files)
+		1. [Steps](#steps-1)
+		1. [Problem](#problem-1)
+1. [Known defects](#known-defects)
+	1. [SublimeLinter wrote own color scheme file in preferences](#sublimelinter-wrote-own-color-scheme-file-in-preferences)
+1. [See also](#see-also)
+1. [Thanks](#thanks)
+1. [Contacts](#contacts)
+1. [Donate](#donate)
+	1. [Bitcoin](#bitcoin)
+	1. [Litecoin](#litecoin)
+	1. [Paypal $](#paypal-)
+	1. [Paypal €](#paypal-€)
+1. [License](#license)
 
 <!-- /MarkdownTOC -->
 
-# SashaSublime
+---
 
-<p align="center">It is devoted to God, the only Creation for the sake of Which it makes sense to live on this planet, the Greatest being of all times and peoples, Queen of the World <a href="https://vk.com/hair_in_the_wind">Sasha Chernykh</a> (Kira Kenyukhova).</p>
+---
+
+<p align="center"><strong>SashaSublime is devoted to God, the only Creation for the sake of Which it makes sense to live on this planet, the Greatest being of all times and peoples, Queen of the World <a href="https://vk.com/hair_in_the_wind">Sasha Chernykh</a> (Kira Kenyukhova)</strong>.</p>
 
 <p align="center"><img src="http://i.imgur.com/OJSBK4V.jpg" alt="Queen of the World Sasha Chernykh"></p>
 
@@ -318,7 +319,7 @@ Print `SashaS`. Name package in Package Control is different right name package,
 
 `Preferences` → `Browse Packages...` → in this folder open terminal, preferable to you, and run command:
 
-	git clone https://github.com/Kristinita/SashaSublime.git
+    git clone https://github.com/Kristinita/SashaSublime.git
 
 ### Hub
 
@@ -326,7 +327,7 @@ I recommend use [Hub](https://hub.github.com/) — a command-line wrapper for gi
 
 If you use Hub, `Preferences` → `Browse Packages...` → in this folder open terminal, preferable to you, and run command:
 
-	hub clone Kristinita/SashaSublime
+    hub clone Kristinita/SashaSublime
 
 ### Manually
 
@@ -379,8 +380,8 @@ Also, you can make that all your settings were as at me. Copy into your file`Pre
 "font_face": "Consolas",
 "font_options":
 [
-	"subpixel_antialias",
-	"directwrite"
+    "subpixel_antialias",
+    "directwrite"
 ],
 "highlight_line": true,
 "highlight_modified_tabs": true,
@@ -410,53 +411,53 @@ To paint in different colors of a bracket of a plugin of BracketHighlighter, exe
 
 ```json
 {
-	"bracket_styles": {
-		"unmatched": {
-			"icon": "question",
-			"color": "brackethighlighter.unmatched",
-			"style": "highlight"
-		},
-		"curly": {
-			"icon": "curly_bracket",
-			"color": "brackethighlighter.curly",
-			"style": "highlight"
-		},
-		"round": {
-			"icon": "round_bracket",
-			"color": "brackethighlighter.round",
-			"style": "outline"
-		},
-		"square": {
-			"icon": "square_bracket",
-			"color": "brackethighlighter.square",
-			"style": "outline"
-		},
-		"angle": {
-			"icon": "angle_bracket",
-			"color": "brackethighlighter.angle",
-			"style": "outline"
-		},
-		"tag": {
-			"icon": "tag",
-			"color": "brackethighlighter.tag",
-			"style": "outline"
-		},
-		"single_quote": {
-			"icon": "single_quote",
-			"color": "brackethighlighter.quote",
-			"style": "outline"
-		},
-		"double_quote": {
-			"icon": "double_quote",
-			"color": "brackethighlighter.quote",
-			"style": "outline"
-		},
-		"regex": {
-			"icon": "regex",
-			"color": "brackethighlighter.quote",
-			"style": "outline"
-		}
-	}
+    "bracket_styles": {
+        "unmatched": {
+            "icon": "question",
+            "color": "brackethighlighter.unmatched",
+            "style": "highlight"
+        },
+        "curly": {
+            "icon": "curly_bracket",
+            "color": "brackethighlighter.curly",
+            "style": "highlight"
+        },
+        "round": {
+            "icon": "round_bracket",
+            "color": "brackethighlighter.round",
+            "style": "outline"
+        },
+        "square": {
+            "icon": "square_bracket",
+            "color": "brackethighlighter.square",
+            "style": "outline"
+        },
+        "angle": {
+            "icon": "angle_bracket",
+            "color": "brackethighlighter.angle",
+            "style": "outline"
+        },
+        "tag": {
+            "icon": "tag",
+            "color": "brackethighlighter.tag",
+            "style": "outline"
+        },
+        "single_quote": {
+            "icon": "single_quote",
+            "color": "brackethighlighter.quote",
+            "style": "outline"
+        },
+        "double_quote": {
+            "icon": "double_quote",
+            "color": "brackethighlighter.quote",
+            "style": "outline"
+        },
+        "regex": {
+            "icon": "regex",
+            "color": "brackethighlighter.quote",
+            "style": "outline"
+        }
+    }
 }
 ```
 
@@ -507,7 +508,7 @@ Examples, when use colors of «S» letter my favicon:
 
 <kbd>Win+R</kbd> → insert in input area this text
 
-	rundll32.exe shell32.dll,Control_RunDLL desk.cpl,Advanced,@Advanced
+    rundll32.exe shell32.dll,Control_RunDLL desk.cpl,Advanced,@Advanced
 
 → <kbd>OK</kbd> → move thumbs. You can preview changes in title bar your window. I select orange color:
 
@@ -630,14 +631,14 @@ I do not hope that I will get at least a penny, but suddenly I'm feeling lucky..
 
 See [my answer](http://bitcoin.stackexchange.com/a/48744/41598) to Bitcoin Stack Exchange, if you want to know how to make exactly the same button. If you Bitcoin client not supported [standard bitcoin schema URI](https://github.com/bitcoin/bips/blob/master/bip-0021.mediawiki), my Bitcoin address is:
 
-	17uctxtsWG3gpyAy6iJ8AVd5rdSjkJH2
+    17uctxtsWG3gpyAy6iJ8AVd5rdSjkJH2
 
 ### Litecoin
 [![Litecoin Donate Button](http://Kristinita.ru/Donate-files/Litecoin-Donate-button.png)](http://Kristinita.ru/Donate-files/Litecoin-Redirect)
 
 If you Litecoin client not supported Litecoin schema URI, my Litecoin address is:
 
-	LLVvhNKGMLGHa8QmeRrBsjZUBjSpQMjUkP
+    LLVvhNKGMLGHa8QmeRrBsjZUBjSpQMjUkP
 
 ### Paypal $
 [![PayPal Dollar button](http://Kristinita.ru/Donate-files/PayPal-Donate-Button-Dollar.png)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=W6MP468ZZV66Q)
