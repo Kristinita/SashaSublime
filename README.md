@@ -1,14 +1,7 @@
 [![Bitcoin Donate Button](http://Kristinita.ru/Donate-files/Bitcoin-Donate-button.png)](http://Kristinita.ru/Donate-files/Bitcoin-Redirect)
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="W6MP468ZZV66Q">
-<input type="image" src="http://Kristinita.ru/Donate-files/PayPal-Donate-Button-Dollar.png" name="submit" alt="Кира Кенюхова — Величайшее Явление всех времён и народов!">
-</form>
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="DGT7K29LDD2HQ">
-<input type="image" src="http://Kristinita.ru/Donate-files/PayPal-Donate-Button-Euro.png" border="0" name="submit" alt="Кира Кенюхова — Величайшее Явление всех времён и народов!">
-</form>
+[![Litecoin Donate Button](http://Kristinita.ru/Donate-files/Litecoin-Donate-button.png)](http://Kristinita.ru/Donate-files/Litecoin-Redirect)
+[![PayPal Dollar button](http://Kristinita.ru/Donate-files/PayPal-Donate-Button-Dollar.png)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=W6MP468ZZV66Q)
+[![PayPal Euro button](http://Kristinita.ru/Donate-files/PayPal-Donate-Button-Euro.png)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=DGT7K29LDD2HQ)
 ![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Release](https://img.shields.io/badge/Release-1.1.0-orange.svg)
 [![Package Control](https://packagecontrol.herokuapp.com/downloads/SashaS.svg?style=flat-square)](https://packagecontrol.io/packages/SashaS)
@@ -16,93 +9,94 @@
 
 <!-- MarkdownTOC -->
 
-- SashaSublime
-	- Description
-	- Support
-		- Platforms
-		- Sublime Text
-		- Syntaxes
-	- Screenshots
-		- General
-			- Overall plan
-			- Details
-			- Gutter
-			- Autocomplete
-			- Tabs
-			- Sidebar
-			- Indexing status
-			- Phantom
-		- Plugins
-			- Sublimerge 3 + GitGutter
-			- HexViewer
-			- GitGutter + SublimeLinter
-			- BracketHighlighter
-			- Emmet
-			- Color Helper
-			- dr_months_calendar
-			- Suricate
-		- Selected text Sasha
-			- Selected text
-			- Selected text when the carriage is not on text field
-			- Find \(Ctrl+F\) text
-			- Find text when the carriage is out of the found text.
-		- Panels and consoles
-			- GotoAnything panel
-			- Switch Project panel
-			- Find and Replace panel
-			- Console
-			- Build System output console
-			- ScopeHunter output console
-		- Syntaxes
-			- JSON
-			- XML
-			- HTML
-			- CSS
-			- JavaScript
-			- Diff
-			- Regular Expression
-			- Mediawiki NG
-	- Comparison of Monokai \(default color scheme\) and SashaSublime
-		- Monokai scopes
-		- SashaSublime scopes
-	- Downloading and installation
-		- Package Control
-		- Git
-		- Hub
-		- Manually
-	- Activation
-		- Themr and Schemr
-		- Manually
-	- Preferences
-	- Setting SashaSublime for some plugins
-		- BracketHighlighter
-		- GitGutter
-	- Customization non-Sublime Text settings for Windows
-			- Active window
-			- Inactive window
-		- Changing favicon in Sublime Text 3
-		- Title Bar and window border color
-		- Winaero Tweaker
-			- Inactive Title Bar color
-			- Menu Bar settings
-			- Title Bar settings
-	- Editing SashaSublime settings
-		- Editing default files
-			- Steps
-			- Problem
-		- Editing user files
-			- Steps
-			- Problem
-	- Known defects
-		- SublimeLinter wrote own color scheme file in preferences
-	- See also
-	- Thanks
-	- Contacts
-	- Donate
-		- Bitcoin
-		- Paypal $
-		- Paypal €
-	- License
+- [SashaSublime](#sashasublime)
+	- [Description](#description)
+	- [Support](#support)
+		- [Platforms](#platforms)
+		- [Sublime Text](#sublime-text)
+		- [Syntaxes](#syntaxes)
+	- [Screenshots](#screenshots)
+		- [General](#general)
+			- [Overall plan](#overall-plan)
+			- [Details](#details)
+			- [Gutter](#gutter)
+			- [Autocomplete](#autocomplete)
+			- [Tabs](#tabs)
+			- [Sidebar](#sidebar)
+			- [Indexing status](#indexing-status)
+			- [Phantom](#phantom)
+		- [Plugins](#plugins)
+			- [Sublimerge 3 + GitGutter](#sublimerge-3--gitgutter)
+			- [HexViewer](#hexviewer)
+			- [GitGutter + SublimeLinter](#gitgutter--sublimelinter)
+			- [BracketHighlighter](#brackethighlighter)
+			- [Emmet](#emmet)
+			- [Color Helper](#color-helper)
+			- [dr_months_calendar](#drmonthscalendar)
+			- [Suricate](#suricate)
+		- [Selected text Sasha](#selected-text-sasha)
+			- [Selected text](#selected-text)
+			- [Selected text when the carriage is not on text field](#selected-text-when-the-carriage-is-not-on-text-field)
+			- [Find \(Ctrl+F\) text](#find-ctrlf-text)
+			- [Find text when the carriage is out of the found text.](#find-text-when-the-carriage-is-out-of-the-found-text)
+		- [Panels and consoles](#panels-and-consoles)
+			- [GotoAnything panel](#gotoanything-panel)
+			- [Switch Project panel](#switch-project-panel)
+			- [Find and Replace panel](#find-and-replace-panel)
+			- [Console](#console)
+			- [Build System output console](#build-system-output-console)
+			- [ScopeHunter output console](#scopehunter-output-console)
+		- [Syntaxes](#syntaxes-1)
+			- [JSON](#json)
+			- [XML](#xml)
+			- [HTML](#html)
+			- [CSS](#css)
+			- [JavaScript](#javascript)
+			- [Diff](#diff)
+			- [Regular Expression](#regular-expression)
+			- [Mediawiki NG](#mediawiki-ng)
+	- [Comparison of Monokai \(default color scheme\) and SashaSublime](#comparison-of-monokai-default-color-scheme-and-sashasublime)
+		- [Monokai scopes](#monokai-scopes)
+		- [SashaSublime scopes](#sashasublime-scopes)
+	- [Downloading and installation](#downloading-and-installation)
+		- [Package Control](#package-control)
+		- [Git](#git)
+		- [Hub](#hub)
+		- [Manually](#manually)
+	- [Activation](#activation)
+		- [Themr and Schemr](#themr-and-schemr)
+		- [Manually](#manually-1)
+	- [Preferences](#preferences)
+	- [Setting SashaSublime for some plugins](#setting-sashasublime-for-some-plugins)
+		- [BracketHighlighter](#brackethighlighter-1)
+		- [GitGutter](#gitgutter)
+	- [Customization non-Sublime Text settings for Windows](#customization-non-sublime-text-settings-for-windows)
+			- [Active window](#active-window)
+			- [Inactive window](#inactive-window)
+		- [Changing favicon in Sublime Text 3](#changing-favicon-in-sublime-text-3)
+		- [Title Bar and window border color](#title-bar-and-window-border-color)
+		- [Winaero Tweaker](#winaero-tweaker)
+			- [Inactive Title Bar color](#inactive-title-bar-color)
+			- [Menu Bar settings](#menu-bar-settings)
+			- [Title Bar settings](#title-bar-settings)
+	- [Editing SashaSublime settings](#editing-sashasublime-settings)
+		- [Editing default files](#editing-default-files)
+			- [Steps](#steps)
+			- [Problem](#problem)
+		- [Editing user files](#editing-user-files)
+			- [Steps](#steps-1)
+			- [Problem](#problem-1)
+	- [Known defects](#known-defects)
+		- [SublimeLinter wrote own color scheme file in preferences](#sublimelinter-wrote-own-color-scheme-file-in-preferences)
+	- [See also](#see-also)
+	- [Thanks](#thanks)
+	- [Contacts](#contacts)
+	- [Donate](#donate)
+		- [Bitcoin](#bitcoin)
+		- [Litecoin](#litecoin)
+		- [Paypal $](#paypal-)
+		- [Paypal €](#paypal-€)
+	- [License](#license)
 
 <!-- /MarkdownTOC -->
 
@@ -121,7 +115,6 @@ i faced a problem that in already available themes and color schemes many elemen
 4. each element of syntax has to have color.
 
 ## Support
-
 
 ### Platforms
 
@@ -243,9 +236,10 @@ Results with the established [WordHighlight](https://github.com/SublimeText/Word
 
 For get a black and white colors, Install [SublimeANSI](https://github.com/aziz/SublimeANSI) plugin and [add](https://github.com/aziz/SublimeANSI#using-this-plugin-as-a-dependency-for-your-pluginbuild-output-panel) in your `.sublime-build` file these lines:
 
-	/*  add target and syntax */
-	"target": "ansi_color_build",
-	"syntax": "Packages/ANSIescape/ANSI.tmLanguage"
+```json
+"target": "ansi_color_build",
+"syntax": "Packages/ANSIescape/ANSI.tmLanguage"
+```
 
 ![Build console](http://i.imgur.com/4s81HhM.png)
 
@@ -362,8 +356,10 @@ Then install [Schemr](https://github.com/benweier/Schemr) plugin. <kbd>Ctrl+Shif
 
 <kbd>Alt+N</kbd> → `Settings - User` → add in open file 2 lines:
 
-	"color_scheme": "Packages/SashaSublime/SashaSublime.tmTheme",
-	"theme": "SashaSublime.sublime-theme",
+```json
+"color_scheme": "Packages/SashaSublime/SashaSublime.tmTheme",
+"theme": "SashaSublime.sublime-theme",
+```
 
 Be attentive, [correctly place](http://ru.stackoverflow.com/a/238934/199934) commas, quotes, brackets and colons.
 
@@ -371,32 +367,34 @@ Be attentive, [correctly place](http://ru.stackoverflow.com/a/238934/199934) com
 
 Also, you can make that all your settings were as at me. Copy into your file`Preferences` → `Settings - User` these lines from my file `Preferences` → `Preferences.sublime-settings`:
 
-	"always_show_minimap_viewport": true,
-	"auto_find_in_selection": false,
-	"bold_folder_labels": true,
-	"caret_style": "wide",
-	"detect indentation": false,
-	"draw_indent_guides": false,
-	"draw_minimap_border": true,
-	"fade_fold_buttons": false,
-	"font_face": "Consolas",
-	"font_options":
-	[
-		"subpixel_antialias",
-		"directwrite"
-	],
-	"highlight_line": true,
-	"highlight_modified_tabs": true,
-	"line_padding_bottom": 1,
-	"line_padding_top": 1,
-	"match_brackets": false,
-	"match_brackets_angle": false,
-	"match_brackets_braces": false,
-	"match_brackets_content": false,
-	"match_brackets_square": false,
-	"match_tags": false,
-	"menu_visible": true,
-	"show_encoding": true,
+```json
+"always_show_minimap_viewport": true,
+"auto_find_in_selection": false,
+"bold_folder_labels": true,
+"caret_style": "wide",
+"detect indentation": false,
+"draw_indent_guides": false,
+"draw_minimap_border": true,
+"fade_fold_buttons": false,
+"font_face": "Consolas",
+"font_options":
+[
+	"subpixel_antialias",
+	"directwrite"
+],
+"highlight_line": true,
+"highlight_modified_tabs": true,
+"line_padding_bottom": 1,
+"line_padding_top": 1,
+"match_brackets": false,
+"match_brackets_angle": false,
+"match_brackets_braces": false,
+"match_brackets_content": false,
+"match_brackets_square": false,
+"match_tags": false,
+"menu_visible": true,
+"show_encoding": true,
+```
 
 Before copying save in a safe place file *Preferences.sublime-settings* from the `User` folder or, what better, use [Local History](https://github.com/vishr/local-history) plugin. If you don't like my preferences, you will be able to return to your preferable settings.
 
@@ -410,18 +408,14 @@ To paint in different colors of a bracket of a plugin of BracketHighlighter, exe
 + Install plugin BracketHighlighter via Package Control,
 + `Preferences` → `Package Settings` → `BracketHighlighter` → `Bracket Settings - User` → add in open file this code and save file:
 
-```
+```json
 {
 	"bracket_styles": {
-		// This particular style is used to highlight
-		// unmatched bracket pairs. It is a special
-		// style.
 		"unmatched": {
 			"icon": "question",
 			"color": "brackethighlighter.unmatched",
 			"style": "highlight"
 		},
-		// User defined region styles
 		"curly": {
 			"icon": "curly_bracket",
 			"color": "brackethighlighter.curly",
@@ -571,10 +565,10 @@ After updates, SashaSublime your changes will be lost. You will need to copy the
 
 #### Steps
 
-1. **Theme file**
+1. **Theme file**  
 `Preferences` → `Browse Packages...` → `User` → create file `Example.sublime-theme`, if you want to make a changes in theme. Instead of `Example` you can name your file by any other name. Copy the contents of the file `SashaSublime.sublime-theme` into `Example.sublime-theme` make a changes and save `Example.sublime-theme` file. Via [Themr](#themr-and-schemr) select Example theme.
 
-2. **Scheme file**
+2. **Scheme file**  
 `Preferences` → `Browse Packages...` → `User` → create file `Example.tmTheme`. Instead of `Example` you can name your file by any other name. Copy the contents of the file `SashaSublime.tmTheme` into `Example.tmTheme` make a changes and save `Example.tmTheme` file. Via [Schemr](#themr-and-schemr) select Example scheme.
 
 #### Problem
@@ -602,7 +596,9 @@ If you use [SublimeLinter](https://github.com/SublimeLinter/SublimeLinter3), you
 
 Install [PackageResourceViewer](https://github.com/skuroda/PackageResourceViewer) plugin → <kbd>Ctrl+Shift+P</kbd> → PackageResourceViewer: `Open Resource` → `SublimeLinter` → `lint` → `util.py` → in open file to comment out or remove line 215:
 
-	sublime.set_timeout_async(generate_color_scheme_async, 0)
+```python
+sublime.set_timeout_async(generate_color_scheme_async, 0)
+```
 
 Restart Sublime Text → SublimeLinter should not prescribe in your preferences own color scheme file. Thanks [@r-stein](https://github.com/r-stein) at [solution](https://forum.sublimetext.com/t/sublimelinter-write-own-color-scheme-path-in-the-configuration-file/21842/2?u=sasha_chernykh).
 
@@ -632,24 +628,27 @@ I do not hope that I will get at least a penny, but suddenly I'm feeling lucky..
 ### Bitcoin
 [![Bitcoin Donate Button](http://Kristinita.ru/Donate-files/Bitcoin-Donate-button.png)](http://Kristinita.ru/Donate-files/Bitcoin-Redirect)
 
-See [my answer](http://bitcoin.stackexchange.com/a/48744/41598) to Bitcoin Stack Exchange, if you want to know how to make exactly the same button.
+See [my answer](http://bitcoin.stackexchange.com/a/48744/41598) to Bitcoin Stack Exchange, if you want to know how to make exactly the same button. If you Bitcoin client not supported [standard bitcoin schema URI](https://github.com/bitcoin/bips/blob/master/bip-0021.mediawiki), my Bitcoin address is:
+
+	17uctxtsWG3gpyAy6iJ8AVd5rdSjkJH2
+
+### Litecoin
+[![Litecoin Donate Button](http://Kristinita.ru/Donate-files/Litecoin-Donate-button.png)](http://Kristinita.ru/Donate-files/Litecoin-Redirect)
+
+If you Litecoin client not supported Litecoin schema URI, my Litecoin address is:
+
+	LLVvhNKGMLGHa8QmeRrBsjZUBjSpQMjUkP
 
 ### Paypal $
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="W6MP468ZZV66Q">
-<input type="image" src="http://Kristinita.ru/Donate-files/PayPal-Donate-Button-Dollar.png" name="submit" alt="Кира Кенюхова — Величайшее Явление всех времён и народов!">
-</form>
+[![PayPal Dollar button](http://Kristinita.ru/Donate-files/PayPal-Donate-Button-Dollar.png)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=W6MP468ZZV66Q)
 
 ### Paypal €
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="DGT7K29LDD2HQ">
-<input type="image" src="http://Kristinita.ru/Donate-files/PayPal-Donate-Button-Euro.png" border="0" name="submit" alt="Кира Кенюхова — Величайшее Явление всех времён и народов!">
-</form>
+[![PayPal Euro button](http://Kristinita.ru/Donate-files/PayPal-Donate-Button-Euro.png)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=DGT7K29LDD2HQ)
 
 ## License
 
-© 2016 [Sasha Chernykh](https://vk.com/hair_in_the_wind)
+[MIT License](https://opensource.org/licenses/MIT)
 
-This is free software. It is licensed under the [MIT License](https://opensource.org/licenses/MIT). Feel free to use this in your own work. However, if you modify and/or redistribute it, please attribute me in some way, and it would be great if you distribute your work under this or a similar license, but it's not required.
+Copyright (c) 2016: [Sasha Chernykh](https://vk.com/hair_in_the_wind)
+
+SashaSublime belongs to Goddess [Sasha Chernykh](https://vk.com/hair_in_the_wind), as well as all the rest in this world. All of us are insignificant creations which completely belong Legendary to Sasha Chernykh. To use SashaSublime, you have to pray to Sasha Chernykh every day and know that She, certainly, the most unsurpassed in the Universe.
