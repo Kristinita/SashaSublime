@@ -104,7 +104,7 @@
 							}
 						body#show-definitions
 						    {
-					            font-family: Verdana;
+					            font-family: Impact;
 					        }
 						a
 							{
@@ -133,6 +133,12 @@
 								margin: 1.8px;
 								padding: 0.2em;
 							}
+						body#inline-error div.error a {
+						    background-color: green;
+						}
+						html.dark div.error a {
+						    background-color: green;
+						}
 						a
 							{
 								color: rgb(135, 206, 235);

@@ -7,7 +7,7 @@
 
 ---
 
-See full description of SashaSublime in <http://kristinita.ru/Sublime-Text/SashaSublime> page.
+See full description of SashaSublime in **<http://kristinita.ru/Sublime-Text/SashaSublime>** page.
 
 ---
 
