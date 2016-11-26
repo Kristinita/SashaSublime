@@ -110,6 +110,10 @@
 							{
 								color: mediumorchid;
 							}
+						p
+							{
+								font-family: Verdana;
+							}
 					]]></string>
 					<!-- Фантомы. Когда при запуске AutoHotkey ошибка, на линии, где совершена ошибка, показывается фантом. -->
 					<!--
@@ -133,12 +137,6 @@
 								margin: 1.8px;
 								padding: 0.2em;
 							}
-						body#inline-error div.error a {
-						    background-color: green;
-						}
-						html.dark div.error a {
-						    background-color: green;
-						}
 						a
 							{
 								color: rgb(135, 206, 235);
@@ -147,6 +145,9 @@
 							{
 								color: #ffdab9;
 							}
+						body#inline-error div.error a {
+						    background-color: #28071a;
+						}
 					]]></string>
 				</dict>
 			</dict>
@@ -830,7 +831,7 @@
 				<key>name</key>
 				<string>HTML: JavaScript backlight</string>
 				<key>scope</key>
-				<string>source.js.embedded.html</string>
+				<string>source.js.embedded.html, source.js</string>
 				<key>settings</key>
 				<dict>
 					<key>background</key>
@@ -842,7 +843,7 @@
 				<key>name</key>
 				<string>HTML: CSS backlight</string>
 				<key>scope</key>
-				<string>source.css.embedded.html, meta.attribute-with-value.style.html source.css</string>
+				<string>source.css.embedded.html, meta.attribute-with-value.style.html source.css, source.css</string>
 				<key>settings</key>
 				<dict>
 					<key>background</key>
