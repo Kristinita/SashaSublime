@@ -1,6 +1,7 @@
-[
-    {
-        "caption": "SashaSublime: Report SashaSublime issue",
-        "command": "sasha_sublime_issues"
-    }
-]
+[{
+    "caption": "SashaSublime: Report SashaSublime Issue",
+    "command": "sasha_sublime_issues"
+}, {
+    "caption": "SashaSublime: See SashaSublime Description",
+    "command": "sasha_sublime_description_open"
+}]
