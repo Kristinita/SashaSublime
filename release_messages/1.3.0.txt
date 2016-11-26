@@ -1,0 +1,2 @@
++ Fixed critical package name bug, I really apologize to all, who install my package use Package Control.
++ Fixed some others bugs.
