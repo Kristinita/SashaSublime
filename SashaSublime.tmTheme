@@ -710,85 +710,85 @@
 					<string>#F378F5</string>
 				</dict>
 			</dict>
-			<!-- JSON -->
-			<!-- JSON: параметры -->
+			<!-- JSON и Suricate-->
+			<!-- JSON и Suricate: параметры -->
 			<dict>
 				<key>name</key>
-				<string>JSON: parameters</string>
+				<string>JSON + Suricate: parameters</string>
 				<key>scope</key>
-				<string>source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.array.json meta.structure.dictionary.json string.quoted.double.json , source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.array.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.array.json meta.structure.dictionary.json string.quoted.double.json   </string>
+				<string>source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.array.json meta.structure.dictionary.json string.quoted.double.json , source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.array.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.array.json meta.structure.dictionary.json string.quoted.double.json, source.suricate-profile meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json string.quoted.double.json</string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
 					<string>#E5FEFF</string>
 				</dict>
 			</dict>
-			<!-- JSON: значения параметров -->
+			<!-- JSON + Suricate: значения параметров -->
 			<dict>
 				<key>name</key>
-				<string>JSON: values</string>
+				<string>JSON + Suricate: values</string>
 				<key>scope</key>
-				<string>source.json meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json , source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.array.json meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json , source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.array.json meta.structure.dictionary.json , source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.array.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.array.json meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json  </string>
+				<string>source.json meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json , source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.array.json meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json , source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.array.json meta.structure.dictionary.json , source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.array.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.array.json meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json, source.suricate-profile meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json   </string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
 					<string>aquamarine</string>
 				</dict>
 			</dict>
-			<!-- JSON: квадратные скобки, открывающая и закрывающая -->
+			<!-- JSON + Suricate: квадратные скобки, открывающая и закрывающая -->
 			<dict>
 				<key>name</key>
-				<string>JSON: square brackets</string>
+				<string>JSON + Suricate: square brackets, Suricate: square brackets</string>
 				<key>scope</key>
-				<string>source.json meta.structure.array.json punctuation.definition.array.begin.json , source.json meta.structure.array.json punctuation.definition.array.end.json </string>
+				<string>source.json meta.structure.array.json punctuation.definition.array.begin.json , source.json meta.structure.array.json punctuation.definition.array.end.json, source.suricate-profile meta.structure.dictionary.json  meta.structure.dictionary.value.json meta.structure.array.json punctuation.definition.array.begin.json , source.suricate-profile  meta.structure.array.json punctuation.definition.array.end.json  </string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
 					<string>orangered</string>
 				</dict>
 			</dict>
-			<!-- JSON: фигурные скобки, открывающая и закрывающая -->
+			<!-- JSON + Suricate: фигурные скобки, открывающая и закрывающая -->
 			<dict>
 				<key>name</key>
-				<string>JSON: braces</string>
+				<string>JSON + Suricate: braces</string>
 				<key>scope</key>
-				<string>source.json meta.structure.dictionary.json punctuation.definition.dictionary.begin.json , source.json meta.structure.dictionary.json punctuation.definition.dictionary.end.json </string>
+				<string>source.json meta.structure.dictionary.json punctuation.definition.dictionary.begin.json , source.json meta.structure.dictionary.json punctuation.definition.dictionary.end.json, source.suricate-profile meta.structure.dictionary.json punctuation.definition.dictionary.begin.json, source.suricate-profile meta.structure.dictionary.json punctuation.definition.dictionary.end.json    </string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
 					<string>#ffff99</string>
 				</dict>
 			</dict>
-			<!-- JSON: двоеточие -->
+			<!-- JSON + Suricate: двоеточие -->
 			<dict>
 				<key>name</key>
-				<string>JSON: colons</string>
+				<string>JSON + Suricate: colons</string>
 				<key>scope</key>
-				<string>source.json meta.structure.dictionary.json meta.structure.dictionary.value.json punctuation.separator.dictionary.key-value.json  </string>
+				<string>source.json meta.structure.dictionary.json meta.structure.dictionary.value.json punctuation.separator.dictionary.key-value.json, source.suricate-profile meta.structure.dictionary.json punctuation.separator.dictionary.key-value.json   </string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
 					<string>hotpink</string>
 				</dict>
 			</dict>
-			<!-- JSON: запятая -->
+			<!-- JSON + Suricate: запятая -->
 			<dict>
 				<key>name</key>
-				<string>JSON: commas</string>
+				<string>JSON + Suricate: commas</string>
 				<key>scope</key>
-				<string>source.json meta.structure.array.json  punctuation.separator.array.json , source.json  meta.structure.dictionary.json meta.structure.dictionary.value.json punctuation.separator.dictionary.pair.json   </string>
+				<string>source.json meta.structure.array.json  punctuation.separator.array.json , source.json  meta.structure.dictionary.json meta.structure.dictionary.value.json punctuation.separator.dictionary.pair.json , source.suricate-profile meta.structure.dictionary.json punctuation.separator.dictionary.pair.json   </string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
 					<string>magenta</string>
 				</dict>
 			</dict>
-			<!-- JSON: кавычки-лапки -->
+			<!-- JSON + Suricate: кавычки-лапки -->
 			<dict>
 				<key>name</key>
-				<string>JSON: quotes pads — &quot;&quot;</string>
+				<string>JSON + Suricate: quotes pads — &quot;&quot;</string>
 				<key>scope</key>
-				<string>source.json punctuation.definition.string.begin.json , source.json punctuation.definition.string.end.json </string>
+				<string>source.json punctuation.definition.string.begin.json , source.json punctuation.definition.string.end.json, source.suricate-profile meta.structure.dictionary.json  string.quoted.double.json punctuation.definition.string.begin.json, source.suricate-profile  string.quoted.double.json punctuation.definition.string.end.json   </string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
@@ -2406,6 +2406,17 @@
 					<key>foreground</key>
 					<string>pink</string>
 				</dict>
+			</dict>
+			<!-- DrCalendar: Конец синтаксиса -->
+			<!-- DrCalendar: год -->
+			<dict>
+				<key>scope</key>
+				<string>source.python</string>
+				<key>settings</key>
+				    <dict>
+				        <key>background</key>
+				        <string>saddlebrown</string>
+				    </dict>
 			</dict>
 			<!-- DrCalendar: Конец синтаксиса -->
 		</array>
