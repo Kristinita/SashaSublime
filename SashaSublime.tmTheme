@@ -2408,17 +2408,45 @@
 				</dict>
 			</dict>
 			<!-- DrCalendar: Конец синтаксиса -->
-			<!-- DrCalendar: год -->
+			<!-- Python: подсветка бэкграунда -->
 			<dict>
 				<key>scope</key>
 				<string>source.python</string>
 				<key>settings</key>
-				    <dict>
-				        <key>background</key>
-				        <string>saddlebrown</string>
-				    </dict>
+				<dict>
+					<key>background</key>
+					<string>saddlebrown</string>
+				</dict>
 			</dict>
-			<!-- DrCalendar: Конец синтаксиса -->
+			<!-- Ruby: подсветка бэкграунда -->
+			<dict>
+				<key>scope</key>
+				<string>source.ruby</string>
+				<key>settings</key>
+				<dict>
+					<key>background</key>
+					<string>#DC143C55</string>
+				</dict>
+			</dict>
+			<!-- PowerShell бэкграунд -->
+			<dict>
+				<key>scope</key>
+				<string>source.powershell</string>
+				<key>settings</key>
+				<dict>
+					<key>background</key>
+					<string>#4169E1AA</string>
+				</dict>
+			</dict>
+						<dict>
+				<key>scope</key>
+				<string>text.html.jinja2 meta.scope.jinja2.variable punctuation.other.jinja2 </string>
+				<key>settings</key>
+				<dict>
+					<key>background</key>
+					<string>red</string>
+				</dict>
+			</dict>
 		</array>
 		<key>uuid</key>
 		<string>4147</string>

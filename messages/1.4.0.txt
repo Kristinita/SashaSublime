@@ -1,0 +1,3 @@
++ [Add] Suricate syntax support
++ [Add] Backgrounds for Python, Ruby and PowerShell syntax
++ [Fixed] Release messages
