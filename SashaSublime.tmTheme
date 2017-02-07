@@ -776,7 +776,7 @@
 				<key>name</key>
 				<string>JSON + Suricate: commas</string>
 				<key>scope</key>
-				<string>source.json meta.structure.array.json  punctuation.separator.array.json , source.json  meta.structure.dictionary.json meta.structure.dictionary.value.json punctuation.separator.dictionary.pair.json , source.suricate-profile meta.structure.dictionary.json punctuation.separator.dictionary.pair.json   </string>
+				<string>source.json meta.structure.array.json  punctuation.separator.array.json , source.json  meta.structure.dictionary.json meta.structure.dictionary.value.json punctuation.separator.dictionary.pair.json , source.suricate-profile meta.structure.dictionary.json punctuation.separator.dictionary.pair.json, source.suricate-profile meta.structure.dictionary.json punctuation.separator.array.json</string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
@@ -2438,7 +2438,8 @@
 					<string>#4169E1AA</string>
 				</dict>
 			</dict>
-						<dict>
+			<!-- Точка для Jinja2 -->
+			<dict>
 				<key>scope</key>
 				<string>text.html.jinja2 meta.scope.jinja2.variable punctuation.other.jinja2 </string>
 				<key>settings</key>
