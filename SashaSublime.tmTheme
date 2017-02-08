@@ -1,6 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist
+  PUBLIC '-//Apple Computer//DTD PLIST 1.0//EN'
+  'http://www.apple.com/DTDs/PropertyList-1.0.dtd'>
 <!-- @Author: Kristinita -->
 <!-- @Date:   2017-02-06 18:01:23 -->
-<!-- @Last Modified time: 2017-02-08 13:56:31 -->
+<!-- @Last Modified time: 2017-02-08 16:14:50 -->
 <!--
 	  __,                    __,          _
 	 (              /       (         /  //o
@@ -9,10 +13,6 @@
 
 
  -->
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist
-  PUBLIC '-//Apple Computer//DTD PLIST 1.0//EN'
-  'http://www.apple.com/DTDs/PropertyList-1.0.dtd'>
 <plist version="1.0">
 	<dict>
 		<key>author</key>
@@ -24,6 +24,9 @@
 			<dict>
 				<key>settings</key>
 				<dict>
+					<!--=============================
+					=            General            =
+					==============================-->
 					<!-- Бэкграунд -->
 					<key>background</key>
 					<string>#2A211C</string>
@@ -162,7 +165,9 @@
 					]]></string>
 				</dict>
 			</dict>
-			<!-- Scopes с общими именами -->
+			<!--============================
+			=            Common            =
+			=============================-->
 			<!-- Выделение жирным -->
 			<dict>
 				<key>name</key>
@@ -721,6 +726,9 @@
 					<string>#F378F5</string>
 				</dict>
 			</dict>
+			<!--=====================================
+			=            JSON + Suricate            =
+			======================================-->
 			<!-- JSON и Suricate-->
 			<!-- JSON и Suricate: параметры -->
 			<dict>
@@ -806,8 +814,9 @@
 					<string>paleturquoise</string>
 				</dict>
 			</dict>
-			<!-- Конец JSON -->
-			<!-- XML -->
+			<!--=========================
+			=            XML            =
+			==========================-->
 			<!-- HTML: теги -->
 			<!-- XML: теги -->
 			<dict>
@@ -835,8 +844,9 @@
 					<string>yellow</string>
 				</dict>
 			</dict>
-			<!-- Конец XML -->
-			<!-- HTML -->
+			<!--==========================
+			=            HTML            =
+			===========================-->
 			<!-- HTML: общая подсветка JavaScript в документах -->
 			<dict>
 				<key>name</key>
@@ -933,6 +943,9 @@
 					<string>yellow</string>
 				</dict>
 			</dict>
+			<!--=========================
+			=            CSS            =
+			==========================-->
 			<!-- HTML: селекторы пользовательских тегов во внутреннем CSS -->
 			<!-- CSS: селекторы пользовательских тегов -->
 			<dict>
@@ -1082,6 +1095,9 @@
 					<string>gold</string>
 				</dict>
 			</dict>
+			<!--================================
+			=            JavaScript            =
+			=================================-->
 			<!-- HTML: type, async, sync во встроенном JavaScript на заглавной -->
 			<!-- JavaScript: type, async, sync на заглавной -->
 			<dict>
@@ -1324,8 +1340,9 @@
 					<string>lightgreen</string>
 				</dict>
 			</dict>
-			<!-- Конец HTML -->
-			<!-- Diff -->
+			<!--==========================
+			=            Diff            =
+			===========================-->
 			<!-- Diff: имена файлов, включая пути; номера различающихся строк в файлах и файле диффа -->
 			<dict>
 				<key>name</key>
@@ -1374,8 +1391,9 @@
 					<string>violet</string>
 				</dict>
 			</dict>
-			<!-- Конец Diff -->
-			<!-- Regular Expression -->
+			<!--========================================
+			=            Regular expression            =
+			=========================================-->
 			<!-- Regular Expression: круглые скобки. -->
 			<dict>
 				<key>name</key>
@@ -1498,7 +1516,9 @@
 					<string>paleturquoise</string>
 				</dict>
 			</dict>
-			<!-- Конец Regular Expression -->
+			<!--===============================
+			=            GitGutter            =
+			================================-->
 			<!-- Git Gutter -->
 			<dict>
 				<key>name</key>
@@ -1555,8 +1575,9 @@
 					<string>#565656</string>
 				</dict>
 			</dict>
-			<!-- Конец Git Gutter -->
-			<!-- Mediawiki NG -->
+			<!--==================================
+			=            Mediawiki NG            =
+			===================================-->
 			<!-- Mediawiki NG: закрывающая чёрточка в тегах вроде <br />, двоеточие в конструкциях вида [[:en:Joe McGinniss -->
 			<dict>
 				<key>name</key>
@@ -1771,8 +1792,9 @@
 					<string>tomato</string>
 				</dict>
 			</dict>
-			<!-- Конец Mediawiki NG -->
-			<!-- BracketHighlighter -->
+			<!--========================================
+			=            BracketHighlighter            =
+			=========================================-->
 			<!-- BracketHighlighter: Вопросительный знак, если BracketHighlighter не находит, с чем сопоставлена скобка, а также текст внутри несопоставленного открывающего/закрывающего тега -->
 			<dict>
 				<key>name</key>
@@ -1857,7 +1879,9 @@
 					<string>palegreen</string>
 				</dict>
 			</dict>
-			<!-- SublimeLinter -->
+			<!--===================================
+			=            SublimeLinter            =
+			====================================-->
 			<!-- SublimeLinter: круг, показывающий плохие привычки -->
 			<dict>
 				<key>name</key>
@@ -1894,7 +1918,9 @@
 					<string>#D02000</string>
 				</dict>
 			</dict>
-			<!-- AutoHotkey -->
+			<!--================================
+			=            AutoHotkey            =
+			=================================-->
 			<!-- AutoHotkey: двойное двоеточие -->
 			<dict>
 				<key>name</key>
@@ -1923,6 +1949,9 @@
 					<string>italic</string>
 				</dict>
 			</dict>
+			<!--====================================================
+			=            Personal syntax «ToDo Manager»            =
+			=====================================================-->
 			<!-- Личный синтаксис «ToDo Manager», см. http://stackoverflow.com/a/36019245/5951529: @Сделано -->
 			<!-- ToDo Manager: @Сделано  -->
 			<dict>
@@ -2152,8 +2181,9 @@
 					<string>#ffb02e</string>
 				</dict>
 			</dict>
-			<!-- Конец личного синтаксиса «ToDo Manager» -->
-			<!-- Личный синтаксис Kireopardy -->
+			<!--===============================
+			=            Kireopady            =
+			================================-->
 			<!-- Kireopardy: Плюс -->
 			<dict>
 				<key>name</key>
@@ -2330,8 +2360,9 @@
 					<string>tomato</string>
 				</dict>
 			</dict>
-			<!-- Kireopardy: Конец синтаксиса -->
-			<!-- DrCalendar -->
+			<!--================================
+			=            DrCalendar            =
+			=================================-->
 			<!-- DrCalendar: сегодня -->
 			<dict>
 				<key>name</key>
@@ -2418,9 +2449,13 @@
 					<string>pink</string>
 				</dict>
 			</dict>
-			<!-- DrCalendar: Конец синтаксиса -->
+			<!--============================
+			=            Python            =
+			=============================-->
 			<!-- Python: подсветка бэкграунда -->
 			<dict>
+				<key>name</key>
+				<string>Python background</string>
 				<key>scope</key>
 				<string>source.python</string>
 				<key>settings</key>
@@ -2429,8 +2464,13 @@
 					<string>saddlebrown</string>
 				</dict>
 			</dict>
+			<!--==========================
+			=            Ruby            =
+			===========================-->
 			<!-- Ruby: подсветка бэкграунда -->
 			<dict>
+				<key>name</key>
+				<string>Ruby background</string>
 				<key>scope</key>
 				<string>source.ruby</string>
 				<key>settings</key>
@@ -2439,8 +2479,13 @@
 					<string>#DC143C55</string>
 				</dict>
 			</dict>
-			<!-- PowerShell бэкграунд -->
+			<!--============================
+			=            Stposh            =
+			=============================-->
+			<!-- Stposh бэкграунд -->
 			<dict>
+				<key>name</key>
+				<string>Stposh background</string>
 				<key>scope</key>
 				<string>source.powershell</string>
 				<key>settings</key>
@@ -2449,8 +2494,13 @@
 					<string>#4169E1AA</string>
 				</dict>
 			</dict>
+			<!--============================
+			=            Jinja2            =
+			=============================-->
 			<!-- Точка для Jinja2 -->
 			<dict>
+				<key>name</key>
+				<string>Jinja2 dot</string>
 				<key>scope</key>
 				<string>text.html.jinja2 meta.scope.jinja2.variable punctuation.other.jinja2 </string>
 				<key>settings</key>
@@ -2467,6 +2517,6 @@
 		<key>semanticClass</key>
 		<string>theme.dark.SashaSublime</string>
 		<key>comment</key>
-		<string>На основе Espresso Libre Криса Томаса</string>
+		<string>SashaSublime — theme and color scheme, where all colors are good visible.</string>
 	</dict>
 </plist>

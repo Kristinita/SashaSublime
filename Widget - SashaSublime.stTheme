@@ -1,6 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist
+  PUBLIC '-//Apple Computer//DTD PLIST 1.0//EN'
+  'http://www.apple.com/DTDs/PropertyList-1.0.dtd'>
 <!-- @Author: Kristinita -->
 <!-- @Date:   2017-02-06 18:01:23 -->
-<!-- @Last Modified time: 2017-02-08 14:29:42 -->
+<!-- @Last Modified time: 2017-02-08 16:19:07 -->
 <!--
 	 _, _    _, , ,  _    _, ,  ,  __  ,  ___, , ,  _,
 	(_,'|\  (_, |_|,'|\  (_, |  | '|_) | ' |  |\/| /_,
@@ -8,10 +12,6 @@
 	'   '  `'   ' `  '  `'      `'       '    '  `   `
 
  -->
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist
-  PUBLIC '-//Apple Computer//DTD PLIST 1.0//EN'
-  'http://www.apple.com/DTDs/PropertyList-1.0.dtd'>
 <plist version="1.0">
 	<dict>
 		<key>name</key>
@@ -21,6 +21,9 @@
 			<dict>
 				<key>settings</key>
 				<dict>
+					<!--=============================
+					=            General            =
+					==============================-->
 					<!-- Бэкграунд в панелях и консоли -->
 					<key>background</key>
 					<string>#EBEAD9</string>
@@ -47,7 +50,9 @@
 					<string>#98F898AD</string>
 				</dict>
 			</dict>
-			<!-- Regular Expression -->
+			<!--=========================================
+			=            Regular expressions            =
+			==========================================-->
 			<!-- Regular expression: числа. Например, в выражении ([1-6])\1 данным цветом подсветится «1-6». Жирным выделятся: диапазоны «0-9», «A-Z» и метасимволы, обозначающие диапазоны, например, «\d» или «\w». -->
 			<dict>
 				<key>scope</key>

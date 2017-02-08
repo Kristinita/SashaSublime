@@ -1,6 +1,6 @@
 // @Author: Kristinita
 // @Date:   2017-02-06 18:01:23
-// @Last Modified time: 2017-02-08 14:18:40
+// @Last Modified time: 2017-02-08 14:58:48
 /*
 	________             ______        ________      ______ __________
 	__  ___/_____ __________  /_______ __  ___/___  ____  /____  /__(_)______ ________
@@ -10,6 +10,9 @@
 
 */
 [
+	////////////////
+	// Scrollbars //
+	////////////////
 	// Полосы прокрутки
 	{
 		"class": "scroll_bar_control",
@@ -60,13 +63,15 @@
 		"attributes": ["horizontal", "dark"],
 		"layer0.texture": "Theme - Default/overlay_dark_thumb_horizontal.png"
 	},
-
 	// Квадрат между полосами прокрутки (сделал таким же, как и сами полосы)
 	{
 		"class": "scroll_corner_control",
 		"layer1.tint": [0, 38, 23],
 		"layer1.opacity": 1.0
 	},
+	//////////////////
+	// Autocomplete //
+	//////////////////
 	// Бэкграунд всплывающих подсказок
 	{
 		"class": "table_row",
@@ -81,6 +86,9 @@
 		"selected_fg": [250, 128, 114, 255],
 		"selected_match_fg": [220, 20, 60, 255]
 	},
+	////////////
+	// Arrows //
+	////////////
 	// Стрелка в правом верхнем углу
 	{
 		"class": "show_tabs_dropdown_button",
@@ -135,6 +143,9 @@
 		"layer1.tint": [0, 206, 209, 255],
 		"layer1.texture": "SashaSublime/icons/arrows/arrow_down_over.png"
 	},
+	/////////////
+	// Sidebar //
+	/////////////
 	// Стрелки в сайдбаре
 	{
 		"class": "disclosure_button_control",
@@ -192,9 +203,13 @@
 		"class": "sidebar_label",
 		"parents": [{ "class": "tree_row", "attributes": ["selected"] }],
 		"color": [128, 0, 128, 255],
-		"font.bold": true
+		"font.bold": true,
 		// , "shadow_color": [60, 60, 60], "shadow_offset": [0, 1]
 	},
+	//////////////////
+	// Quick panels //
+	//////////////////
+	// Quick panels — panels in top window
 	// Размеры ячеек выпадающих меню верхних консолей
 	{
 		"class": "quick_panel",
@@ -205,12 +220,6 @@
 		"class": "overlay_control",
 		"layer1.tint": [205, 133, 63],
 		"layer1.opacity": 1.0
-	},
-	// Рамка, обрамляющая форму ввода текста в верхних консолях и панелях Find and Replace
-	{
-		"class": "text_line_control",
-		"layer1.tint": [255, 218, 185],
-		"layer1.opacity": 1
 	},
 	// Текст в выпадающем меню верхних консолей, 3 класса
 	{
@@ -236,18 +245,22 @@
 		"selected_match_fg": [255, 0, 255, 255],
 		"selected_bg": [255, 255, 0, 255]
 	},
+	// Quick panels + Find & Replace panels
+	// Рамка, обрамляющая форму ввода текста в верхних консолях и панелях Find and Replace
+	{
+		"class": "text_line_control",
+		"layer1.tint": [255, 218, 185],
+		"layer1.opacity": 1
+	},
+	/////////////////////////////
+	// Find and Replace panels //
+	/////////////////////////////
 	// Большие кнопки в Find and Replace
 	{
 		"class": "button_control",
 		"min_size": [75, 0],
 		"layer0.opacity": 0.5,
 		"layer1.opacity": 0.9
-	},
-	// Рамка консоли для билдов — Ctrl + B — и формы Find and Replace
-	{
-		"class": "panel_control",
-		"layer1.tint": [0, 206, 209],
-		"layer1.opacity": 1.0
 	},
 	// Текст слов в панели Find and Replace
 	{
@@ -277,6 +290,16 @@
 		"layer0.opacity": 1.0,
 		"layer1.opacity": 1.0
 	},
+	// Find and Replace panels + Build System
+	// Рамка консоли для билдов — Ctrl + B — и формы Find and Replace
+	{
+		"class": "panel_control",
+		"layer1.tint": [0, 206, 209],
+		"layer1.opacity": 1.0
+	},
+	////////////////
+	// Status Bar //
+	////////////////
 	// Текст Статус Бара
 	{
 		"class": "label_control",
@@ -300,7 +323,7 @@
 		"layer1.tint": [255, 0, 0], // цвет границы
 		"layer1.opacity": 1.0,
 		"layer1.draw_center": false, // не рисуем внутреннюю (inner) часть. Расстояние до нее от краев задается через inner_margin
-		"layer1.inner_margin": [20, 0, 0, 0] // размер границы: [слева, сверху, справа, снизу]
+		"layer1.inner_margin": [20, 0, 0, 0], // размер границы: [слева, сверху, справа, снизу]
 	},
 	// Кнопка в левом нижнем углу Статус Бара
 	{
@@ -308,17 +331,26 @@
 		"layer0.tint": [154, 205, 50],
 		"layer0.opacity": 1.0
 	},
+	////////////
+	// Layout //
+	////////////
 	// Layout — сетка, разделяющая 2 или более одновременно открытых файлов
 	{
 		"class": "grid_layout_control",
 		"border_size": 3,
 		"border_color": [238, 130, 238]
 	},
+	/////////////
+	// Minimap //
+	/////////////
 	// Мини-карта документа слева от крайней вертикальной полосы прокрутки
 	{
 		"class": "minimap_control",
 		"viewport_color": [135, 80, 75, 160]
 	},
+	//////////////////
+	// I don't know //
+	//////////////////
 	// (Не определено) Возможно, элемент не поддерживается Sublime Text 3: http://stackoverflow.com/questions/36663238/class-sheet-container-in-sublime-text-3/36667410?noredirect=1#comment61122738_36667410
 	{
 		"class": "sheet_container_control",
@@ -327,6 +359,9 @@
 		"layer1.tint": [255, 0, 0],
 		"layer1.opacity": 1.0
 	},
+	//////////
+	// Tabs //
+	//////////
 	// Бэкграунд для вкладок
 	{
 		"class": "tabset_control",
@@ -366,7 +401,6 @@
 		"layer1.opacity": 1.0,
 		"layer1.texture": "Theme - Default/dark_tabset_background_transparent.png"
 	},
-
 	// Вкладки
 	{
 		"class": "tab_control",
@@ -388,7 +422,6 @@
 		"max_margin_trim": 6,
 		"hit_test_level": 0.4
 	},
-
 	// Tabs (file color overrides)
 	{
 		"class": "tab_control",
@@ -412,7 +445,6 @@
 		"layer2.texture": "Theme - Default/dark_unselected_tab_bg2.png",
 		"layer2.opacity": 1.0
 	},
-
 	// Выбранные вкладки
 	{
 		"class": "tab_control",
@@ -441,7 +473,6 @@
 		"layer2.opacity": 1,
 		"layer0.opacity": 1.0
 	},
-
 	// Текст во вкладках
 	{
 		"class": "tab_label",
@@ -486,7 +517,6 @@
 		"shadow_color": [0, 0, 0, 255],
 		"shadow_offset": [0, -1]
 	},
-
 	{
 		"class": "tab_label",
 		"parents": [{ "class": "tab_control", "attributes": ["file_light"] }],
@@ -624,9 +654,9 @@
 		"layer3.texture": "Theme - Default/light_x.png",
 		"layer3.opacity": 1.0
 	},
-	//
-	// Все параметры ниже скопированы из файла Default.Sublime-Theme
-	//
+	///////////////////////////
+	// Default.sublime-theme //
+	///////////////////////////
 	{
 
 		"class": "label_control",
@@ -868,7 +898,7 @@
 	}, {
 		"class": "sidebar_label",
 		"font.bold": false,
-		"font.italic": false
+		"font.italic": false,
 			// , "shadow_color": [250, 250, 250], "shadow_offset": [0, 0]
 	}, {
 		"class": "sidebar_label",
