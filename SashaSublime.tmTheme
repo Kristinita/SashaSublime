@@ -4,7 +4,7 @@
   'http://www.apple.com/DTDs/PropertyList-1.0.dtd'>
 <!-- @Author: Kristinita -->
 <!-- @Date:   2017-02-06 18:01:23 -->
-<!-- @Last Modified time: 2017-02-08 16:14:50 -->
+<!-- @Last Modified time: 2017-02-09 17:55:34 -->
 <!--
 	  __,                    __,          _
 	 (              /       (         /  //o
@@ -2511,7 +2511,7 @@
 			</dict>
 		</array>
 		<key>uuid</key>
-		<string>4147</string>
+		<string>14995162-6AC1-4AC7-A6D5-A54344107FDC</string>
 		<key>colorSpaceName</key>
 		<string>sRGB</string>
 		<key>semanticClass</key>
