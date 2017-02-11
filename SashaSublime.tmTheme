@@ -4,7 +4,7 @@
   'http://www.apple.com/DTDs/PropertyList-1.0.dtd'>
 <!-- @Author: Kristinita -->
 <!-- @Date:   2017-02-06 18:01:23 -->
-<!-- @Last Modified time: 2017-02-09 17:55:34 -->
+<!-- @Last Modified time: 2017-02-10 19:32:09 -->
 <!--
 	  __,                    __,          _
 	 (              /       (         /  //o
@@ -256,7 +256,7 @@
 					<string>#FC8389</string>
 				</dict>
 			</dict>
-			<!-- True или false -->
+			<!-- Булевы значения: true или false -->
 			<dict>
 				<key>name</key>
 				<string>Built-in constant</string>
@@ -270,6 +270,7 @@
 					<string>#D1C2FF</string>
 				</dict>
 			</dict>
+			<!-- Переменные -->
 			<dict>
 				<key>name</key>
 				<string>Variable</string>
@@ -281,7 +282,7 @@
 					<string>#FA8537</string>
 				</dict>
 			</dict>
-			<!-- HTML: значения атрибутов тегов -->
+			<!-- HTML: строковые значения атрибутов тегов -->
 			<dict>
 				<key>name</key>
 				<string>String</string>
@@ -506,6 +507,17 @@
 					<string>#FFD0D0</string>
 				</dict>
 			</dict>
+			<dict>
+				<key>name</key>
+				<string>Support</string>
+				<key>scope</key>
+				<string>support</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>yellow</string>
+				</dict>
+			</dict>
 			<!-- Mediawiki NG: ошибка или стили в таблицах, записанные через style -->
 			<dict>
 				<key>name</key>
@@ -523,18 +535,7 @@
 				<key>name</key>
 				<string>Number</string>
 				<key>scope</key>
-				<string>text.html.mt source.css.embedded.html punctuation.definition.tag.html</string>
-				<key>settings</key>
-				<dict>
-					<key>foreground</key>
-					<string>yellow</string>
-				</dict>
-			</dict>
-			<dict>
-				<key>name</key>
-				<string>Support</string>
-				<key>scope</key>
-				<string>support</string>
+				<string>text.html source.css.embedded.html punctuation.definition.tag.html</string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
@@ -602,11 +603,12 @@
 					<string>#70E1EB</string>
 				</dict>
 			</dict>
+			<!-- html в <!DOCTYPE html> -->
 			<dict>
 				<key>name</key>
 				<string>Markup DOCTYPE</string>
 				<key>scope</key>
-				<string>meta.tag.sgml.doctype</string>
+				<string>text.html.basic meta.tag.sgml.html meta.tag.sgml.doctype.html</string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
@@ -922,16 +924,30 @@
 			<!-- HTML: угловые скобки у DOCTYPE -->
 			<dict>
 				<key>name</key>
-				<string>HTML: DOCTYPE brackets</string>
+				<string>HTML: DOCTYPE angle brackets</string>
 				<key>scope</key>
-				<string>text.html.basic meta.tag.sgml.html punctuation.definition.tag.html </string>
+				<string>text.html.basic meta.tag.sgml.html punctuation.definition.tag.html</string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
 					<string>red</string>
 				</dict>
 			</dict>
-			<!-- HTML: открывающие и закрывающие скобки тега <style>и прочих тегов, для которых не придумали отдельных scopes -->
+			<!-- HTML: слово DOCTYPE -->
+			<dict>
+				<key>name</key>
+				<string>HTML: DOCTYPE word</string>
+				<key>scope</key>
+				<string>text.html.basic meta.tag.sgml.html meta.tag.sgml.doctype.html entity.name.tag.doctype.html</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>bold</string>
+					<key>foreground</key>
+					<string>#8FCDFF</string>
+				</dict>
+			</dict>
+			<!-- HTML: открывающие и закрывающие скобки тега <style> и прочих тегов, для которых не придумали отдельных scopes -->
 			<dict>
 				<key>name</key>
 				<string>HTML: brackets of other tags</string>
@@ -941,6 +957,19 @@
 				<dict>
 					<key>foreground</key>
 					<string>yellow</string>
+				</dict>
+			</dict>
+			<!-- HTML: знак равенства в конструкциях вида charset="utf-8" и
+			script type="application/javascript" -->
+			<dict>
+				<key>name</key>
+				<string>HTML: brackets of other tags</string>
+				<key>scope</key>
+				<string>text.html.basic meta.attribute-with-value.html punctuation.separator.key-value.html, text.html.basic  meta.attribute-with-value.html punctuation.separator.key-value.html </string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>lemonchiffon</string>
 				</dict>
 			</dict>
 			<!--=========================
@@ -1286,6 +1315,21 @@
 					<string>orange</string>
 				</dict>
 			</dict>
+			<!-- HTML функция вида $init во встроенном JavaScript -->
+			<!-- Javascript: функция вида $init -->
+			<dict>
+				<key>name</key>
+				<string>HTML: JavaScript $init function, JavaScript: $init function</string>
+				<key>scope</key>
+				<string>text.html.basic source.js.embedded.html meta.function.declaration.js entity.name.function.js</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>bold</string>
+					<key>foreground</key>
+					<string>#fa8537</string>
+				</dict>
+			</dict>
 			<!-- HTML: запятая во встроенном JavaScript после значения параметра -->
 			<!-- JavaScript: запятая после значения параметра -->
 			<dict>
@@ -1338,6 +1382,36 @@
 				<dict>
 					<key>foreground</key>
 					<string>lightgreen</string>
+				</dict>
+			</dict>
+			<!-- HTML: объявление функции в JavaScript -->
+			<!-- JavaScript: объявление функции -->
+			<dict>
+				<key>name</key>
+				<string>HTML: JavaScript function declaration, JavaScript: function declaration</string>
+				<key>scope</key>
+				<string>text.html.basic source.js.embedded.html meta.function.declaration.js storage.type.function.js, source.js.embedded.html meta.function.declaration.js storage.type.function.js </string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>bold</string>
+					<key>foreground</key>
+					<string>red</string>
+				</dict>
+			</dict>
+			<!-- HTML: return в function $init() {return true;} -->
+			<!-- JavaScript: return в function $init() {return true;} -->
+			<dict>
+				<key>name</key>
+				<string>HTML: JavaScript dollar sign, JavaScript: dollar sign</string>
+				<key>scope</key>
+				<string>text.html.basic source.js.embedded.html meta.block.js keyword.control.flow.js, source.js.embedded.html meta.block.js keyword.control.flow.js</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>bold</string>
+					<key>foreground</key>
+					<string>red</string>
 				</dict>
 			</dict>
 			<!--==========================
