@@ -4,7 +4,7 @@
   'http://www.apple.com/DTDs/PropertyList-1.0.dtd'>
 <!-- @Author: Kristinita -->
 <!-- @Date:   2017-02-06 18:01:23 -->
-<!-- @Last Modified time: 2017-02-10 19:32:09 -->
+<!-- @Last Modified time: 2017-02-13 14:55:46 -->
 <!--
 	  __,                    __,          _
 	 (              /       (         /  //o
@@ -204,18 +204,6 @@
 					<string>italic</string>
 					<key>foreground</key>
 					<string>#FFFF7A</string>
-				</dict>
-			</dict>
-			<!-- Отмена общей подсветки бэкграунда для PHP -->
-			<dict>
-				<key>name</key>
-				<string>Embedded source: no PHP files</string>
-				<key>scope</key>
-				<string>text source</string>
-				<key>settings</key>
-				<dict>
-					<key>background</key>
-					<string>#2A211C</string>
 				</dict>
 			</dict>
 			<!-- Общая подсветка фона элементов -->
@@ -2576,11 +2564,26 @@
 				<key>name</key>
 				<string>Jinja2 dot</string>
 				<key>scope</key>
-				<string>text.html.jinja2 meta.scope.jinja2.variable punctuation.other.jinja2 </string>
+				<string>text.html.jinja2 punctuation.other.jinja2 </string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>mistyrose</string>
+				</dict>
+			</dict>
+			<!--=========================
+			=            PHP            =
+			==========================-->
+			<!-- Отмена общей подсветки бэкграунда для PHP -->
+			<dict>
+				<key>name</key>
+				<string>Embedded source: no PHP files</string>
+				<key>scope</key>
+				<string>text source</string>
 				<key>settings</key>
 				<dict>
 					<key>background</key>
-					<string>red</string>
+					<string>#2A211C</string>
 				</dict>
 			</dict>
 		</array>
