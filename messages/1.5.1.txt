@@ -1,0 +1,2 @@
++ [Add] Preferences.sublime-settings file, which add settings, if they do not exist
++ [Fixed] Color scheme path bug
