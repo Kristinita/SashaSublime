@@ -4,7 +4,7 @@
   'http://www.apple.com/DTDs/PropertyList-1.0.dtd'>
 <!-- @Author: Kristinita -->
 <!-- @Date:   2017-02-06 18:01:23 -->
-<!-- @Last Modified time: 2017-02-13 14:55:46 -->
+<!-- @Last Modified time: 2017-02-15 11:00:32 -->
 <!--
 	  __,                    __,          _
 	 (              /       (         /  //o
@@ -39,7 +39,7 @@
 					<!-- «Канавка», в которой содержатся номера строк -->
 					<key>gutter</key>
 					<string>darkslategray</string>
-					<!-- Один параметр для двух значений: 1) Каретка, 2) Текст, найденный при помощи Find and Replace, если курсор находится совсем в другом месте. Допустим, нашёл слово «key», а пишешь в совсем другом месте. «key» тогда обведётся оранжевым прямоугольником с закруглёнными краями. -->
+					<!-- Один параметр для двух значений: 1) Каретка, 2) Текст, найденный при помощи Find and Replace, если курсор находится совсем в другом месте. Допустим, нашёл слово «key», а пишешь в совсем другом месте. «key» тогда обведётся оранжевым прямоугольником с закруглёнными краями. См. багрепорт — https://github.com/SublimeTextIssues/Core/issues/1593 . -->
 					<key>caret</key>
 					<string>darkorange</string>
 					<!-- Линия, на которой располагается каретка -->
@@ -958,6 +958,18 @@
 				<dict>
 					<key>foreground</key>
 					<string>lemonchiffon</string>
+				</dict>
+			</dict>
+			<!-- HTML: собственные теги -->
+			<dict>
+				<key>name</key>
+				<string>HTML: user tags</string>
+				<key>scope</key>
+				<string>text.html.basic meta.tag.other.html entity.name.tag.other.html</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>yellowgreen</string>
 				</dict>
 			</dict>
 			<!--=========================

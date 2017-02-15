@@ -1,0 +1,3 @@
++ [Add] Unit tests for HTML syntax,
++ [Add] Decoration in theme and color scheme files,
++ [Fixed] Many minor bugs.

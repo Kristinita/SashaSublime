@@ -2,7 +2,7 @@
 	"always_show_minimap_viewport": true,
 	"bold_folder_labels": true,
 	"caret_style": "wide",
-	"color_scheme": "Packages/User/SashaSublime.tmTheme",
+	"color_scheme": "Packages/SashaSublime/SashaSublime.tmTheme",
 	"draw_indent_guides": false,
 	"draw_minimap_border": true,
 	"fade_fold_buttons": false,
@@ -25,5 +25,5 @@
 	"match_tags": false,
 	"menu_visible": true,
 	"show_encoding": true,
-	"theme": "SashaSublime.sublime-theme",
+	"theme": "SashaSublime.sublime-theme"
 }
