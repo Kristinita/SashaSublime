@@ -1,2 +1,3 @@
 + [Add] Preferences.sublime-settings file, which add settings, if do not exist,
 + [Fixed] Color scheme path bug.
++ [Fixed] SublimeLinter custom gutter theme bug

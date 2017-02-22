@@ -4,7 +4,7 @@
   'http://www.apple.com/DTDs/PropertyList-1.0.dtd'>
 <!-- @Author: Kristinita -->
 <!-- @Date:   2017-02-06 18:01:23 -->
-<!-- @Last Modified time: 2017-02-21 14:45:51 -->
+<!-- @Last Modified time: 2017-02-21 14:54:49 -->
 <!--
 	  __,                    __,          _
 	 (              /       (         /  //o
@@ -1956,7 +1956,7 @@
 			<!--===================================
 			=            SublimeLinter            =
 			====================================-->
-			<!-- SublimeLinter: круг, показывающий плохие привычки -->
+			<!-- SublimeLinter: круг, показывающий плохие привычки в gutter-theme по умолчанию -->
 			<dict>
 				<key>name</key>
 				<string>SublimeLinter: Warning</string>
@@ -1970,7 +1970,7 @@
 			</dict>
 			<!-- SublimeLinter: цвет иконок, если gutter-theme не дефолтная. различать цвета warning и error не получается, см. багрепорт https://github.com/SublimeLinter/SublimeLinter3/issues/544 . Поэтому закомментировал. -->
 			<!-- 			<dict><key>name</key><string>SublimeLinter: Gutter Mark</string><key>scope</key><string>sublimelinter.gutter-mark</string><key>settings</key><dict><key>foreground</key><string>green</string></dict></dict>-->
-			<!-- SublimeLinter: круг, показывающий ошибки -->
+			<!-- SublimeLinter: круг, показывающий ошибки в gutter-theme по умолчанию -->
 			<dict>
 				<key>name</key>
 				<string>SublimeLinter: Error</string>
