@@ -1,0 +1,14 @@
+[
+    {
+        "caption": "SashaSublime: Report SashaSublime issue",
+        "command": "sasha_sublime_issues"
+    },
+    {
+    	"caption": "SashaSublime: Transfer SashaSublime Preferences",
+    	"command": "transfer_sasha_sublime_preferences"
+    },
+    {
+    	"caption": "SashaSublime: Open Package Description",
+    	"command": "sasha_sublime_open_description"
+    }
+]

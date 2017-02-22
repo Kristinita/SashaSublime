@@ -1,0 +1,7 @@
++ [Add] Preferences.sublime-settings file, which add settings, if do not exist,
++ [Add] Suggestion to rewritten preferences, thanks @r-stein,
++ [Add] Commands to command palette and menu bar,
++ [Fixed] Color scheme path bug,
++ [Fixed] SublimeLinter custom gutter theme bug,
++ [Fixed] Valid semver tag bug, thanks @wbond and @FichteFoll,
++ [Fixed] Delete unexpected files.

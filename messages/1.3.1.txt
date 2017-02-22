@@ -1,2 +1,0 @@
-+ Fixed messages.json bug
-+ Add link to SashaSublime page in command palette
