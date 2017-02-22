@@ -8,11 +8,11 @@
 	☐	 Add bad visible of others themes,
 	☐	 Add «Why SashaSublime?»,
 	☐	 Parsed messages.json error,
-  ☐ Add in known issues error — https://github.com/SublimeTextIssues/Core/issues/1593
+  ☐ Add in known issues error — https://github.com/SublimeTextIssues/Core/issues/1593 ,
   ☐ Add more about change icon,
   ☐ Refactoring: more default values in tmTheme,
   ☐ Add, how to change Sublime Text icon,
-  ☐ Add about Preferences.sublime-settings and view.settings().get('$setting$'), https://forum.sublimetext.com/t/question-is-it-possible-to-rewrite-user-preferences-sublime-settings-file/26100/3?u=sasha_chernykh , http://docs.sublimetext.info/en/latest/customization/settings.html#the-settings-hierarchy
+  ☐ Add about Preferences.sublime-settings and view.settings().get('$setting$'), https://forum.sublimetext.com/t/question-is-it-possible-to-rewrite-user-preferences-sublime-settings-file/26100/3?u=sasha_chernykh , http://docs.sublimetext.info/en/latest/customization/settings.html#the-settings-hierarchy ,
   ☐ Add about Switch settings,
   ☐ Add, how install developer versions,
   ☐ Add link to this TODO file,
