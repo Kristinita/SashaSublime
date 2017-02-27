@@ -4,7 +4,7 @@
   'http://www.apple.com/DTDs/PropertyList-1.0.dtd'>
 <!-- @Author: Kristinita -->
 <!-- @Date:   2017-02-06 18:01:23 -->
-<!-- @Last Modified time: 2017-02-21 14:54:49 -->
+<!-- @Last Modified time: 2017-02-27 09:26:19 -->
 <!--
 	  __,                    __,          _
 	 (              /       (         /  //o
@@ -2424,6 +2424,33 @@
 					<string>tomato</string>
 				</dict>
 			</dict>
+			<!--==================================
+			=            RawLineEdit            =
+			===================================-->
+			<!-- RawLineEdit: символ переноса строки — CR -->
+			<dict>
+				<key>name</key>
+				<string>Raw New Line: Carriage Return</string>
+				<key>scope</key>
+				<string>glyph.carriage-return</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#66CCCC</string>
+				</dict>
+			</dict>
+			<!-- RawLineEdit: символ окончания строки — ¬ -->
+			<dict>
+				<key>name</key>
+				<string>Raw New Line: New Line Glyph</string>
+				<key>scope</key>
+				<string>glyph.new-line</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#F2777A</string>
+				</dict>
+			</dict>
 			<!--================================
 			=            DrCalendar            =
 			=================================-->
@@ -2511,6 +2538,45 @@
 				<dict>
 					<key>foreground</key>
 					<string>pink</string>
+				</dict>
+			</dict>
+			<!--=============================
+			=            Python IDE         =
+			==============================-->
+			<!-- Python IDE: иконка предупреждения  -->
+			<dict>
+				<key>name</key>
+				<string>SublimePythonIDE Warning</string>
+				<key>scope</key>
+				<string>sublimepythonide.mark.warning</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#EDBA00</string>
+				</dict>
+			</dict>
+			<!-- Python IDE: пока не знаю, что означает -->
+			<dict>
+				<key>name</key>
+				<string>SublimePythonIDE Gutter Mark</string>
+				<key>scope</key>
+				<string>sublimepythonide.gutter-mark</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#FFFFFF</string>
+				</dict>
+			</dict>
+			<!-- Python IDE: иконка ошибки -->
+			<dict>
+				<key>name</key>
+				<string>SublimePythonIDE Error</string>
+				<key>scope</key>
+				<string>sublimepythonide.mark.error</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#DA2000</string>
 				</dict>
 			</dict>
 			<!--============================
