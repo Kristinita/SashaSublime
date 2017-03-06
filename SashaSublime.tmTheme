@@ -4,7 +4,7 @@
   'http://www.apple.com/DTDs/PropertyList-1.0.dtd'>
 <!-- @Author: Kristinita -->
 <!-- @Date:   2017-02-06 18:01:23 -->
-<!-- @Last Modified time: 2017-02-27 09:26:19 -->
+<!-- @Last Modified time: 2017-03-06 14:11:31 -->
 <!--
 	  __,                    __,          _
 	 (              /       (         /  //o
@@ -2578,20 +2578,97 @@
 					<key>foreground</key>
 					<string>#DA2000</string>
 				</dict>
+			<!--================================
+			=            Flake8Lint            =
+			=================================-->
+			<!-- Flake8Lint: иконка ошибки -->
 			</dict>
-			<!--============================
-			=            Python            =
-			=============================-->
-			<!-- Python: подсветка бэкграунда -->
 			<dict>
 				<key>name</key>
-				<string>Python background</string>
+				<string>Python Flake8 Lint Error</string>
+				<key>scope</key>
+				<string>flake8lint.mark.error</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#DA2000</string>
+				</dict>
+			</dict>
+			<!-- Flake8Lint: пока не знаю, что означает -->
+			<dict>
+				<key>name</key>
+				<string>Python Flake8 Lint Gutter Mark</string>
+				<key>scope</key>
+				<string>flake8lint.mark.gutter</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#FFFFFF</string>
+				</dict>
+			</dict>
+			<!-- Flake8Lint: иконка критической ошибки -->
+			<dict>
+				<key>name</key>
+				<string>Python Flake8 Lint Critical</string>
+				<key>scope</key>
+				<string>flake8lint.mark.critical</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#981600</string>
+				</dict>
+			</dict>
+			<!-- Flake8Lint: иконка предупреждения -->
+			<dict>
+				<key>name</key>
+				<string>Python Flake8 Lint Warning</string>
+				<key>scope</key>
+				<string>flake8lint.mark.warning</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#EDBA00</string>
+				</dict>
+			</dict>
+			<!--====================================
+			=            PythonImproved            =
+			=====================================-->
+			<!-- PythonImproved: подсветка бэкграунда -->
+			<dict>
+				<key>name</key>
+				<string>PythonImproved: background</string>
 				<key>scope</key>
 				<string>source.python</string>
 				<key>settings</key>
 				<dict>
 					<key>background</key>
 					<string>saddlebrown</string>
+				</dict>
+			</dict>
+			<!-- PythonImproved: переменные -->
+			<dict>
+				<key>name</key>
+				<string>PythonImproved: variables</string>
+				<key>scope</key>
+				<string>source.python meta.identifier.python</string>
+				<key>settings</key>
+				<dict>
+					<key>background</key>
+					<string>#D13EDE</string>
+				</dict>
+			</dict>
+			<!-- PythonImproved: docstrings -->
+			<dict>
+				<key>name</key>
+				<string>PythonImproved: docstrings</string>
+				<key>scope</key>
+				<string>source.python comment.block.python string.quoted.double.block.python</string>
+				<key>settings</key>
+				<dict>
+					<key>background</key>
+					<string>#DC143C55</string>
+					<key>foreground</key>
+					<string>#ffdab9</string>
 				</dict>
 			</dict>
 			<!--==========================
