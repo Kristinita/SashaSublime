@@ -1,4 +1,4 @@
-	☐	 Add link to description of plugin in command palette,
+  ✔   Add link to description of plugin in command palette, @done (17-03-14 20:56)
 	☐	 Add RegexPlainTip support,
 	☐	 Change popup style,
 	☐	 Add YUML support,
@@ -18,3 +18,4 @@
   ☐ Add link to this TODO file,
   ☐ Add in description, how rewrite settings,
   ☐ Add version numbers in a messages files,
+  ☐ Correct donate links,
