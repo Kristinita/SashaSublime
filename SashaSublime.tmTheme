@@ -4,7 +4,7 @@
   'http://www.apple.com/DTDs/PropertyList-1.0.dtd'>
 <!-- @Author: Kristinita -->
 <!-- @Date:   2017-02-06 18:01:23 -->
-<!-- @Last Modified time: 2017-04-30 12:35:10 -->
+<!-- @Last Modified time: 2017-05-08 17:50:58 -->
 <!--
 	  __,                    __,          _
 	 (              /       (         /  //o
@@ -2809,6 +2809,19 @@
 					<string>palegoldenrod</string>
 				</dict>
 			</dict>
+			<!-- PythonImproved: переменные в списке. -->
+			<!-- Пример: %s в LOG_FILTER = [(logging.WARN, 'Empty alt attribute for image %s in %s')] -->
+			<dict>
+				<key>name</key>
+				<string>PythonImproved: variables in lists</string>
+				<key>scope</key>
+				<string>source.python meta.structure.list.python meta.structure.list.item.python string.quoted.single.single-line.python constant.other.placeholder.python </string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>indigo</string>
+				</dict>
+			</dict>
 			<!-- PythonImproved: фигурные скобки -->
 			<dict>
 				<key>name</key>
@@ -2960,6 +2973,33 @@
 				<dict>
 					<key>background</key>
 					<string>#2A211C</string>
+				</dict>
+			</dict>
+			<!--=========================
+			=           Stylus          =
+			==========================-->
+			<!-- Stylus: переменные -->
+			<dict>
+				<key>name</key>
+				<string>Stylus: Variables</string>
+				<key>scope</key>
+				<string>source.stylus variable.other.stylus</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#dd18ff</string>
+				</dict>
+			</dict>
+			<!-- Stylus: родительский селектор -->
+			<dict>
+				<key>name</key>
+				<string>Stylus: Parent Selector</string>
+				<key>scope</key>
+				<string>source.stylus meta.selector.stylus variable.language.stylus</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#FD7C6E</string>
 				</dict>
 			</dict>
 		</array>
