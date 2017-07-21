@@ -4,7 +4,7 @@
   'http://www.apple.com/DTDs/PropertyList-1.0.dtd'>
 <!-- @Author: Kristinita -->
 <!-- @Date:   2017-02-06 18:01:23 -->
-<!-- @Last Modified time: 2017-05-08 17:50:58 -->
+<!-- @Last Modified time: 2017-07-21 08:28:30 -->
 <!--
 	  __,                    __,          _
 	 (              /       (         /  //o
@@ -3000,6 +3000,45 @@
 				<dict>
 					<key>foreground</key>
 					<string>#FD7C6E</string>
+				</dict>
+			</dict>
+			<!--======================================
+			=         PersistentRegexHighlight       =
+			=======================================-->
+			<!-- Warm Blue color -->
+			<dict>
+				<key>name</key>
+				<string>Highlight Color Warm Blue</string>
+				<key>scope</key>
+				<string>highlight.color.ADD8E6</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#ADD8E6</string>
+				</dict>
+			</dict>
+			<!-- Misty Rose color -->
+			<dict>
+				<key>name</key>
+				<string>Highlight Color MistyRose</string>
+				<key>scope</key>
+				<string>highlight.color.FFE4E1</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#FFE4E1</string>
+				</dict>
+			</dict>
+			<!-- Green Tea color -->
+			<dict>
+				<key>name</key>
+				<string>Highlight Color Green Tea</string>
+				<key>scope</key>
+				<string>highlight.color.D0F0C0</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#D0F0C0</string>
 				</dict>
 			</dict>
 		</array>
