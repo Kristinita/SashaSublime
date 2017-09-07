@@ -4,7 +4,7 @@
   'http://www.apple.com/DTDs/PropertyList-1.0.dtd'>
 <!-- @Author: Kristinita -->
 <!-- @Date:   2017-02-06 18:01:23 -->
-<!-- @Last Modified time: 2017-07-21 08:28:30 -->
+<!-- @Last Modified time: 2017-09-07 09:26:55 -->
 <!--
 	  __,                    __,          _
 	 (              /       (         /  //o
@@ -3039,6 +3039,18 @@
 				<dict>
 					<key>foreground</key>
 					<string>#D0F0C0</string>
+				</dict>
+			</dict>
+			<!-- Orange color -->
+			<dict>
+				<key>name</key>
+				<string>Highlight Color Orange</string>
+				<key>scope</key>
+				<string>highlight.color.FFA500</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#FFA500</string>
 				</dict>
 			</dict>
 		</array>
