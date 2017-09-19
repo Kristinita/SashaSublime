@@ -4,7 +4,7 @@
   'http://www.apple.com/DTDs/PropertyList-1.0.dtd'>
 <!-- @Author: Kristinita -->
 <!-- @Date:   2017-02-06 18:01:23 -->
-<!-- @Last Modified time: 2017-09-19 13:09:46 -->
+<!-- @Last Modified time: 2017-09-19 20:16:18 -->
 <!--
 	  __,                    __,          _
 	 (              /       (         /  //o
@@ -2587,6 +2587,447 @@
 				<dict>
 					<key>background</key>
 					<string>#2A211C</string>
+				</dict>
+			</dict>
+			<!--=========================
+			=           Stylus          =
+			==========================-->
+			<!-- Stylus: переменные -->
+			<dict>
+				<key>name</key>
+				<string>Stylus: Variables</string>
+				<key>scope</key>
+				<string>source.stylus variable.other.stylus</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#dd18ff</string>
+				</dict>
+			</dict>
+			<!-- Stylus: родительский селектор -->
+			<dict>
+				<key>name</key>
+				<string>Stylus: Parent Selector</string>
+				<key>scope</key>
+				<string>source.stylus meta.selector.stylus variable.language.stylus</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#FD7C6E</string>
+				</dict>
+			</dict>
+			<!--======================================
+			=         PersistentRegexHighlight       =
+			=======================================-->
+			<!-- Warm Blue color -->
+			<dict>
+				<key>name</key>
+				<string>Highlight Color Warm Blue</string>
+				<key>scope</key>
+				<string>highlight.color.ADD8E6</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#ADD8E6</string>
+				</dict>
+			</dict>
+			<!-- Misty Rose color -->
+			<dict>
+				<key>name</key>
+				<string>Highlight Color MistyRose</string>
+				<key>scope</key>
+				<string>highlight.color.FFE4E1</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#FFE4E1</string>
+				</dict>
+			</dict>
+			<!-- Green Tea color -->
+			<dict>
+				<key>name</key>
+				<string>Highlight Color Green Tea</string>
+				<key>scope</key>
+				<string>highlight.color.D0F0C0</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#D0F0C0</string>
+				</dict>
+			</dict>
+			<!-- Orange color -->
+			<dict>
+				<key>name</key>
+				<string>Highlight Color Orange</string>
+				<key>scope</key>
+				<string>highlight.color.FFA500</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#FFA500</string>
+				</dict>
+			</dict>
+			<!--====================================
+			=            PythonImproved            =
+			=====================================-->
+			<!-- PythonImproved: подсветка бэкграунда -->
+			<dict>
+				<key>name</key>
+				<string>PythonImproved: background</string>
+				<key>scope</key>
+				<string>source.python</string>
+				<key>settings</key>
+				<dict>
+					<key>background</key>
+					<string>saddlebrown</string>
+				</dict>
+			</dict>
+			<!-- PythonImproved: переменные -->
+			<dict>
+				<key>name</key>
+				<string>PythonImproved: variables</string>
+				<key>scope</key>
+				<string>source.python meta.identifier.python</string>
+				<key>settings</key>
+				<dict>
+					<key>background</key>
+					<string>#D13EDE</string>
+				</dict>
+			</dict>
+			<!-- PythonImproved: имена классов -->
+			<dict>
+				<key>name</key>
+				<string>PythonImproved: class names</string>
+				<key>scope</key>
+				<string>source.python meta.class.python entity.name.type.class.python meta.identifier.python</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#A8CAF5</string>
+					<key>background</key>
+					<string>#2A211C</string>
+					<key>fontStyle</key>
+					<string>bold</string>
+				</dict>
+			</dict>
+			<!-- PythonImproved: docstrings -->
+			<dict>
+				<key>name</key>
+				<string>PythonImproved: docstrings</string>
+				<key>scope</key>
+				<string>source.python comment.block.python string.quoted.double.block.python</string>
+				<key>settings</key>
+				<dict>
+					<key>background</key>
+					<string>#DC143C55</string>
+					<key>foreground</key>
+					<string>#ffdab9</string>
+				</dict>
+			</dict>
+			<!-- PythonImproved: круглые скобки функции — print(sasha) -->
+			<dict>
+				<key>name</key>
+				<string>PythonImproved: round brackets</string>
+				<key>scope</key>
+				<string>source.python meta.function-call.python punctuation.definition.arguments.end.python , source.python meta.function-call.python punctuation.definition.arguments.begin.python </string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>salmon</string>
+				</dict>
+			</dict>
+			<!-- PythonImproved: двоеточие после определения функции — def say_hello(): ) -->
+			<dict>
+				<key>name</key>
+				<string>PythonImproved: colon after function</string>
+				<key>scope</key>
+				<string>source.python meta.function.python punctuation.section.function.begin.python </string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>lightblue</string>
+				</dict>
+			</dict>
+			<!-- PythonImproved: двоеточие между ключом и значением словаря -->
+			<dict>
+				<key>name</key>
+				<string>PythonImproved: colon between key and value</string>
+				<key>scope</key>
+				<string>source.python meta.structure.dictionary.python punctuation.separator.valuepair.dictionary.python </string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>red</string>
+				</dict>
+			</dict>
+			<!-- PythonImproved: запятая в списке и словаре -->
+			<dict>
+				<key>name</key>
+				<string>PythonImproved: comma in list and dictionary</string>
+				<key>scope</key>
+				<string>source.python meta.structure.list.python punctuation.separator.list.python, source.python meta.structure.dictionary.python punctuation.separator.dictionary.python  </string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>darkorange</string>
+				</dict>
+			</dict>
+			<!-- PythonImproved: запятая между параметрами функции -->
+			<dict>
+				<key>name</key>
+				<string>PythonImproved: comma between function parameters</string>
+				<key>scope</key>
+				<string>source.python meta.function-call.python meta.function-call.arguments.python punctuation.separator.parameters.python </string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>green</string>
+				</dict>
+			</dict>
+			<!-- PythonImproved: квадратные скобки списка -->
+			<dict>
+				<key>name</key>
+				<string>PythonImproved: square brackets of list</string>
+				<key>scope</key>
+				<string>source.python meta.structure.list.python punctuation.definition.list.begin.python , source.python meta.structure.list.python punctuation.definition.list.end.python </string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>chartreuse</string>
+				</dict>
+			</dict>
+			<!-- PythonImproved: кавычки элементов списка -->
+			<dict>
+				<key>name</key>
+				<string>PythonImproved: single quotes items of lists</string>
+				<key>scope</key>
+				<string>source.python meta.structure.list.python meta.structure.list.item.python string.quoted.single.single-line.python punctuation.definition.string.begin.python , source.python meta.structure.list.python meta.structure.list.item.python string.quoted.single.single-line.python punctuation.definition.string.end.python </string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>blue</string>
+				</dict>
+			</dict>
+			<!-- PythonImproved: одиночные кавычки ключа и значения списка -->
+			<dict>
+				<key>name</key>
+				<string>PythonImproved: single quotes key and value of list</string>
+				<key>scope</key>
+				<string>source.python meta.structure.dictionary.python meta.structure.dictionary.key.python string.quoted.single.single-line.python punctuation.definition.string.begin.python , source.python meta.structure.dictionary.python meta.structure.dictionary.key.python string.quoted.single.single-line.python punctuation.definition.string.end.python , source.python meta.structure.dictionary.python meta.structure.dictionary.value.python string.quoted.single.single-line.python punctuation.definition.string.begin.python , source.python meta.structure.dictionary.python meta.structure.dictionary.value.python string.quoted.single.single-line.python punctuation.definition.string.end.python </string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>pink</string>
+				</dict>
+			</dict>
+			<!-- PythonImproved: элементы списка -->
+			<dict>
+				<key>name</key>
+				<string>PythonImproved: items of lists</string>
+				<key>scope</key>
+				<string>source.python meta.structure.list.python meta.structure.list.item.python string.quoted.single.single-line.python </string>
+				<key>settings</key>
+				<dict>
+					<key>background</key>
+					<string>lightcoral</string>
+					<key>foreground</key>
+					<string>palegoldenrod</string>
+				</dict>
+			</dict>
+			<!-- PythonImproved: переменные в списке. -->
+			<!-- Пример: %s в LOG_FILTER = [(logging.WARN, 'Empty alt attribute for image %s in %s')] -->
+			<dict>
+				<key>name</key>
+				<string>PythonImproved: variables in lists</string>
+				<key>scope</key>
+				<string>source.python meta.structure.list.python meta.structure.list.item.python string.quoted.single.single-line.python constant.other.placeholder.python </string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>indigo</string>
+				</dict>
+			</dict>
+			<!-- PythonImproved: фигурные скобки -->
+			<dict>
+				<key>name</key>
+				<string>PythonImproved: braces of dictionaries</string>
+				<key>scope</key>
+				<string>source.python meta.structure.dictionary.python punctuation.definition.dictionary.begin.python , source.python meta.structure.dictionary.python punctuation.definition.dictionary.end.python </string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>lightskyblue</string>
+				</dict>
+			</dict>
+			<!-- PythonImproved: ключ словаря -->
+			<dict>
+				<key>name</key>
+				<string>PythonImproved: dictionary key</string>
+				<key>scope</key>
+				<string>source.python meta.structure.dictionary.python meta.structure.dictionary.key.python string.quoted.single.single-line.python </string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>italic</string>
+					<key>foreground</key>
+					<string>lightblue</string>
+				</dict>
+			</dict>
+			<!-- PythonImproved: значение ключа словаря -->
+			<dict>
+				<key>name</key>
+				<string>PythonImproved: value of dictionary key</string>
+				<key>scope</key>
+				<string>source.python meta.structure.dictionary.python meta.structure.dictionary.value.python string.quoted.single.single-line.python </string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>italic</string>
+					<key>foreground</key>
+					<string>orange</string>
+				</dict>
+			</dict>
+			<!-- PythonImproved: значение ключа словаря в списке -->
+			<!-- Пример: SashaDeadlink в DEADLINK_OPTS = { 'classes': ['SashaDeadlink'] }-->
+			<dict>
+				<key>name</key>
+				<string>PythonImproved: value of dictionary key in list</string>
+				<key>scope</key>
+				<string>source.python meta.structure.dictionary.python meta.structure.dictionary.value.python meta.structure.list.python meta.structure.list.item.python string.quoted.single.single-line.python </string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>italic</string>
+					<key>foreground</key>
+					<string>palegoldenrod</string>
+				</dict>
+			</dict>
+			<!-- PythonImproved: вложенные круглые скобки — int(input('Саша Святая: ')) -->
+			<dict>
+				<key>name</key>
+				<string>PythonImproved: nested method round brackets</string>
+				<key>scope</key>
+				<string>source.python meta.function-call.python meta.function-call.arguments.python meta.function-call.python punctuation.definition.arguments.begin.python , source.python meta.function-call.python meta.function-call.arguments.python meta.function-call.python punctuation.definition.arguments.end.python </string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>limegreen</string>
+				</dict>
+			</dict>
+			<!-- PythonImproved: вложенные функции -->
+			<dict>
+				<key>name</key>
+				<string>PythonImproved: nested functions</string>
+				<key>scope</key>
+				<string>source.python meta.function-call.python meta.function-call.arguments.python meta.function-call.python support.function.builtin.call.python </string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>yellow</string>
+				</dict>
+			</dict>
+			<!-- PythonImproved: вызов функции print_max() -->
+			<dict>
+				<key>name</key>
+				<string>PythonImproved: call function</string>
+				<key>scope</key>
+				<string>source.python meta.function-call.python meta.function-call.generic.python </string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>pink</string>
+					<key>fontStyle</key>
+					<string>italic</string>
+				</dict>
+			</dict>
+			<!--=============================
+			=            Python IDE         =
+			==============================-->
+			<!-- Python IDE: иконка предупреждения  -->
+			<dict>
+				<key>name</key>
+				<string>SublimePythonIDE Warning</string>
+				<key>scope</key>
+				<string>sublimepythonide.mark.warning</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#EDBA00</string>
+				</dict>
+			</dict>
+			<!-- Python IDE: пока не знаю, что означает -->
+			<dict>
+				<key>name</key>
+				<string>SublimePythonIDE Gutter Mark</string>
+				<key>scope</key>
+				<string>sublimepythonide.gutter-mark</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#FFFFFF</string>
+				</dict>
+			</dict>
+			<!-- Python IDE: иконка ошибки -->
+			<dict>
+				<key>name</key>
+				<string>SublimePythonIDE Error</string>
+				<key>scope</key>
+				<string>sublimepythonide.mark.error</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#DA2000</string>
+				</dict>
+			</dict>
+			<!--================================
+			=            Flake8Lint            =
+			=================================-->
+			<!-- Flake8Lint: иконка ошибки -->
+			<dict>
+				<key>name</key>
+				<string>Python Flake8 Lint Error</string>
+				<key>scope</key>
+				<string>flake8lint.mark.error</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#DA2000</string>
+				</dict>
+			</dict>
+			<!-- Flake8Lint: пока не знаю, что означает -->
+			<dict>
+				<key>name</key>
+				<string>Python Flake8 Lint Gutter Mark</string>
+				<key>scope</key>
+				<string>flake8lint.mark.gutter</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#FFFFFF</string>
+				</dict>
+			</dict>
+			<!-- Flake8Lint: иконка критической ошибки -->
+			<dict>
+				<key>name</key>
+				<string>Python Flake8 Lint Critical</string>
+				<key>scope</key>
+				<string>flake8lint.mark.critical</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#981600</string>
+				</dict>
+			</dict>
+			<!-- Flake8Lint: иконка предупреждения -->
+			<dict>
+				<key>name</key>
+				<string>Python Flake8 Lint Warning</string>
+				<key>scope</key>
+				<string>flake8lint.mark.warning</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#EDBA00</string>
 				</dict>
 			</dict>
 		</array>
