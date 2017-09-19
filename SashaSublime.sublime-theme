@@ -1,6 +1,6 @@
 // @Author: Kristinita
 // @Date:   2017-02-06 18:01:23
-// @Last Modified time: 2017-09-19 10:10:11
+// @Last Modified time: 2017-09-19 12:02:27
 /*
 	________             ______        ________      ______ __________
 	__  ___/_____ __________  /_______ __  ___/___  ____  /____  /__(_)______ ________
@@ -112,7 +112,7 @@
 		"class": "scroll_tabs_left_button",
 		"attributes": ["hover"],
 		"layer0.opacity": 0.5,
-		"layer1.opacity": 0.8
+		"layer0.opacity": 0.8
 	}, {
 		"class": "scroll_tabs_right_button",
 		"layer0.texture": "SashaSublime/icons/arrows/arrow_right.png",
@@ -122,7 +122,7 @@
 		"class": "scroll_tabs_right_button",
 		"attributes": ["hover"],
 		"layer0.opacity": 0.5,
-		"layer1.opacity": 0.8
+		"layer0.opacity": 0.8
 	},
 	// Стрелки рядом с номерами строк
 	{
@@ -313,7 +313,7 @@
 		"layer1.tint": [51, 0, 0, 255],
 		"layer1.opacity": 1
 	},
-	// Миниимальная ширина Status Button — кнопок в правой части Status Bar
+	// Минимальная ширина Status Button — кнопок в правой части Status Bar
 	{
 		"class": "status_button",
 		"min_size": [30, 0]
@@ -323,7 +323,7 @@
 		"class": "status_button",
 		"layer1.tint": [255, 0, 0], // цвет границы
 		"layer1.opacity": 1.0,
-		"layer1.draw_center": false, // не рисуем внутреннюю (inner) часть. Расстояние до нее от краев задается через inner_margin
+		"layer1.draw_center": false, // не рисуем внутреннюю (inner) часть. Расстояние до неё от краёв задаётся через inner_margin
 		"layer1.inner_margin": [20, 0, 0, 0], // размер границы: [слева, сверху, справа, снизу]
 	},
 	// Кнопка в левом нижнем углу Статус Бара
