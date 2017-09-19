@@ -1,6 +1,6 @@
 // @Author: Kristinita
 // @Date:   2017-02-06 18:01:23
-// @Last Modified time: 2017-04-13 20:06:49
+// @Last Modified time: 2017-09-19 10:10:11
 /*
 	________             ______        ________      ______ __________
 	__  ___/_____ __________  /_______ __  ___/___  ____  /____  /__(_)______ ________
@@ -90,11 +90,12 @@
 	// Arrows //
 	////////////
 	// Стрелка в правом верхнем углу
+	// Fix by Keith Hall — https://github.com/SublimeTextIssues/Core/issues/1931#issuecomment-330449379
 	{
 		"class": "show_tabs_dropdown_button",
-		"layer1.texture": "SashaSublime/icons/arrows/arrow_down.png",
-		"layer1.tint": [240, 128, 128, 255],
-		"layer1.opacity": 1.0
+		"layer0.texture": "SashaSublime/icons/arrows/arrow_down.png",
+		"layer0.tint": [240, 128, 128, 255],
+		"layer0.opacity": 1.0
 	}, {
 		"class": "show_tabs_dropdown_button",
 		"attributes": ["hover"],
@@ -104,9 +105,9 @@
 	// Стрелки полосы прокрутки
 	{
 		"class": "scroll_tabs_left_button",
-		"layer1.texture": "SashaSublime/icons/arrows/arrow_left.png",
-		"layer1.tint": [104, 226, 150],
-		"layer1.opacity": 1.0
+		"layer0.texture": "SashaSublime/icons/arrows/arrow_left.png",
+		"layer0.tint": [104, 226, 150],
+		"layer0.opacity": 1.0
 	}, {
 		"class": "scroll_tabs_left_button",
 		"attributes": ["hover"],
@@ -114,9 +115,9 @@
 		"layer1.opacity": 0.8
 	}, {
 		"class": "scroll_tabs_right_button",
-		"layer1.texture": "SashaSublime/icons/arrows/arrow_right.png",
-		"layer1.tint": [104, 226, 150],
-		"layer1.opacity": 1.0
+		"layer0.texture": "SashaSublime/icons/arrows/arrow_right.png",
+		"layer0.tint": [104, 226, 150],
+		"layer0.opacity": 1.0
 	}, {
 		"class": "scroll_tabs_right_button",
 		"attributes": ["hover"],
