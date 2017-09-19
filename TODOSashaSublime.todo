@@ -1,4 +1,4 @@
-	☐	 Add link to description of plugin in command palette,
+  ✔   Add link to description of plugin in command palette, @done (17-03-14 20:56)
 	☐	 Add RegexPlainTip support,
 	☐	 Change popup style,
 	☐	 Add YUML support,
@@ -12,8 +12,10 @@
   ☐ Add more about change icon,
   ☐ Refactoring: more default values in tmTheme,
   ☐ Add, how to change Sublime Text icon,
-  ☐ Add about Preferences.sublime-settings and view.settings().get('$setting$'), https://forum.sublimetext.com/t/question-is-it-possible-to-rewrite-user-preferences-sublime-settings-file/26100/3?u=sasha_chernykh , http://docs.sublimetext.info/en/latest/customization/settings.html#the-settings-hierarchy ,
+  ✔ Add about Preferences.sublime-settings and view.settings().get('$setting$'), https://forum.sublimetext.com/t/question-is-it-possible-to-rewrite-user-preferences-sublime-settings-file/26100/3?u=sasha_chernykh , http://docs.sublimetext.info/en/latest/customization/settings.html#the-settings-hierarchy , @done (17-02-22 21:50)
   ☐ Add about Switch settings,
   ☐ Add, how install developer versions,
   ☐ Add link to this TODO file,
   ☐ Add in description, how rewrite settings,
+  ☐ Add version numbers in a messages files,
+  ☐ Correct donate links,

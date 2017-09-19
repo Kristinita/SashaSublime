@@ -1,0 +1,4 @@
++ [Fix] Critical paths to images bug for Build 3143;
++ [Add] RawLineEdit, PythonIDE, PythonImproved, Flake8Lint, Stylus and PersistentRegexHighlight support;
++ [Fix] CoffeeScript and Stylus icons in sidebar;
++ [Add] Build 3143 support.

@@ -1,7 +1,7 @@
-<p align="center"><a href="http://Kristinita.ru/Donate-files/Bitcoin-Redirect"><img src="http://Kristinita.ru/Donate-files/Bitcoin-Donate-button.png"></a>
-<a href="http://Kristinita.ru/Donate-files/Litecoin-Redirect"><img src="http://Kristinita.ru/Donate-files/Litecoin-Donate-button.png"></a>
-<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=W6MP468ZZV66Q"><img src="http://Kristinita.ru/Donate-files/PayPal-Donate-Button-Dollar.png"></a>
-<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=DGT7K29LDD2HQ"><img src="http://Kristinita.ru/Donate-files/PayPal-Donate-Button-Euro.png"></a></p>
+<p align="center"><a href="http://Kristinita.ru/images/donate_files/Bitcoin-HTML-Redirect.html"><img src="http://Kristinita.ru/images/donate_files/Bitcoin-Donate-button.png"></a>
+<a href="http://Kristinita.ru/images/donate_files/Litecoin-HTML-Redirect"><img src="http://Kristinita.ru/images/donate_files/Litecoin-Donate-button.png"></a>
+<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=W6MP468ZZV66Q"><img src="http://Kristinita.ru/images/donate_files/PayPal-Donate-Button-Dollar.png"></a>
+<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=DGT7K29LDD2HQ"><img src="http://Kristinita.ru/images/donate_files/PayPal-Donate-Button-Euro.png"></a></p>
 
 ---
 
