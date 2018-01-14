@@ -1,6 +1,6 @@
 // @Author: Kristinita
 // @Date:   2017-02-06 18:01:23
-// @Last Modified time: 2017-09-19 14:53:28
+// @Last Modified time: 2017-09-22 10:30:55
 /*
 	________             ______        ________      ______ __________
 	__  ___/_____ __________  /_______ __  ___/___  ____  /____  /__(_)______ ________
@@ -100,7 +100,7 @@
 		"class": "show_tabs_dropdown_button",
 		"attributes": ["hover"],
 		"layer0.opacity": 0.5,
-		"layer1.opacity": 0.8
+		"layer0.opacity": 0.8
 	},
 	// Стрелки полосы прокрутки
 	{

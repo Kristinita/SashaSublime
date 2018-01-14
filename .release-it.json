@@ -1,0 +1,9 @@
+{
+  "src": {
+    "tagName": "st3-%s"
+  },
+  "github": {
+    "release": true,
+    "tokenRef": "GITHUB_TOKEN"
+  }
+}
