@@ -4,7 +4,7 @@
   'http://www.apple.com/DTDs/PropertyList-1.0.dtd'>
 <!-- @Author: Kristinita -->
 <!-- @Date:   2017-02-06 18:01:23 -->
-<!-- @Last Modified time: 2017-09-19 20:16:18 -->
+<!-- @Last Modified time: 2018-01-14 09:06:12 -->
 <!--
 	  __,                    __,          _
 	 (              /       (         /  //o
@@ -2699,7 +2699,7 @@
 				<key>name</key>
 				<string>PythonImproved: class names</string>
 				<key>scope</key>
-				<string>source.python meta.class.python entity.name.type.class.python meta.identifier.python</string>
+				<string>source.python meta.class.python entity.name.type.class.python</string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
@@ -2753,7 +2753,7 @@
 				<key>name</key>
 				<string>PythonImproved: colon between key and value</string>
 				<key>scope</key>
-				<string>source.python meta.structure.dictionary.python punctuation.separator.valuepair.dictionary.python </string>
+				<string>source.python punctuation.separator.valuepair.dictionary.python </string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
