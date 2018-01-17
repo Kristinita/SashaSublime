@@ -4,7 +4,7 @@
   'http://www.apple.com/DTDs/PropertyList-1.0.dtd'>
 <!-- @Author: Kristinita -->
 <!-- @Date:   2017-02-06 18:01:23 -->
-<!-- @Last Modified time: 2018-01-14 09:06:12 -->
+<!-- @Last Modified time: 2018-01-17 18:50:36 -->
 <!--
 	  __,                    __,          _
 	 (              /       (         /  //o
@@ -138,6 +138,9 @@
 					4) padding — отступ текста от рамки
 					5) a: color — цвет ссылок
 					6) .error, .deleted: color — текст ошибок
+					7) .anaconda .phantom .violations — color of anaconda violation,
+					by default dark color in dark background, see:
+					https://i.imgur.com/I8Oa0kb.png
 					 -->
 					<key>phantomCss</key>
 					<string><![CDATA[
@@ -162,6 +165,9 @@
 							}
 						body#inline-error div.error a {
 						    background-color: #28071a;
+						}
+						.anaconda .phantom .violations {
+							color: lightblue;
 						}
 					]]></string>
 				</dict>
@@ -2978,6 +2984,81 @@
 					<key>foreground</key>
 					<string>#DA2000</string>
 				</dict>
+			</dict>
+			<!--====================
+			=       Anaconda       =
+			=====================-->
+			<dict>
+			  <key>name</key>
+			  <string>anaconda Error Outline</string>
+			  <key>scope</key>
+			  <string>anaconda.outline.illegal</string>
+			  <key>settings</key>
+			  <dict>
+			      <key>background</key>
+			      <string>#FF4A52</string>
+			      <key>foreground</key>
+			      <string>#FFFFFF</string>
+			  </dict>
+			</dict>
+			<dict>
+			  <key>name</key>
+			  <string>anaconda Error Underline</string>
+			  <key>scope</key>
+			  <string>anaconda.underline.illegal</string>
+			  <key>settings</key>
+			  <dict>
+			      <key>background</key>
+			      <string>#FF0000</string>
+			  </dict>
+			</dict>
+			<dict>
+			  <key>name</key>
+			  <string>anaconda Warning Outline</string>
+			  <key>scope</key>
+			  <string>anaconda.outline.warning</string>
+			  <key>settings</key>
+			  <dict>
+			      <key>background</key>
+			      <string>#DF9400</string>
+			      <key>foreground</key>
+			      <string>#FFFFFF</string>
+			  </dict>
+			</dict>
+			<dict>
+			  <key>name</key>
+			  <string>anaconda Warning Underline</string>
+			  <key>scope</key>
+			  <string>anaconda.underline.warning</string>
+			  <key>settings</key>
+			  <dict>
+			      <key>background</key>
+			      <string>#FF0000</string>
+			  </dict>
+			</dict>
+			<dict>
+			  <key>name</key>
+			  <string>anaconda Violation Outline</string>
+			  <key>scope</key>
+			  <string>anaconda.outline.violation</string>
+			  <key>settings</key>
+			  <dict>
+			      <key>background</key>
+			      <string>#ffffff33</string>
+			      <key>foreground</key>
+			      <string>#FFFFFF</string>
+			  </dict>
+			</dict>
+			<dict>
+			  <key>name</key>
+			  <string>anaconda Violation Underline</string>
+			  <key>scope</key>
+			  <string>anaconda.underline.violation</string>
+			  <key>settings</key>
+			  <dict>
+			      <key>background</key>
+			      <string>#FF0000</string>
+			  </dict>
 			</dict>
 			<!--================================
 			=            Flake8Lint            =

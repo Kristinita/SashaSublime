@@ -4,6 +4,8 @@
   },
   "github": {
     "release": true,
-    "tokenRef": "GITHUB_TOKEN"
+    "tokenRef": "GITHUB_TOKEN",
+    "export_to_file": true,
+    "export_folder": "messages"
   }
 }
