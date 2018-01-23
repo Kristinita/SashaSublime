@@ -5,6 +5,6 @@
     "release": "release-it"
   },
   "devDependencies": {
-    "release-it": "^4.2.0"
+    "release-it": "^6.1.0"
   }
 }
