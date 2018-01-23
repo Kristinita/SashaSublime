@@ -3,8 +3,5 @@
   "version": "1.7.1",
   "scripts": {
     "release": "release-it"
-  },
-  "devDependencies": {
-    "release-it": "^6.1.0"
   }
 }
