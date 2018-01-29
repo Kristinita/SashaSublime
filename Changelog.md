@@ -1,3 +1,9 @@
+#### 1.7.5 (2018-01-29)
+
+##### Build System / Dependencies
+
+* **release-it:**  Fix .release-it.json ([40783aee](https://github.com/Kristinita/SashaSublime/commit/40783aee5a678d62f4e703248c277c725246f1ea))
+
 #### 1.7.4 (2018-01-29)
 
 ##### Build System / Dependencies
