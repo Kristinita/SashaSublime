@@ -1,5 +1,5 @@
 {
-    "buildCommand": "changelog -f - -u https:\/\/github.com\/Kristinita\/SashaBranchReleaseIt | tee messages\/${version}.txt | cat - Changelog.md > temp && mv temp Changelog.md && sed -i '\/\\\"install\\\": \\\"messages\\\/install\\.txt\\\"\/i\\\"${version}\\\": \\\"messages\\\/${version}\\.txt\\\",' messages.json && js-beautify -r messages.json",
+    "buildCommand": "changelog -f - -u https:\/\/github.com\/Kristinita\/SashaSublime | tee messages\/${version}.txt | cat - Changelog.md > temp && mv temp Changelog.md && sed -i '\/\\\"install\\\": \\\"messages\\\/install\\.txt\\\"\/i\\\"${version}\\\": \\\"messages\\\/${version}\\.txt\\\",' messages.json && js-beautify -r messages.json",
     "changelogCommand": "changelog -f -",
     "github": {
         "release": true,
