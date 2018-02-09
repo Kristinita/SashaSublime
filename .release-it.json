@@ -5,8 +5,11 @@
         "release": true,
         "tokenRef": "GITHUB_TOKEN"
     },
+    "npm": {
+        "publish": false
+    },
     "safeBump": false,
-	"src": {
+    "src": {
         "tagName": "st3-%s"
     }
 }
