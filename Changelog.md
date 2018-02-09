@@ -1,3 +1,19 @@
+#### 1.7.6 (2018-02-09)
+
+##### Build System / Dependencies
+
+* **release-it:**
+  *  Escaping slashes ([4a592ad4](https://github.com/Kristinita/SashaSublime/commit/4a592ad41beb03e557b3c1325f215ad3b86a0d5e))
+  *  Update .release-it.json ([f421b344](https://github.com/Kristinita/SashaSublime/commit/f421b3444aa4721cb4f7d1e32291b1a0fa16051d))
+
+##### Documentation Changes
+
+* **code-of-conduct:**  Add CODE_OF_CONDUCT.md file ([12d970d3](https://github.com/Kristinita/SashaSublime/commit/12d970d38e22c88708dd4b5007017971e71a4fee))
+
+##### Refactors
+
+* **release-it:**  No npm in configuration file ([5a5b2e82](https://github.com/Kristinita/SashaSublime/commit/5a5b2e82eb12b6578927a2822fbf73e9ef287875))
+
 #### 1.7.5 (2018-01-29)
 
 ##### Build System / Dependencies
