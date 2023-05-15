@@ -1,8 +1,8 @@
 Thanks for installing SashaSublime, theme and color scheme for Sublime Text 3, where all elements are good visible!
 
-SashaSublime devoted Empress of the Universe Sasha Chernykh — <https://vk.com/hair_in_the_wind>.
+SashaSublime devoted Empress of the Universe Sasha Chernykh — <https://vk.com/psychologist_kira_k>.
 
-Full description SashaSublime is situated in page <http://kristinita.ru/Sublime-Text/SashaSublime>.
+Full description SashaSublime is situated in page <https://kristinita.netlify.app/Sublime-Text/SashaSublime>.
 
 If you have questions, feature request or bug report, <kbd>Ctrl+Shift+P</kbd> → `SashaSublime: Report SashaSublime Issue` → write your issue.
 

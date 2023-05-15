@@ -6,6 +6,7 @@
 import sublime
 import sublime_plugin
 
+
 class TransferSashaSublimePreferencesCommand(sublime_plugin.WindowCommand):
     def run(self):
         ans = sublime.ok_cancel_dialog(
@@ -19,7 +20,8 @@ class TransferSashaSublimePreferencesCommand(sublime_plugin.WindowCommand):
             return
         # load the settings to transfer
         res = sublime.load_resource(
-            "Packages/SashaSublime/Preferences.sublime-settings")
+            "Packages/SashaSublime/Preferences.sublime-settings"
+        )
         my_settings = sublime.decode_value(res)
         # transfer the settings to the user settings
         user_settings = sublime.load_settings("Preferences.sublime-settings")

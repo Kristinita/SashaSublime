@@ -12,7 +12,7 @@
 		"subpixel_antialias",
 		"directwrite"
 	],
-	"font_size": 18,
+	"font_size": 14,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"line_padding_bottom": 1,

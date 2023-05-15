@@ -4,7 +4,7 @@
   'http://www.apple.com/DTDs/PropertyList-1.0.dtd'>
 <!-- @Author: Kristinita -->
 <!-- @Date:   2017-02-06 18:01:23 -->
-<!-- @Last Modified time: 2018-01-17 18:50:36 -->
+<!-- @Last Modified time: 2023-05-15 17:49:14 -->
 <!--
 	  __,                    __,          _
 	 (              /       (         /  //o
@@ -1118,8 +1118,8 @@
 					<string>bold</string>
 				</dict>
 			</dict>
-			<!-- HTML: во встроенном JavaScript systemLanguage на заглавной — http://Kristinita.ru -->
-			<!-- JavaScript: systemLanguage на заглавной — http://Kristinita.ru -->
+			<!-- HTML: во встроенном JavaScript systemLanguage на заглавной —https://kristinita.netlify.app -->
+			<!-- JavaScript: systemLanguage на заглавной — https://kristinita.netlify.app -->
 			<dict>
 				<key>name</key>
 				<string>HTML: JavaScript systemLanguage, JavaScript: systemLanguage</string>
@@ -2432,6 +2432,232 @@
 				</dict>
 			</dict>
 			<!--================================
+			=            Synercia              =
+			=================================-->
+			<!-- body tag -->
+			<dict>
+				<key>name</key>
+				<string>Synercia: body tag</string>
+				<key>scope</key>
+				<string>body.eric</string>
+				<key>settings</key>
+				<dict>
+					<key>background</key>
+					<!-- [INFO] Mediumturquoise -->
+					<string>#48D1CCAA</string>
+				</dict>
+			</dict>
+			<!-- answer -->
+			<dict>
+				<key>name</key>
+				<string>Synercia: answer</string>
+				<key>scope</key>
+				<string>answer.eric</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>limegreen</string>
+				</dict>
+			</dict>
+			<!-- proof -->
+			<dict>
+				<key>name</key>
+				<string>Synercia: proof</string>
+				<key>scope</key>
+				<string>proof.eric</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>powderblue</string>
+					<key>fontStyle</key>
+					<string>italic</string>
+				</dict>
+			</dict>
+			<!-- info -->
+			<dict>
+				<key>name</key>
+				<string>Synercia: info</string>
+				<key>scope</key>
+				<string>info.eric</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>plum</string>
+					<key>fontStyle</key>
+					<string>italic</string>
+				</dict>
+			</dict>
+			<!-- subst -->
+			<dict>
+				<key>name</key>
+				<string>Synercia: subst</string>
+				<key>scope</key>
+				<string>subst.eric</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>lawngreen</string>
+					<key>fontStyle</key>
+					<string>italic</string>
+				</dict>
+			</dict>
+			<!-- theme -->
+			<dict>
+				<key>name</key>
+				<string>Synercia: theme</string>
+				<key>scope</key>
+				<string>theme.eric</string>
+				<key>settings</key>
+				<dict>
+					<key>background</key>
+					<!-- [INFO] Lightcoral -->
+					<string>#F08080AA</string>
+				</dict>
+			</dict>
+			<!-- wrong -->
+			<dict>
+				<key>name</key>
+				<string>Synercia: wrong</string>
+				<key>scope</key>
+				<string>wrong.eric</string>
+				<key>settings</key>
+				<dict>
+					<key>background</key>
+					<string>#990000</string>
+				</dict>
+			</dict>
+			<!-- tao -->
+			<dict>
+				<key>name</key>
+				<string>Synercia: tao</string>
+				<key>scope</key>
+				<string>tao.eric</string>
+				<key>settings</key>
+				<dict>
+					<key>background</key>
+					<!-- [INFO] Orange -->
+					<string>#FFA500AA</string>
+				</dict>
+			</dict>
+			<!-- reverse -->
+			<dict>
+				<key>name</key>
+				<string>Synercia: reverse</string>
+				<key>scope</key>
+				<string>reverse.eric</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>chocolate</string>
+				</dict>
+			</dict>
+			<!-- head: obligate -->
+			<dict>
+				<key>name</key>
+				<string>Synercia: head obligate</string>
+				<key>scope</key>
+				<string>head.obligate.eric</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>red</string>
+				</dict>
+			</dict>
+			<!-- head: facultative -->
+			<dict>
+				<key>name</key>
+				<string>Synercia: head facultative</string>
+				<key>scope</key>
+				<string>head.examples.eric, head.facultative.eric</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>orange</string>
+				</dict>
+			</dict>
+			<!-- ignore lint -->
+			<dict>
+				<key>name</key>
+				<string>Synercia: head ignore linting</string>
+				<key>scope</key>
+				<string>ignorelint.eric</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>mediumvioletred</string>
+				</dict>
+			</dict>
+			<!-- marginalis -->
+			<dict>
+				<key>name</key>
+				<string>Synercia: marginalis</string>
+				<key>scope</key>
+				<string>help.eric, marginalis.eric</string>
+				<key>settings</key>
+				<dict>
+					<key>background</key>
+					<string>sandybrown</string>
+					<key>foreground</key>
+					<string>firebrick</string>
+					<key>fontStyle</key>
+					<string>italic</string>
+				</dict>
+			</dict>
+			<!-- etymology -->
+			<dict>
+				<key>name</key>
+				<string>Synercia: etymology</string>
+				<key>scope</key>
+				<string>etymology.eric</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>hotpink</string>
+					<key>fontStyle</key>
+					<string>italic</string>
+				</dict>
+			</dict>
+			<!-- hyperlinks -->
+			<dict>
+				<key>name</key>
+				<string>Synercia: hyperlinks</string>
+				<key>scope</key>
+				<string>hyperlink.eric</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>yellowgreen</string>
+				</dict>
+			</dict>
+			<!-- maintenance -->
+			<dict>
+				<key>name</key>
+				<string>Synercia: maintenance</string>
+				<key>scope</key>
+				<string>maintenance.eric</string>
+				<key>settings</key>
+				<dict>
+					<key>background</key>
+					<string>olive</string>
+					<key>fontStyle</key>
+					<string>italic</string>
+				</dict>
+			</dict>
+			<!-- line break -->
+			<dict>
+				<key>name</key>
+				<string>Synercia: line break</string>
+				<key>scope</key>
+				<string>linebreak.eric</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>olive</string>
+					<key>fontStyle</key>
+					<string>italic</string>
+				</dict>
+			</dict>
+			<!--================================
 			=            DrCalendar            =
 			=================================-->
 			<!-- DrCalendar: сегодня -->
@@ -3119,6 +3345,6 @@
 		<key>semanticClass</key>
 		<string>theme.dark.SashaSublime</string>
 		<key>comment</key>
-		<string>SashaSublime — theme and color scheme, where all colors are good visible.</string>
+		<string>SashaSublime — theme and color scheme, where all colors are good visible</string>
 	</dict>
 </plist>

@@ -7,6 +7,8 @@
     <key>settings</key>
     <dict>
       <key>icon</key>
+      <!-- [LICENCE] Handcrafts pack of Freepik:
+      https://www.flaticon.com/free-icon/post-it_2793279?term=note&page=3&position=57 -->
       <string>file_type_note</string>
     </dict>
   </dict>

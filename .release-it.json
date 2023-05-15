@@ -1,15 +1,16 @@
 {
-    "buildCommand": "changelog -f - -u https:\/\/${repo.host}\/${repo.repository} | tee messages\/${version}.txt | cat - Changelog.md > temp && mv temp Changelog.md && sed -i '\/\\\"install\\\": \\\"messages\\\/install\\.txt\\\"\/i\\\"${version}\\\": \\\"messages\\\/${version}\\.txt\\\",' messages.json && js-beautify -r messages.json",
+    "buildCommand": "changelog -f - -u https:\/\/${repo.host}\/${repo.repository} | tee messages\/${version}.txt | cat - CHANGELOG.md > temp && mv temp CHANGELOG.md && sed -i '\/\\\"install\\\": \\\"messages\\\/install\\.txt\\\"\/i\\\"${version}\\\": \\\"messages\\\/${version}\\.txt\\\",' messages.json && js-beautify -r messages.json",
     "changelogCommand": "changelog -f -",
     "github": {
         "release": true,
-        "tokenRef": "GITHUB_TOKEN"
+        "tokenRef": "TOKEN_GITHUB_FOR_RELEASE_IT"
     },
     "npm": {
         "publish": false
     },
     "safeBump": false,
     "src": {
+    	"addUntrackedFiles": true,
         "tagName": "st3-%s"
     }
 }
