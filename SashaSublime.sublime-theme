@@ -1,6 +1,10 @@
-// @Author: Kristinita
-// @Date:   2017-02-06 18:01:23
-// @Last Modified time: 2023-05-15 16:34:57
+/*
+	@Author: Kristinita
+	@Date: 2017-02-06 18:01:23
+	@Last Modified by: Kristinita
+	@Last Modified time: 2025-02-24 10:01:59
+/*
+
 /*
 	________             ______        ________      ______ __________
 	__  ___/_____ __________  /_______ __  ___/___  ____  /____  /__(_)______ ________
@@ -11,10 +15,17 @@
 */
 
 /*
-[INFO] Documentation:
-https://www.sublimetext.com/docs/themes.html#status-bar
+[OVERVIEW] Sublime Text themes:
+https://www.sublimetext.com/docs/themes.html
+
+[INFO] “Default.sublime-theme”:
+https://github.com/twolfson/sublime-files/blob/master/Packages/Theme%20-%20Default/Default.sublime-theme
+User can get the default theme of her/his Sublime Text version use “PackageResourseViewer: Open Resource” →
+“Theme - Default” → “Default.sublime-theme”
 */
+
 [
+
 	////////////////
 	// Scrollbars //
 	////////////////
@@ -100,25 +111,39 @@ https://www.sublimetext.com/docs/themes.html#status-bar
 		"fg": [199, 21, 133],
 		"selected_fg": [250, 128, 114],
 	},
-	{
-		/* [INFO] Symbol to the left of autocomplete:
-		https://i.imgur.com/YnHHNVn.png */
-		"class": "kind_label",
-		/* [REQUIRED] “kind_container”, because “kind_label” used also
-		for Quick panel:
-		https://www.sublimetext.com/docs/themes.html#auto-complete
-		*/
-		"parents": [
-		{
-		    "class": "kind_container"
-		}],
-		/* [INFO] Metallic blue color
 
-		[NOTE] I can’t change background for this element:
-		“no such prop bg when matching kind_label against kind_label”
-		*/
-		"fg": [50, 82, 123],
+	/* [INFO] The container on the left of autocomplete:
+	https://i.imgur.com/sdzz6wh.png */
+	{
+		"class": "kind_container",
+		"layer0.tint": "hotpink",
+		"layer0.opacity": 1.0,
+
+		/* [REQUIRED] This element is also used in the “quick_panel” for Goto Symbol and Goto Symbol in Project.
+		A “parents” key should be used to distinguish the two uses.
+		https://www.sublimetext.com/docs/themes.html#auto-complete */
+		"parents":
+		[
+			{"class": "auto_complete"},
+		]
 	},
+
+	/* [INFO] The symbol inside the container on the left of autocomplete:
+	https://i.imgur.com/LxEkX9Q.png */
+	{
+		"class": "kind_label",
+		"fg": "purple",
+
+		/* [REQUIRED] This element is also used in the “quick_panel” for Goto Symbol and Goto Symbol in Project.
+		A “parents” key should be used to distinguish the two uses.
+		https://www.sublimetext.com/docs/themes.html#auto-complete */
+		"parents":
+		[
+			{"class": "auto_complete"},
+		]
+	},
+
+
 	////////////
 	// Arrows //
 	////////////
@@ -303,6 +328,53 @@ https://www.sublimetext.com/docs/themes.html#status-bar
 		"layer1.tint": [255, 218, 185],
 		"layer1.opacity": 1
 	},
+
+	/* [INFO] “kind_container” — container on the quick panel on the left of quick panel items.
+
+	[PLUGIN] CommandsBrowser → command “commands_browser_plugin_commands_33”:
+	https://i.imgur.com/V4eN8Rk.png */
+	{
+		"class": "kind_container",
+
+		// Extra margin on the left makes the
+		// italic kind_label look visually centered
+		"content_margin": [6, 0, 5, 0],
+
+		/* [INFO] burlywood with opacity */
+		"layer0.tint": [222, 184, 135, 20],
+		"layer0.opacity": 1.0,
+
+		/* [REQUIRED] “This element is also used in auto_complete to show the kind of the item
+		being inserted. A "parents" key should be used to distinguish the two uses.”:
+		https://www.sublimetext.com/docs/themes.html#quick-panel */
+		"parents":
+		[
+			{"class": "quick_panel"},
+		]
+	},
+
+	/* [INFO] “kind_label” — the text inside “kind_container”:
+
+	[PLUGIN] CommandsBrowser → command “commands_browser_plugin_commands_33”:
+	https://i.imgur.com/m97Oksb.png */
+	{
+		"class": "kind_label",
+
+		/* [NOTE][FIXME][ISSUE] Alias “color” doesn’t work for kind_label:
+		https://www.sublimetext.com/docs/themes.html#quick-panel
+		https://www.sublimetext.com/docs/themes.html#font-properties */
+		"fg": "lime",
+		"font.size": 12,
+
+		/* [REQUIRED] “This element is also used in auto_complete to show the kind of the item
+		being inserted. A "parents" key should be used to distinguish the two uses.”:
+		https://www.sublimetext.com/docs/themes.html#quick-panel */
+		"parents":
+		[
+			{"class": "quick_panel"},
+		]
+	},
+
 	/////////////////////////////
 	// Find and Replace panels //
 	/////////////////////////////

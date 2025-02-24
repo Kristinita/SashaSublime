@@ -4,7 +4,7 @@
   'http://www.apple.com/DTDs/PropertyList-1.0.dtd'>
 <!-- @Author: Kristinita -->
 <!-- @Date:   2017-02-06 18:01:23 -->
-<!-- @Last Modified time: 2023-05-15 17:49:14 -->
+<!-- @Last Modified time: 2025-02-24 10:20:13 -->
 <!--
 	  __,                    __,          _
 	 (              /       (         /  //o
@@ -108,6 +108,7 @@
 							{
 								background-color: peru;
 							}
+
 						body
 							{
 								color: mediumvioletred;
@@ -117,14 +118,17 @@
 								margin: 0.2rem;
 								padding: 0.2rem;
 							}
+
 						body#show-definitions
 						    {
-					            font-family: Impact;
-					        }
+					        	font-family: Impact;
+					      	}
+
 						a
 							{
 								color: mediumorchid;
 							}
+
 						p
 							{
 								font-family: Verdana;
@@ -2799,11 +2803,23 @@
 				<key>name</key>
 				<string>Jinja2 dot</string>
 				<key>scope</key>
-				<string>text.html.jinja2 punctuation.other.jinja2 </string>
+				<string>text.html.jinja2 punctuation.other.jinja2</string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
 					<string>mistyrose</string>
+				</dict>
+			</dict>
+			<!-- Теги в Jinja2 -->
+			<dict>
+				<key>name</key>
+				<string>Jinja2 tags</string>
+				<key>scope</key>
+				<string>text.html.jinja2 meta.scope.jinja2.tag</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>crimson</string>
 				</dict>
 			</dict>
 			<!--=========================

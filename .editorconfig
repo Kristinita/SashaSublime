@@ -1,0 +1,62 @@
+################
+# EditorConfig #
+################
+# [OVERVIEW] Define and maintain consistent coding styles between different editors and IDEs:
+# http://editorconfig.org/
+# [NOTE] No linters for linting “.editorconfig” file:
+# https://github.com/editorconfig/editorconfig/issues/345
+
+# [INFO] Apply another .editorconfig for subfolder, that for root folder
+# http://editorconfig.org/#file-format-details
+# root = true
+
+# [INFO] UNIX line endings in “.sh” files:
+# https://stackoverflow.com/a/49050430/5951529
+# Tabs = 4 spaces for CoffeeScript always
+[*]
+indent_style = tab
+indent_size = 4
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+
+# [INFO] ECLint — ignore leading spaces in comments:
+# https://www.npmjs.com/package/eclint#support-for-doc-comments
+# https://www.npmjs.com/package/eclint#block_comment_start
+#
+# [WARNING] Leading spaces doesn't deleted:
+# https://github.com/jedmao/eclint/issues/155
+block_comment_start = /*
+block_comment = *
+block_comment_end = */
+
+
+# [INFO] Markdown support trailing spaces:
+# http://markdown-guide.readthedocs.io/en/latest/basics.html#line-return
+[*.md]
+trim_trailing_whitespace = false
+
+
+# [NOTE] YAML doesn't support tabs:
+# http://yaml.org/faq.html
+# https://stackoverflow.com/a/19976827/5951529
+[*.{prettierc,yaml,yml,yamllint}]
+indent_style = space
+indent_size = 2
+
+
+# [INFO] Read reasons in “.flake8” file:
+# https://github.com/Kristinita/KristinitaPelican/blob/master/.flake8
+[*.py]
+indent_style = space
+
+
+# [INFO] Windows line endings in batch file.
+# If LF, user may have some problems:
+# for me, incorrect output, if unicode symbols in batch comments
+# https://stackoverflow.com/a/38836221/5951529
+# https://serverfault.com/a/429598/351829
+[*.bat]
+end_of_line = crlf

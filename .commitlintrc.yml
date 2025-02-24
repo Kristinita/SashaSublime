@@ -1,0 +1,323 @@
+##############
+# Commitlint #
+##############
+# [OVERVIEW] Lint commit messages for compliance with the Conventional Commits specification:
+# https://commitlint.js.org
+#
+# [INFO] Conventional Commits documentation:
+# https://conventionalcommits.org
+#
+# [OPTIONS]
+# https://commitlint.js.org/#/reference-configuration?id=javascript
+#
+# [RULES]
+# https://commitlint.js.org/#/reference-rules
+#
+#
+# -------
+#
+# [INFO] Structure of the valid commit:
+# https://www.conventionalcommits.org/en/v1.0.0/#summary
+#
+# ```
+# <type>[optional scope]: <description>
+#
+# [optional body]
+#
+# [optional footer(s)]
+# ```
+#
+# [INFO] Default types are taken from Angular convention:
+# https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#type
+#
+# [INFO] “fix” correlates with “PATCH”, “feat” with “MINOR” in Semantic Versioning
+#
+# [INFO] “BREAKING CHANGE” in the footer or “!” after the “type(scope)”
+# correlating with “MAJOR” in Semantic Versioning
+#
+#
+# [NOTE] Commitlint check type and scope solely for the header (first line) of the commit.
+# It considers all subsequent “type(scope)” as body.
+#
+# [EXAMPLE] This example commit valid, because type and scope valid for the first line,
+# Commitlint doesn’t check type an scope of the second and third line; it’s a body lines:
+#
+# ```
+# validtype(validscope): Text
+#
+# nonvalidtype(nonvalidscope): Second text
+#
+# anothernonvalidtype(anothernonvalidscope): Third text
+# ```
+#
+#
+# [INFO] Footer must contain “BREAKING CHANGE:” or valid footers in git trailer format:
+# https://git-scm.com/docs/git-interpret-trailers
+#
+# [NOTE] No list of valid Git trailers:
+# https://stackoverflow.com/q/76959953/5951529
+# https://stackoverflow.com/q/70430983/5951529
+#
+#
+# [NOTE] If the commit is valid, Commitlint doesn’t print the full commit, including the body and footer;
+# When setting up Commitlint commands, users might think that Commitlint solely parsed the header:
+# https://github.com/conventional-changelog/commitlint/issues/3830
+#
+#
+# -------
+#
+# [INFO] 3 methods to validate the last commit.
+#
+#
+# [INFO] 1. Local usage:
+# https://commitlint.js.org/#/?id=test
+#
+# Lint last commit from git history:
+#
+# ```
+# npx commitlint --from=HEAD~1 --verbose
+# ```
+#
+# [NOTE] This method works for local machine, but doesn’t work for CI and simple-git-hooks
+#
+#
+# [INFO] 2. CI usage:
+# https://bit.ly/commitlint-for-every-ci
+#
+# ```
+# git log -1 --pretty=format:\"%s%n%n%b\" | npx commitlint --verbose
+# ```
+#
+# [INFO] “--pretty-format” — format commit messages from log for using them in Commitlint:
+# https://git-scm.com/docs/pretty-formats
+#
+# [INFO]
+# “%s” — “subject”, full first line of the commit
+# “%n” — new line
+# “%b” — “body”, body + footer
+#
+# [INFO] “%s%n%n%b” — correct formatting, that Commitlint successfully works
+#
+# [NOTE] This command works for me for AppVeyor and Travis.
+# Special settings and/or plugins for each CI, as described in the documentation, aren’t required:
+# https://commitlint.js.org/#/guides-ci-setup
+#
+# [INFO] This method works for local and CI usage, but not for git hooks
+#
+#
+# [INFO] 3. Git hooks:
+# https://commitlint.js.org/#/guides-local-setup?id=add-hook
+#
+# ```
+# module.exports = {
+#   "commit-msg": "npx commitlint --edit \"$1\" --verbose"
+# };
+# ```
+#
+# [INFO] After the user writes “git commit …” and presses “Enter” Commitlint lint this commit.
+# If commit is non-valid, it’s not accepted and doesn’t appear to the commit log.
+# The user will be able to make a “git push” solely after adding a valid commit.
+#
+# [INFO] “--edit "$1"” — get commit message from “./.git/COMMIT_EDITMSG”:
+# https://commitlint.js.org/#/reference-cli
+#
+# [INFO] “commit-msg” hook required for linting commits via Commitlint:
+# https://typicode.github.io/husky/getting-started.html#automatic-recommended
+#
+# [INFO] I use simple-git-hooks for managing Git hooks:
+# https://github.com/toplenboren/simple-git-hooks
+#
+# -------
+#
+# [INFO] Commitlint successfully parse commits added in two different ways:
+#
+# 1. “git commit -m "first message" -m "second message" -m "third message" -m "fourth message" --signoff”
+# 2. “git commit --signoff” and write commit body and footer in the preferred text editor
+#
+#
+# [INFO] Probot Commitlint check commits in GitHub pull requests:
+# https://commitlint-probot.wizardtales.com/probot
+# https://github.com/z0al/commitlint-bot
+#
+# [NOTE] Probot Commitlint doesn’t work with commitlint configuration files:
+# https://github.com/ahmed-taj/commitlint-bot/pull/8
+# https://probot.github.io/apps/commitlint/
+
+
+##################################
+# Commitlint config-conventional #
+##################################
+# [INFO] Default rules preset, installed by “npm install --save-dev @commitlint/config-conventional”:
+# https://github.com/conventional-changelog/commitlint/blob/master/%40commitlint/config-conventional/index.js
+#
+# [INFO] Set-up default “config-conventional” preset:
+# https://commitlint.js.org/#/guides-local-setup?id=install-commitlint
+# https://commitlint.js.org/#/reference-configuration?id=javascript
+extends:
+- "@commitlint/config-conventional"
+
+
+# [INFO] 0 — disable, 1 — warning, 2 — error:
+# https://github.com/marionebl/commitlint/blob/master/docs/reference-rules.md#rules
+# https://github.com/SuperPaintman/commitlint-config-pedantic/blob/master/configs/base.yml
+#
+# [INFO] I prefer errors rather than warnings so that CI build exits at every warning
+rules:
+
+  # [NOTE] “body” is the long commit description, which may contain long URL’s.
+  # I think it makes sense to set it to a high value.
+  body-max-length:
+  - 2
+  - always
+  - 250
+
+  # [NOTE] 120 as in Python
+  footer-max-length:
+  - 2
+  - always
+  - 120
+
+  # [NOTE] 120 as in Python
+  header-max-length:
+  - 2
+  - always
+  - 120
+
+  # [INFO] “references” — is issues references in footer as “fix #4147” and “re #4147”:
+  # https://commitlint.js.org/#/reference-prompt?id=questions
+  references-empty:
+  - 0
+
+  # [NOTE] Enforce scope usage.
+  # [EXAMPLE] “git commit -m "feat: Kira Goddess" — non-valid”,
+  # “git commit -m "feat(kirascope): Kira Goddess — valid”
+  scope-empty:
+  - 2
+  - never
+
+  # [NOTE] I set that subject may be written in any case, because many words and objects in programming,
+  # with which I begin my subjects, begin with a small letter
+  subject-case:
+  - 0
+  - always
+
+  # [INFO] Check if specific trailer exists:
+  # https://commitlint.js.org/#/reference-rules?id=trailer-exists
+  # https://git-scm.com/docs/git-interpret-trailers
+  #
+  # [INFO] Sign-off commits:
+  # https://stackoverflow.com/a/14044024/5951529
+  #
+  # I use sign-off commits for reals projects and I don’t use it for demo and debugging repositories
+  #
+  # [INFO] “Sign-off is a requirement for getting patches into the Linux kernel and a few other projects,
+  # but most projects don't actually use it.”:
+  # https://stackoverflow.com/a/1962112/5951529
+  #
+  # [INFO] For sign off commit add “--signoff” or “-s” command to “git commit” command:
+  # https://stackoverflow.com/a/45974435/5951529
+  #
+  #
+  # -------
+  #
+  # [NOTE] “--signoff” print to console real e-mail address.
+  # To hide it for GitHub:
+  #
+  # 1. https://github.com/settings/emails → “Keep my email addresses private” on GitHub —
+  # https://stackoverflow.com/a/71542189/5951529
+  #
+  # 2. https://github.com/settings/emails → Primary email → “Not visible in emails” →
+  # get generated private email — https://stackoverflow.com/posts/comments/121169456
+  #
+  # 3. Set GitHub private e-mail for both, global and local settings —
+  # https://stackoverflow.com/a/51097104/5951529
+  #
+  # git config --global user.email "{username}@users.noreply.github.com"
+  # git config user.email "{username}@users.noreply.github.com"
+  #
+  # [NOTE] Don’t use the syntax "{ID}+{username}@users.noreply.github.com".
+  # Commits in this case are displayed as “Unverified”.
+  # E-mail with {ID} is “Unverified” in GPG keys settings:
+  # https://github.com/orgs/community/discussions/41199
+  # https://i.imgur.com/6svALVn.png
+  #
+  # 4. Check the git configuration, use “git config --list --show-origin --show-scope”:
+  # https://stackoverflow.com/a/2115116/5951529
+  #
+  # 5. Create a new GPG key for GitHub private no-reply e-mail without number ID:
+  # https://docs.github.com/en/authentication/managing-commit-signature-verification/generating-a-new-gpg-key
+  # https://github.com/orgs/community/discussions/41199#discussioncomment-8133113
+  #
+  # 6. Add this new GPG key to GitHub account:
+  # https://docs.github.com/en/authentication/managing-commit-signature-verification/adding-a-gpg-key-to-your-github-account
+  trailer-exists:
+  - 2
+  - always
+  - "Signed-off-by:"
+
+  # [NOTE] I added personal types for my projects.
+  # I think this will help provide more accurate information about the type of changes made.
+  type-enum:
+  - 2
+  - always
+  -
+
+    # [INFO] Default types
+
+    # [INFO] Building tools changes (example scopes: grunt, gulp)
+    - build
+
+    # [INFO] Tool changes, configuration changes,
+    # and changes to things that do not actually go into production at all:
+    # https://stackoverflow.com/a/26944812/5951529
+    - chore
+
+    # [INFO] Changes to our CI configuration files and scripts (example scopes: Travis, Circle, BrowserStack, SauceLabs)
+    - ci
+
+    # [INFO] Documentation only changes
+    - docs
+
+    # [INFO] A new feature
+    - feat
+
+    # [INFO] A bug fix
+    - fix
+
+    # [INFO] A code change that improves performance
+    - perf
+
+    # [INFO] A code change that neither fixes a bug nor adds a feature
+    - refactor
+
+    # [INFO] Reverts a previous commit
+    - revert
+
+    # [INFO] Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc.)
+    # Validation changes — is this type.
+    - style
+
+    # [INFO] Adding missing or correcting existing tests
+    - test
+
+
+    # [INFO] Personal types
+
+    # [INFO] Debugging.
+    - debug
+
+    # [INFO] Delete unneeded
+    - del
+
+    # [INFO] Changes for linters/checkers/validators.
+    # Example scopes — “eslint”, “stylint”
+    - lint
+
+    # [INFO] Migrate from one tool to another
+    - migrate
+
+    # [INFO] Update
+    - upd
+
+    # [INFO] VCS changes (example scopes: bazaar, mercurial, git)
+    - vcs
