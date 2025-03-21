@@ -3,8 +3,9 @@
   PUBLIC '-//Apple Computer//DTD PLIST 1.0//EN'
   'http://www.apple.com/DTDs/PropertyList-1.0.dtd'>
 <!-- @Author: Kristinita -->
-<!-- @Date:   2017-02-06 18:01:23 -->
-<!-- @Last Modified time: 2025-02-24 10:20:13 -->
+<!-- @Date: 2017-02-06 18:01:23 -->
+<!-- @Last Modified by: Kristinita -->
+<!-- @Last Modified time: 2025-03-21 16:06:17 -->
 <!--
 	  __,                    __,          _
 	 (              /       (         /  //o
@@ -1358,7 +1359,7 @@
 			<!-- JavaScript: одинарные кавычки, открывающая и закрывающая -->
 			<dict>
 				<key>name</key>
-				<string>HTML: JavaScript unary quotes, JavaScript: unary quotes</string>
+				<string>HTML: JavaScript single quotes, JavaScript: single quotes</string>
 				<key>scope</key>
 				<string>text.html.basic source.js.embedded.html meta.block.js string.quoted.single.js punctuation.definition.string.begin.js , text.html.basic source.js.embedded.html meta.block.js string.quoted.single.js punctuation.definition.string.end.js , source.js meta.block.js string.quoted.single.js punctuation.definition.string.begin.js , source.js meta.block.js string.quoted.single.js punctuation.definition.string.end.js </string>
 				<key>settings</key>
@@ -2963,7 +2964,7 @@
 				<key>name</key>
 				<string>PythonImproved: docstrings</string>
 				<key>scope</key>
-				<string>source.python comment.block.python string.quoted.double.block.python</string>
+				<string>source.python comment.block.python string.quoted.double.block.python , source.python comment.block.python string.quoted.single.block.python</string>
 				<key>settings</key>
 				<dict>
 					<key>background</key>
@@ -3047,21 +3048,21 @@
 			<!-- PythonImproved: кавычки элементов списка -->
 			<dict>
 				<key>name</key>
-				<string>PythonImproved: single quotes items of lists</string>
+				<string>PythonImproved: double and single quotes for list items</string>
 				<key>scope</key>
-				<string>source.python meta.structure.list.python meta.structure.list.item.python string.quoted.single.single-line.python punctuation.definition.string.begin.python , source.python meta.structure.list.python meta.structure.list.item.python string.quoted.single.single-line.python punctuation.definition.string.end.python </string>
+				<string>source.python meta.structure.list.python meta.structure.list.item.python string.quoted.double.single-line.python punctuation.definition.string.begin.python , source.python meta.structure.list.python meta.structure.list.item.python string.quoted.double.single-line.python punctuation.definition.string.end.python , source.python meta.structure.list.python meta.structure.list.item.python string.quoted.single.single-line.python punctuation.definition.string.begin.python , source.python meta.structure.list.python meta.structure.list.item.python string.quoted.single.single-line.python punctuation.definition.string.end.python</string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
 					<string>blue</string>
 				</dict>
 			</dict>
-			<!-- PythonImproved: одиночные кавычки ключа и значения списка -->
+			<!-- PythonImproved: двойные и одиночные кавычки ключа и значения списка -->
 			<dict>
 				<key>name</key>
-				<string>PythonImproved: single quotes key and value of list</string>
+				<string>PythonImproved: double and single quotes for keys and values of lists</string>
 				<key>scope</key>
-				<string>source.python meta.structure.dictionary.python meta.structure.dictionary.key.python string.quoted.single.single-line.python punctuation.definition.string.begin.python , source.python meta.structure.dictionary.python meta.structure.dictionary.key.python string.quoted.single.single-line.python punctuation.definition.string.end.python , source.python meta.structure.dictionary.python meta.structure.dictionary.value.python string.quoted.single.single-line.python punctuation.definition.string.begin.python , source.python meta.structure.dictionary.python meta.structure.dictionary.value.python string.quoted.single.single-line.python punctuation.definition.string.end.python </string>
+				<string>source.python meta.structure.dictionary.python meta.structure.dictionary.key.python string.quoted.double.single-line.python punctuation.definition.string.begin.python , source.python meta.structure.dictionary.python meta.structure.dictionary.key.python string.quoted.double.single-line.python punctuation.definition.string.end.python , source.python meta.structure.dictionary.python meta.structure.dictionary.value.python string.quoted.double.single-line.python punctuation.definition.string.begin.python , source.python meta.structure.dictionary.python meta.structure.dictionary.value.python string.quoted.double.single-line.python punctuation.definition.string.end.python , source.python meta.structure.dictionary.python meta.structure.dictionary.key.python string.quoted.single.single-line.python punctuation.definition.string.begin.python , source.python meta.structure.dictionary.python meta.structure.dictionary.key.python string.quoted.single.single-line.python punctuation.definition.string.end.python , source.python meta.structure.dictionary.python meta.structure.dictionary.value.python string.quoted.single.single-line.python punctuation.definition.string.begin.python , source.python meta.structure.dictionary.python meta.structure.dictionary.value.python string.quoted.single.single-line.python punctuation.definition.string.end.python</string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
@@ -3073,7 +3074,7 @@
 				<key>name</key>
 				<string>PythonImproved: items of lists</string>
 				<key>scope</key>
-				<string>source.python meta.structure.list.python meta.structure.list.item.python string.quoted.single.single-line.python </string>
+				<string>source.python meta.structure.list.python meta.structure.list.item.python string.quoted.double.single-line.python , source.python meta.structure.list.python meta.structure.list.item.python string.quoted.single.single-line.python</string>
 				<key>settings</key>
 				<dict>
 					<key>background</key>
@@ -3083,12 +3084,12 @@
 				</dict>
 			</dict>
 			<!-- PythonImproved: переменные в списке. -->
-			<!-- Пример: %s в LOG_FILTER = [(logging.WARN, 'Empty alt attribute for image %s in %s')] -->
+			<!-- Пример: %s в LOG_FILTER = [(logging.WARN, "Empty alt attribute for image %s in %s")] -->
 			<dict>
 				<key>name</key>
 				<string>PythonImproved: variables in lists</string>
 				<key>scope</key>
-				<string>source.python meta.structure.list.python meta.structure.list.item.python string.quoted.single.single-line.python constant.other.placeholder.python </string>
+				<string>source.python meta.structure.list.python meta.structure.list.item.python string.quoted.double.single-line.python constant.other.placeholder.python , source.python meta.structure.list.python meta.structure.list.item.python string.quoted.single.single-line.python constant.other.placeholder.python</string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
@@ -3112,7 +3113,7 @@
 				<key>name</key>
 				<string>PythonImproved: dictionary key</string>
 				<key>scope</key>
-				<string>source.python meta.structure.dictionary.python meta.structure.dictionary.key.python string.quoted.single.single-line.python </string>
+				<string>source.python meta.structure.dictionary.python meta.structure.dictionary.key.python string.quoted.double.single-line.python , source.python meta.structure.dictionary.python meta.structure.dictionary.key.python string.quoted.single.single-line.python</string>
 				<key>settings</key>
 				<dict>
 					<key>fontStyle</key>
@@ -3126,7 +3127,7 @@
 				<key>name</key>
 				<string>PythonImproved: value of dictionary key</string>
 				<key>scope</key>
-				<string>source.python meta.structure.dictionary.python meta.structure.dictionary.value.python string.quoted.single.single-line.python </string>
+				<string>source.python meta.structure.dictionary.python meta.structure.dictionary.value.python string.quoted.double.single-line.python , source.python meta.structure.dictionary.python meta.structure.dictionary.value.python string.quoted.single.single-line.python</string>
 				<key>settings</key>
 				<dict>
 					<key>fontStyle</key>
@@ -3136,12 +3137,12 @@
 				</dict>
 			</dict>
 			<!-- PythonImproved: значение ключа словаря в списке -->
-			<!-- Пример: SashaDeadlink в DEADLINK_OPTS = { 'classes': ['SashaDeadlink'] }-->
+			<!-- Пример: SashaDeadlink в DEADLINK_OPTS = { "classes": ["SashaDeadlink"] } -->
 			<dict>
 				<key>name</key>
 				<string>PythonImproved: value of dictionary key in list</string>
 				<key>scope</key>
-				<string>source.python meta.structure.dictionary.python meta.structure.dictionary.value.python meta.structure.list.python meta.structure.list.item.python string.quoted.single.single-line.python </string>
+				<string>source.python meta.structure.dictionary.python meta.structure.dictionary.value.python meta.structure.list.python meta.structure.list.item.python string.quoted.double.single-line.python , source.python meta.structure.dictionary.python meta.structure.dictionary.value.python meta.structure.list.python meta.structure.list.item.python string.quoted.single.single-line.python</string>
 				<key>settings</key>
 				<dict>
 					<key>fontStyle</key>
