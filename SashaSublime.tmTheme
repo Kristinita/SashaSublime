@@ -5,7 +5,7 @@
 <!-- @Author: Kristinita -->
 <!-- @Date: 2017-02-06 18:01:23 -->
 <!-- @Last Modified by: Kristinita -->
-<!-- @Last Modified time: 2025-03-21 16:06:17 -->
+<!-- @Last Modified time: 2025-03-30 19:23:37 -->
 <!--
 	  __,                    __,          _
 	 (              /       (         /  //o
@@ -33,7 +33,7 @@
 					<string>#2A211C</string>
 					<!-- Номера строк -->
 					<key>gutterForeground</key>
-					<string>#FF1493</string>
+					<string>deeppink</string>
 					<!-- Граница миникарты -->
 					<key>minimapBorder</key>
 					<string>hotpink</string>
@@ -48,10 +48,10 @@
 					<string>lightslategray</string>
 					<!-- Основной текст -->
 					<key>foreground</key>
-					<string>#ffdab9</string>
+					<string>peachpuff</string>
 					<!-- Не знаю, что означает. Возможно, параметр бесполезен для Sublime Text 3. -->
 					<key>invisibles</key>
-					<string>#FF0000</string>
+					<string>red</string>
 					<!-- Выделенный текст, не считая обводку вокруг него -->
 					<key>selection</key>
 					<string>dimgray</string>
@@ -91,7 +91,7 @@
 					<!-- Тени справа и слева (слева при горизонтальной перемотке), когда текст вылазит за пределы экрана -->
 					<!-- You need "word_wrap": false for syntax, that to see shadows, see https://forum.sublimetext.com/t/bug-shadow-key-missing-in-build-3143/31764/7?u=sasha_chernykh -->
 					<key>shadow</key>
-					<string>#F08080</string>
+					<string>lightcoral</string>
 					<!-- Ширина теней слева и справа при вертикальной перемотке, когда текст вылазит за пределы экрана -->
 					<key>shadowWidth</key>
 					<string>25</string>
@@ -102,7 +102,7 @@
 					3) margin — ширина рамки
 					4) padding — отступ текста от рамки
 					5) a: color — цвет ссылок
-					 -->
+					-->
 					<key>popupCss</key>
 					<string><![CDATA[
 						html
@@ -112,18 +112,18 @@
 
 						body
 							{
+								background-color: sandybrown;
+								border-radius: .7rem;
 								color: mediumvioletred;
-								background-color: #F4A460;
 								font-family: Verdana;
-								border-radius: 0.7rem;
-								margin: 0.2rem;
-								padding: 0.2rem;
+								margin: .2rem;
+								padding: .2rem;
 							}
 
 						body#show-definitions
-						    {
-					        	font-family: Impact;
-					      	}
+							{
+								font-family: Impact;
+							}
 
 						a
 							{
@@ -134,6 +134,41 @@
 							{
 								font-family: Verdana;
 							}
+
+						/* [PURPOSE] Overwrite classes for SublimeLinter popups.
+
+						[SUBLIMELINTER][INFO] SublimeLinter popup styles:
+						https://github.com/SublimeLinter/SublimeLinter/blob/22a0b52a9d3250b441ca6ad7a845dd0398fac738/highlight_view.py#L1019-L1052
+
+						[POPUPCSS][NOTE] Overwriting values of CSS variables “--foreground”, “--redish” and “--yellowish” required.
+						Overwriting colors has no effect.
+
+						[EXAMPLES] This syntax has no effect:
+
+						```css
+						#sublimelinter-tooltip .error
+							{
+								color: green;
+							}
+						```
+
+						This syntax also doesn’t work:
+
+						```css
+						body#sublimelinter-tooltip div.error
+							{
+								color: green !important;
+							}
+						```
+						*/
+
+						#sublimelinter-tooltip
+							{
+								--foreground: mediumorchid;
+								--redish: crimson;
+								--yellowish: yellow;
+							}
+
 					]]></string>
 					<!-- Фантомы. Когда при запуске AutoHotkey ошибка, на линии, где совершена ошибка, показывается фантом. -->
 					<!--
@@ -146,34 +181,41 @@
 					7) .anaconda .phantom .violations — color of anaconda violation,
 					by default dark color in dark background, see:
 					https://i.imgur.com/I8Oa0kb.png
-					 -->
+					-->
 					<key>phantomCss</key>
 					<string><![CDATA[
 						html
 							{
 								background-color: blanchedalmond;
 							}
+
 						body
 							{
-								color: rgb(135, 206, 235);
+								color: skyblue;
 								background-color: rgb(101, 62, 58);
 								margin: 1.8px;
 								padding: 0.2em;
 							}
+
 						a
 							{
-								color: rgb(135, 206, 235);
+								color: skyblue;
 							}
+
 						.error, .deleted
 							{
-								color: #ffdab9;
+								color: peachpuff;
 							}
-						body#inline-error div.error a {
-						    background-color: #28071a;
-						}
-						.anaconda .phantom .violations {
-							color: lightblue;
-						}
+
+						body#inline-error div.error a
+							{
+								background-color: #28071a;
+							}
+
+						.anaconda .phantom .violations
+							{
+								color: lightblue;
+							}
 					]]></string>
 				</dict>
 			</dict>
@@ -493,7 +535,7 @@
 					<key>background</key>
 					<string>#990000</string>
 					<key>foreground</key>
-					<string>#FFFFFF</string>
+					<string>white</string>
 				</dict>
 			</dict>
 			<dict>
@@ -1573,7 +1615,7 @@
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
-					<string>#ffdab9</string>
+					<string>peachpuff</string>
 					<key>background</key>
 					<string>#FAF20A7A</string>
 				</dict>
@@ -1902,7 +1944,7 @@
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
-					<string>#FF0000</string>
+					<string>red</string>
 				</dict>
 			</dict>
 			<!-- BracketHighlighter: круглые скобки -->
@@ -2152,9 +2194,9 @@
 			<!-- ToDo Manager: @КатКрис -->
 			<dict>
 				<key>name</key>
-				<string>ToDo Manager: Catalogue</string>
+				<string>ToDo Manager: Catalog</string>
 				<key>scope</key>
-				<string>meta.catalogue</string>
+				<string>meta.catalog</string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
@@ -2230,7 +2272,7 @@
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
-					<string>#FF1493</string>
+					<string>deeppink</string>
 				</dict>
 			</dict>
 			<!-- ToDo Manager: @Компьютер -->
@@ -2877,7 +2919,7 @@
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
-					<string>#ADD8E6</string>
+					<string>lightblue</string>
 				</dict>
 			</dict>
 			<!-- Misty Rose color -->
@@ -2889,7 +2931,7 @@
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
-					<string>#FFE4E1</string>
+					<string>mistyrose</string>
 				</dict>
 			</dict>
 			<!-- Green Tea color -->
@@ -2913,7 +2955,7 @@
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
-					<string>#FFA500</string>
+					<string>orange</string>
 				</dict>
 			</dict>
 			<!--====================================
@@ -2970,7 +3012,7 @@
 					<key>background</key>
 					<string>#DC143C55</string>
 					<key>foreground</key>
-					<string>#ffdab9</string>
+					<string>peachpuff</string>
 				</dict>
 			</dict>
 			<!-- PythonImproved: круглые скобки функции — print(sasha) -->
@@ -3054,7 +3096,7 @@
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
-					<string>blue</string>
+					<string>sienna</string>
 				</dict>
 			</dict>
 			<!-- PythonImproved: двойные и одиночные кавычки ключа и значения списка -->
@@ -3213,7 +3255,7 @@
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
-					<string>#FFFFFF</string>
+					<string>white</string>
 				</dict>
 			</dict>
 			<!-- Python IDE: иконка ошибки -->
@@ -3241,7 +3283,7 @@
 			      <key>background</key>
 			      <string>#FF4A52</string>
 			      <key>foreground</key>
-			      <string>#FFFFFF</string>
+			      <string>white</string>
 			  </dict>
 			</dict>
 			<dict>
@@ -3252,7 +3294,7 @@
 			  <key>settings</key>
 			  <dict>
 			      <key>background</key>
-			      <string>#FF0000</string>
+			      <string>red</string>
 			  </dict>
 			</dict>
 			<dict>
@@ -3265,7 +3307,7 @@
 			      <key>background</key>
 			      <string>#DF9400</string>
 			      <key>foreground</key>
-			      <string>#FFFFFF</string>
+			      <string>white</string>
 			  </dict>
 			</dict>
 			<dict>
@@ -3276,7 +3318,7 @@
 			  <key>settings</key>
 			  <dict>
 			      <key>background</key>
-			      <string>#FF0000</string>
+			      <string>red</string>
 			  </dict>
 			</dict>
 			<dict>
@@ -3289,7 +3331,7 @@
 			      <key>background</key>
 			      <string>#ffffff33</string>
 			      <key>foreground</key>
-			      <string>#FFFFFF</string>
+			      <string>white</string>
 			  </dict>
 			</dict>
 			<dict>
@@ -3300,7 +3342,7 @@
 			  <key>settings</key>
 			  <dict>
 			      <key>background</key>
-			      <string>#FF0000</string>
+			      <string>red</string>
 			  </dict>
 			</dict>
 			<!--================================
@@ -3327,7 +3369,7 @@
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
-					<string>#FFFFFF</string>
+					<string>white</string>
 				</dict>
 			</dict>
 			<!-- Flake8Lint: иконка критической ошибки -->
